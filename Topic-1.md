@@ -1,5 +1,4 @@
-# Part 1
-> The processor implementation options: Processor technology, implementation techniques and design technologies. Typically peripherals for embedded systems. Communication protocols
+# Part 1: The processor implementation options: Processor technology, implementation techniques and design technologies. Typically peripherals for embedded systems. Communication protocols
 
 ## processor technology
 Processor technology refers to the underlying architecture and design principles used in creating a central processing unit (CPU) or a microprocessor. There are several types of processor technologies available, including:
