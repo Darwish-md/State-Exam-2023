@@ -43,16 +43,7 @@ This method involves trying different solutions and observing the outcomes until
 ### Algorithmic Methods:
 Algorithmic methods involve step-by-step procedures or instructions to solve a problem. Algorithms provide a clear sequence of operations that lead to a solution. Examples include search algorithms, sorting algorithms, and mathematical algorithms.
 
-### Heuristic Methods:
-Heuristic methods involve using rules of thumb, intuition, or educated guesses to guide the problem-solving process. These methods aim to find reasonably good solutions in a more efficient manner, although they may not guarantee the optimal solution.
-
-### Divide and Conquer:
-This method involves breaking a complex problem into smaller, more manageable sub-problems. Each sub-problem is solved independently, and their solutions are combined to obtain the solution to the original problem. This approach simplifies the problem-solving process and facilitates problem decomposition.
-
-### Analytical Methods:
-Analytical methods involve analyzing the problem, identifying patterns, and using logical reasoning to deduce solutions. These methods often rely on mathematical or logical models to understand the problem structure and make informed decisions.
-    
-### Searching algorithms:
+#### Searching algorithms:
 They can be categorized into two main types: informed search and uninformed search. The categorization is based on whether or not the algorithm utilizes additional information, known as heuristics, to guide the search process. Let's explore the different types of searching algorithms and their categorization:
 
 - Uninformed Search Algorithms:
@@ -68,6 +59,15 @@ They can be categorized into two main types: informed search and uninformed sear
   - Greedy Search: Greedy search is an informed search algorithm that makes locally optimal choices at each step based on a heuristic function. It selects the option that appears most favorable at the current state without considering the long-term consequences. Greedy search uses heuristics to guide the search process but does not guarantee an optimal solution.
   
   -   A* Search: A* search is an informed search algorithm that combines the advantages of both uniform cost search and greedy search. It evaluates each state based on a heuristic function and the cumulative cost to reach that state. A* search intelligently balances the cost to reach the current state and an estimate of the remaining cost to reach the goal. It guarantees an optimal solution if the heuristic function satisfies certain conditions.
+
+### Heuristic Methods:
+Heuristic methods involve using rules of thumb, intuition, or educated guesses to guide the problem-solving process. These methods aim to find reasonably good solutions in a more efficient manner, although they may not guarantee the optimal solution.
+
+### Divide and Conquer:
+This method involves breaking a complex problem into smaller, more manageable sub-problems. Each sub-problem is solved independently, and their solutions are combined to obtain the solution to the original problem. This approach simplifies the problem-solving process and facilitates problem decomposition.
+
+### Analytical Methods:
+Analytical methods involve analyzing the problem, identifying patterns, and using logical reasoning to deduce solutions. These methods often rely on mathematical or logical models to understand the problem structure and make informed decisions.
 
 ## Methods for Solving Constraint Satisfaction Problems:
 Constraint satisfaction problems (CSPs) are a specific type of problem where a set of variables must be assigned values while satisfying a given set of constraints. CSPs have specific methods tailored to their characteristics, including:
