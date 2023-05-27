@@ -37,10 +37,10 @@ ALUs are digital circuits that perform arithmetic and logical operations on bina
 ## General Problem Solving Methods:
 General problem-solving methods refer to a set of techniques that can be applied to a wide range of problems, regardless of their specific domain. These methods provide a systematic approach to analyze problems, generate solutions, and evaluate their effectiveness. Some common general problem-solving methods include:
 
-### Trial and Error: 
+### 1. Trial and Error: 
 This method involves trying different solutions and observing the outcomes until a successful one is found. It is a simple but often time-consuming approach that relies on repeated attempts and learning from failures.
 
-### Algorithmic Methods:
+### 2. Algorithmic Methods:
 Algorithmic methods involve step-by-step procedures or instructions to solve a problem. Algorithms provide a clear sequence of operations that lead to a solution. Examples include search algorithms, sorting algorithms, and mathematical algorithms.
 
 #### Searching algorithms:
@@ -60,31 +60,31 @@ They can be categorized into two main types: informed search and uninformed sear
   
   -   A* Search: A* search is an informed search algorithm that combines the advantages of both uniform cost search and greedy search. It evaluates each state based on a heuristic function and the cumulative cost to reach that state. A* search intelligently balances the cost to reach the current state and an estimate of the remaining cost to reach the goal. It guarantees an optimal solution if the heuristic function satisfies certain conditions.
 
-### Heuristic Methods:
+### 3. Heuristic Methods:
 Heuristic methods involve using rules of thumb, intuition, or educated guesses to guide the problem-solving process. These methods aim to find reasonably good solutions in a more efficient manner, although they may not guarantee the optimal solution.
 
-### Divide and Conquer:
+### 4. Divide and Conquer:
 This method involves breaking a complex problem into smaller, more manageable sub-problems. Each sub-problem is solved independently, and their solutions are combined to obtain the solution to the original problem. This approach simplifies the problem-solving process and facilitates problem decomposition.
 
-### Analytical Methods:
+### 5. Analytical Methods:
 Analytical methods involve analyzing the problem, identifying patterns, and using logical reasoning to deduce solutions. These methods often rely on mathematical or logical models to understand the problem structure and make informed decisions.
 
 ## Methods for Solving Constraint Satisfaction Problems:
 Constraint satisfaction problems (CSPs) are a specific type of problem where a set of variables must be assigned values while satisfying a given set of constraints. CSPs have specific methods tailored to their characteristics, including:
 
-### Backtracking:
+### 1. Backtracking:
 Backtracking is a widely used method for solving CSPs. It systematically explores potential solutions, incrementally assigning values to variables and backtracking when a constraint is violated. It explores the search space in a depth-first manner, trying different variable-value assignments until a valid solution is found or all possibilities are exhausted.
 
-### Constraint Propagation:
+### 2. Constraint Propagation:
 Constraint propagation methods use inference techniques to reduce the search space by enforcing constraints. They exploit relationships between variables and constraints to eliminate inconsistent values and focus the search on more promising assignments. Examples include arc consistency and constraint propagation algorithms like AC-3.
 
-### Local Search:
+### 3. Local Search:
 Local search methods aim to find feasible solutions by iteratively improving an initial assignment. They explore the solution space by making local changes to the current assignment, evaluating their quality based on constraints, and moving towards better solutions. Examples include hill climbing, simulated annealing, and genetic algorithms.
 
-### Integer Programming:
+### 4. Integer Programming:
 Integer programming is a mathematical optimization technique used to solve CSPs with integer variables. It formulates the problem as a mathematical program with linear or nonlinear objective functions and constraints, aiming to find the optimal solution within the given constraints.
 
-### Constraint Logic Programming:
+### 5. Constraint Logic Programming:
 Constraint logic programming combines logic programming with constraint satisfaction techniques. It allows expressing problems declaratively using constraints and logic rules and relies on backtracking and constraint propagation to search for solutions.
 
 In summary, general problem-solving methods provide a broad set of techniques applicable to various problems, while methods for solving constraint satisfaction problems are specialized approaches tailored to problems that involve assigning values to variables while satisfying constraints.
