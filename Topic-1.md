@@ -142,7 +142,7 @@ Generic programming involves writing code that can operate on different data typ
 
 ***Example: A generic sorting algorithm can be implemented in a way that it works with arrays of integers, strings, or any other comparable data type. This avoids the need for writing separate sorting algorithms for each specific data type.***
 
-'''
+```
 def quicksort(arr, compare):
     if len(arr) <= 1:
         return arr
@@ -165,7 +165,7 @@ sorted_int_array = quicksort(int_array, compare_int)
 # Sorting strings based on length
 str_array = ["apple", "banana", "cherry", "date", "elderberry"]
 sorted_str_array = quicksort(str_array, compare_str)
-'''
+```
 
 ## I/O Tools of Programming Languages, File Handling:
 I/O (Input/Output) tools in programming languages provide functionality for reading input from users or external sources and writing output to displays or files. File handling involves operations such as creating, opening, reading, writing, and closing files.
