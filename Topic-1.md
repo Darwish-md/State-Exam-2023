@@ -8,11 +8,11 @@ Processor technology refers to the underlying architecture and design principles
 
 2. RISC (Reduced Instruction Set Computer): RISC processors have a simplified instruction set, typically with fixed-length instructions. They focus on executing simple instructions quickly, enabling a more efficient use of hardware resources.
 
-> Difference between CISC & RISC
+ > Difference between CISC & RISC
 
-![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/f68d46a0-200c-4330-abde-ddea8f7b8ec2)
+   ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/f68d46a0-200c-4330-abde-ddea8f7b8ec2)
 
-![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/c30c4632-e5d6-4154-9458-8569a50608ba)
+   ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/c30c4632-e5d6-4154-9458-8569a50608ba)
 
 3. Superscalar Processors: Superscalar processors are designed to achieve higher performance by executing multiple instructions simultaneously within a single processor cycle. Unlike scalar processors that execute one instruction at a time, superscalar processors employ advanced techniques like instruction-level parallelism (ILP) to execute multiple instructions in parallel. They feature multiple functional units, instruction fetch, and decode units, and sophisticated branch prediction mechanisms to exploit parallelism and execute instructions out of order, optimizing the utilization of available resources.
 
