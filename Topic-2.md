@@ -20,27 +20,42 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two wid
 
 ### TCP
 - Source Port: This 16-bit field identifies the sending application or process within the source device.
+
 - Destination Port: Similar to the source port, this 16-bit field identifies the receiving application or process within the destination device.
+
 - Sequence Number: This 32-bit field is used to maintain the order of the data segments transmitted from the source to the destination. It allows the receiving end to reconstruct the data in the correct order.
+
 - Acknowledgment Number: Also a 32-bit field, it serves as a positive acknowledgment from the receiving end, indicating the sequence number of the next expected data segment.
+
 - Window Size: This 16-bit field specifies the number of data bytes that the sender is willing to receive before receiving an acknowledgment. It helps in flow control and avoids overwhelming the receiver.
+
 - Checksum: A 16-bit field that ensures the integrity of the TCP segment by verifying the correctness of the transmitted data.
+
 - Urgent Pointer: If the URG (urgent) flag is set, this 16-bit field points to the sequence number of the last urgent data byte in the TCP segment.
+
 - Options: This variable-length field allows for additional TCP functionality, such as setting maximum segment size, timestamping, and window scaling.
+
 ### UDP
 - Source Port: Similar to TCP, this 16-bit field identifies the sending application or process within the source device.
+
 - Destination Port: Like TCP, this 16-bit field identifies the receiving application or process within the destination device.
+
 - Length: This 16-bit field specifies the length of the UDP datagram, including the header and the data.
+
 - Checksum: A 16-bit field that ensures the integrity of the UDP datagram by verifying the correctness of the transmitted data.
 
 ## Mechanisms:
 
 - Connection-Oriented vs. Connectionless: TCP is connection-oriented, meaning it establishes a reliable, ordered, and error-checked connection between the sender and receiver. UDP, on the other hand, is connectionless, providing a best-effort delivery mechanism without establishing a connection or ensuring reliability.
+
 - Flow Control and Congestion Control: TCP incorporates flow control and congestion control mechanisms to manage the rate of data transmission and avoid network congestion. UDP does not provide these mechanisms.
+
 - Reliability: TCP guarantees reliable data delivery by using acknowledgment, retransmission, and error-checking mechanisms. UDP does not provide any built-in mechanisms for reliability, making it more suitable for applications where real-time or low-latency communication is prioritized over guaranteed delivery.
+
 - Overhead: Due to its additional functionality for reliability and flow control, TCP has higher overhead in terms of header size and computational requirements compared to UDP, which has a minimal header.
+
 - Ordering: TCP ensures in-order delivery of data segments, while UDP does not guarantee the order of data delivery. UDP is more appropriate for applications where real-time data is more critical than maintaining strict ordering.
-- 
+
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/521e79ad-fa11-47e0-be43-04e56fa5ceb3)
 
 
