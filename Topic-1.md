@@ -92,18 +92,96 @@ Communication protocols can be categorized into several types based on their cha
 
 2. Network Communication Protocols:
     
-    a. Ethernet: Ethernet is a widely used protocol for wired local area networks (LANs). It provides a standard way of transmitting data packets over a network using various physical media, such as twisted pair cables or fiber optics. Ethernet enables embedded systems to connect to the internet, communicate with other devices, and access network-based services.
+- Ethernet: Ethernet is a widely used protocol for wired local area networks (LANs). It provides a standard way of transmitting data packets over a network using various physical media, such as twisted pair cables or fiber optics. Ethernet enables embedded systems to connect to the internet, communicate with other devices, and access network-based services.
 
-    b. CAN (Controller Area Network): CAN is a robust serial communication protocol commonly used in automotive and industrial applications. It allows for reliable and deterministic communication between devices connected in a network. CAN is well-suited for real-time applications and provides features like message prioritization, error detection, and fault tolerance. It is commonly used in automotive systems, industrial control systems, and automation applications.
+- CAN (Controller Area Network): CAN is a robust serial communication protocol commonly used in automotive and industrial applications. It allows for reliable and deterministic communication between devices connected in a network. CAN is well-suited for real-time applications and provides features like message prioritization, error detection, and fault tolerance. It is commonly used in automotive systems, industrial control systems, and automation applications.
 
-    c. MQTT (Message Queuing Telemetry Transport): MQTT is a lightweight publish-subscribe messaging protocol designed for resource-constrained devices and networks. It is commonly used in Internet of Things (IoT) applications to facilitate communication between embedded devices and IoT platforms or brokers. MQTT follows a publish-subscribe model, where devices can publish messages to specific topics, and other devices can subscribe to those topics to receive the messages.
+- MQTT (Message Queuing Telemetry Transport): MQTT is a lightweight publish-subscribe messaging protocol designed for resource-constrained devices and networks. It is commonly used in Internet of Things (IoT) applications to facilitate communication between embedded devices and IoT platforms or brokers. MQTT follows a publish-subscribe model, where devices can publish messages to specific topics, and other devices can subscribe to those topics to receive the messages.
 
 3. Wireless Communication Protocols:
 
-    a. Bluetooth: Bluetooth is a wireless communication protocol designed for short-range communication between devices. It provides a low-power and low-cost solution for connecting embedded systems with peripherals, such as wireless keyboards, mice, headphones, and sensors. Bluetooth devices can form ad-hoc networks called piconets.
+- Bluetooth: Bluetooth is a wireless communication protocol designed for short-range communication between devices. It provides a low-power and low-cost solution for connecting embedded systems with peripherals, such as wireless keyboards, mice, headphones, and sensors. Bluetooth devices can form ad-hoc networks called piconets.
 
-    b. Wi-Fi (Wireless Fidelity): Wi-Fi is a wireless communication protocol that enables high-speed data transmission over short to medium distances. It is commonly used for wireless internet connectivity in embedded systems, allowing devices to connect to local area networks (LANs) or access points (APs).
+- Wi-Fi (Wireless Fidelity): Wi-Fi is a wireless communication protocol that enables high-speed data transmission over short to medium distances. It is commonly used for wireless internet connectivity in embedded systems, allowing devices to connect to local area networks (LANs) or access points (APs).
 
-    c. Zigbee: Zigbee is a low-power, low-data-rate wireless communication protocol designed for control and monitoring applications. It is commonly used in home automation, industrial automation, and sensor networks. Zigbee devices can form mesh networks, allowing messages to be routed through intermediate devices to extend the network coverage.
-    
+- Zigbee: Zigbee is a low-power, low-data-rate wireless communication protocol designed for control and monitoring applications. It is commonly used in home automation, industrial automation, and sensor networks. Zigbee devices can form mesh networks, allowing messages to be routed through intermediate devices to extend the network coverage.
+ 
+# Part 2: Program units. Subprograms. Parameter evaluation. Parameter passing methods. Block. Scoping, accessibility. Abstract data type. Generic programming. I/O tools of programming languages, file handling. Exception handling. Parallel programming.
 
+## Program Units:
+Program units refer to the modular building blocks of a program. They help organize code into manageable and reusable components. Common examples of program units are functions, procedures, modules, or classes. Each program unit typically performs a specific task or encapsulates related functionality.
+
+## Subprograms:
+Subprograms, also known as subroutines or functions, are self-contained sections of code that perform a specific task. They can be invoked from different parts of a program to execute their defined functionality. Subprograms improve code modularity, reusability, and maintainability.
+
+## Parameter evaluation:
+It is the process of matching formal and actual parameters when calling a subprogram. Formal parameters are defined in the subprogram's specification, while actual parameters are specified in the calls. Three key issues in parameter evaluation are: assigning actual parameters to formal parameters based on order or explicit naming, ensuring the number of actual parameters matches the number of formal parameters (with the option for default values), and handling the relationship between types of formal and actual parameters.
+
+## Parameter passing:
+It refers to the action of transferring the actual parameters to the formal parameters when calling a function or subroutine. Various methods exist for parameter passing:
+- Pass by Value: In this method, the value of the actual parameter is copied to the formal parameter. Any modifications made to the formal parameter within the subprogram do not affect the original actual parameter.
+
+- Pass by Reference: Here, both the actual and formal parameters refer to the same memory location. Changes made to the formal parameter within the subprogram will impact the original actual parameter.
+
+- Pass by Name: This method allows passing the name of the formal parameter as the actual parameter. The order of parameters becomes irrelevant in this case.
+
+- Pass by Result or "Pass by Copy-Result": In this method, the formal parameter's initial value is undefined, and the value is only copied back to the actual parameter when the subprogram completes execution.
+
+## Block, Scoping, Accessibility:
+A block is a section of code that groups statements together, often delimited by curly braces or other syntax. Scoping defines the visibility and accessibility of variables within different parts of the code.
+
+***Example: Consider a block of code within a function. Variables declared within that block have a scope limited to that block and are inaccessible outside of it. This promotes encapsulation and prevents naming conflicts with variables in other parts of the code.***
+
+## Abstract Data Type (ADT):
+Abstract Data Type refers to a high-level data structure with defined operations and behavior, but its implementation details are hidden. It focuses on what operations can be performed on the data rather than how they are implemented. Examples are: Stack, Queue, Tree, Graph.
+
+***Example: An ADT "Stack" allows operations like push (to add an element), pop (to remove the top element), and isEmpty (to check if the stack is empty). The specific implementation of the stack (e.g., using arrays or linked lists) is abstracted away.***
+
+## Generic Programming:
+Generic programming involves writing code that can operate on different data types. It allows creating reusable algorithms and data structures that are not tied to specific data types.
+
+***Example: A generic sorting algorithm can be implemented in a way that it works with arrays of integers, strings, or any other comparable data type. This avoids the need for writing separate sorting algorithms for each specific data type.***
+
+'''
+def quicksort(arr, compare):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    less = [x for x in arr if compare(x, pivot) < 0]
+    equal = [x for x in arr if compare(x, pivot) == 0]
+    greater = [x for x in arr if compare(x, pivot) > 0]
+    return quicksort(less, compare) + equal + quicksort(greater, compare)
+
+def compare_int(a, b):
+    return a - b
+
+def compare_str(a, b):
+    return len(a) - len(b)
+
+# Sorting integers
+int_array = [5, 2, 8, 1, 9]
+sorted_int_array = quicksort(int_array, compare_int)
+
+# Sorting strings based on length
+str_array = ["apple", "banana", "cherry", "date", "elderberry"]
+sorted_str_array = quicksort(str_array, compare_str)
+'''
+
+## I/O Tools of Programming Languages, File Handling:
+I/O (Input/Output) tools in programming languages provide functionality for reading input from users or external sources and writing output to displays or files. File handling involves operations such as creating, opening, reading, writing, and closing files.
+
+***Example: In Python, the "input" function can be used to read user input from the console, and the "print" function is used to display output. File handling functions like "open," "read," and "write" enable reading and writing data to files.***
+
+## Exception Handling:
+Exception handling is a mechanism to handle and recover from unexpected or exceptional events during program execution. It allows the program to gracefully handle errors and prevent abnormal termination. Examples are:     
+    - ArithmeticError: Raised for arithmetic errors, such as division by zero or invalid operations.
+    - FileNotFoundError: Raised when a file or directory is not found.
+    - IndexError: Raised when an index is out of range.
+    - TypeError: Raised when an operation is performed on an object of inappropriate type.
+
+***Example: When dividing a number by zero, a divide-by-zero exception can occur. Exception handling allows catching such exceptions and taking appropriate actions, such as displaying an error message or executing alternative code.***
+
+## Parallel Programming:
+Parallel programming involves dividing a task into smaller subtasks that can be executed simultaneously on multiple processing units (such as CPU cores) to improve performance and efficiency. All modern processors are multi-core with SMT or Simultaneous multithreading enabled which means a single core can perform 2 virtual threads at the same time. 
+
+***Example: In a parallel programming scenario, a large dataset can be divided into smaller chunks, and each chunk can be processed concurrently by separate threads or processes. This can speed up computation and achieve better utilization of available resources.***
