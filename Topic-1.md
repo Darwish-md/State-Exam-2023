@@ -10,6 +10,7 @@ Processor technology refers to the underlying architecture and design principles
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/a4a1f8b0-8bd6-4c18-ba41-e17f30cbce4e)
 
 > Difference between CISC & RISC
+
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/f68d46a0-200c-4330-abde-ddea8f7b8ec2)
 
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/c30c4632-e5d6-4154-9458-8569a50608ba)
