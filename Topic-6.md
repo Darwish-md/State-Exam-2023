@@ -93,27 +93,26 @@ In web scripting, control structures are used to determine the flow of execution
 These control structures provide the ability to create dynamic and interactive web applications by controlling the logic and flow of the scripts.
 
 ## Sensor through a Web Page:
-
 HTML5 introduced the ability to access various sensors through a web page using JavaScript. Some of the sensors that can be accessed include:
 
-    Geolocation Sensor: Allows obtaining the geographical location of the device, such as latitude and longitude coordinates.
-    Accelerometer Sensor: Measures the acceleration forces acting on the device in three-dimensional space.
-    Gyroscope Sensor: Measures the device's orientation and rotation rate.
-    Ambient Light Sensor: Detects the ambient light level around the device.
-    Proximity Sensor: Detects the presence of nearby objects without physical contact.
-    Magnetometer Sensor: Measures the strength and direction of the magnetic field around the device.
-    Device Orientation Sensor: Provides information about the device's physical orientation in three-dimensional space.
+ - Geolocation Sensor: Allows obtaining the geographical location of the device, such as latitude and longitude coordinates.
+ - Accelerometer Sensor: Measures the acceleration forces acting on the device in three-dimensional space.
+ - Gyroscope Sensor: Measures the device's orientation and rotation rate.
+ - Ambient Light Sensor: Detects the ambient light level around the device.
+ - Proximity Sensor: Detects the presence of nearby objects without physical contact.
+ - Magnetometer Sensor: Measures the strength and direction of the magnetic field around the device.
+ - Device Orientation Sensor: Provides information about the device's physical orientation in three-dimensional space.
 
 By accessing these sensors through a web page, developers can create applications that leverage real-time sensor data for various purposes, such as location-based services, augmented reality, gaming, and more.
 
-Providing Remote Management Systems through a Web Page:
+## Providing Remote Management Systems through a Web Page:
 
 A web page can be utilized to provide remote management systems, allowing users to remotely control and manage devices or systems. This is typically achieved through the following components:
 
-    User Interface: The web page serves as the user interface, providing a visual representation of the remote management system. It may include interactive controls, status indicators, and data visualization.
-    Communication Protocols: The web page communicates with the remote devices or systems using appropriate communication protocols, such as HTTP, WebSocket, or AJAX, enabling data exchange and control commands.
-    Backend Services: Backend services handle the processing of incoming requests from the web page, execute the necessary actions on the remote devices or systems, and provide responses back to the web page.
-    Authentication and Security: To ensure secure access, authentication mechanisms are implemented to verify the identity of users accessing the remote management system. Encryption and other security measures are employed to protect data transmission.
-    Remote Control Features: The web page may offer functionalities such as device configuration, monitoring, diagnostics, firmware/software updates, and remote troubleshooting.
+ - User Interface: The web page serves as the user interface, providing a visual representation of the remote management system. It may include interactive controls, status indicators, and data visualization.
+ - Communication Protocols: The web page communicates with the remote devices or systems using appropriate communication protocols, such as HTTP, WebSocket, or AJAX, enabling data exchange and control commands.
+ - Backend Services: Backend services handle the processing of incoming requests from the web page, execute the necessary actions on the remote devices or systems, and provide responses back to the web page.
+ - Authentication and Security: To ensure secure access, authentication mechanisms are implemented to verify the identity of users accessing the remote management system. Encryption and other security measures are employed to protect data transmission.
+ - Remote Control Features: The web page may offer functionalities such as device configuration, monitoring, diagnostics, firmware/software updates, and remote troubleshooting.
 
 By accessing the remote management system through a web page, users can conveniently control and manage devices or systems from anywhere with an internet connection, providing flexibility and ease of use.
