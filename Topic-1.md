@@ -63,20 +63,32 @@ Embedded systems are computer systems comprising of a processor, memory, and inp
 
 Peripherals are typically connected to the embedded system using various interfaces like GPIO (General Purpose Input/Output) pins, serial buses (e.g., I2C, SPI), or dedicated communication protocols (e.g., USB, Ethernet):
 
-1. Serial Communication Interfaces (SCI) – These are relatively slow, asynchronous communication ports that are used to communicate with other embedded systems and devices.
+- Serial Communication Interfaces (SCI) – These are relatively slow, asynchronous communication ports that are used to communicate with other embedded systems and devices.
 
-2. General-Purpose Input/Output (GPIO): GPIO pins provide a flexible interface to connect and control external devices. They can be configured as either inputs or outputs, allowing the embedded system to monitor external signals or control external devices.
-
-Communication protocols can be categorized into several types based on their characteristics and areas of application. Here are some commonly used communication protocols in embedded systems, grouped into categories:
+- General-Purpose Input/Output (GPIO): GPIO pins provide a flexible interface to connect and control external devices. They can be configured as either inputs or outputs, allowing the embedded system to monitor external signals or control external devices.
 
 ## Communication Protocols
+Communication protocols can be categorized into several types based on their characteristics and areas of application. Here are some commonly used communication protocols in embedded systems, grouped into categories:
+
 1. Serial Communication Protocols:
-   
-   a. UART (Universal Asynchronous Receiver-Transmitter): UART is a widely used asynchronous serial communication protocol. It uses two data lines, one for transmitting data (TX) and another for receiving data (RX). UART is commonly used for short-distance communication between devices, such as microcontrollers, sensors, and peripheral modules.
 
-    b. SPI (Serial Peripheral Interface): SPI is a synchronous serial communication protocol that allows full-duplex communication between a master device and one or more slave devices. It typically utilizes four lines: a clock line (SCLK), a master-out slave-in line (MOSI), a master-in slave-out line (MISO), and a chip select line (CS). SPI is commonly used for interconnecting devices like sensors, memory chips, and display modules.
+- UART (Universal Asynchronous Receiver-Transmitter): UART is a widely used asynchronous serial communication protocol. It uses two data lines, one for transmitting data (TX) and another for receiving data (RX). UART is commonly used for short-distance communication between devices, such as microcontrollers, sensors, and peripheral modules.
 
-    c. I2C (Inter-Integrated Circuit): I2C is a multi-master, multi-slave, and bidirectional serial communication protocol. It requires only two lines: a serial data line (SDA) and a serial clock line (SCL). I2C allows multiple devices to communicate on the same bus, and each device has a unique address. It is commonly used for communication between integrated circuits on a PCB, such as sensors, EEPROMs, and real-time clocks.
+![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/c7ec8eaa-5701-4f44-9dd6-dac84eccf7f1)
+
+- USART: Universal Synchronous Asynchronous Receiver/Transmitter is identical to UART with added synchronous functionality.
+
+![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/b3328bdc-f3f2-4e1a-8d89-b97490aca9ec)
+
+- SPI (Serial Peripheral Interface): SPI is a synchronous serial communication protocol that allows full-duplex communication between a master device and one or more slave devices. It typically utilizes four lines: a clock line (SCLK), a master-out slave-in line (MOSI), a master-in slave-out line (MISO), and a chip select line (CS). SPI is commonly used for interconnecting devices like sensors, memory chips, and display modules.
+
+![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/b85a1c32-a0d7-4712-a681-96d48c4f9140)
+
+- I2C (Inter-Integrated Circuit): I2C is a multi-master, multi-slave, and bidirectional serial communication protocol. It requires only two lines: a serial data line (SDA) and a serial clock line (SCL). I2C allows multiple devices to communicate on the same bus, and each device has a unique address. It is commonly used for communication between integrated circuits on a PCB, such as sensors, EEPROMs, and real-time clocks.
+
+![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/3d43b037-4b9d-4eee-9374-39679aec9195)
+
+- USB: Universal Serial Bus, this is a two-wired serial communication protocol. USB sends and receives the data serially between the host and an external peripheral device. Data is sent as packets.
 
 2. Network Communication Protocols:
     
@@ -93,3 +105,5 @@ Communication protocols can be categorized into several types based on their cha
     b. Wi-Fi (Wireless Fidelity): Wi-Fi is a wireless communication protocol that enables high-speed data transmission over short to medium distances. It is commonly used for wireless internet connectivity in embedded systems, allowing devices to connect to local area networks (LANs) or access points (APs).
 
     c. Zigbee: Zigbee is a low-power, low-data-rate wireless communication protocol designed for control and monitoring applications. It is commonly used in home automation, industrial automation, and sensor networks. Zigbee devices can form mesh networks, allowing messages to be routed through intermediate devices to extend the network coverage.
+    
+
