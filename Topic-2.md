@@ -64,3 +64,5 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two wid
 - Ordering: TCP ensures in-order delivery of data segments, while UDP does not guarantee the order of data delivery. UDP is more appropriate for applications where real-time data is more critical than maintaining strict ordering.
 
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/521e79ad-fa11-47e0-be43-04e56fa5ceb3)
+
+## three-way handshake
