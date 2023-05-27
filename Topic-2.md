@@ -29,7 +29,10 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two wid
 
 - Window Size: This 16-bit field specifies the number of data bytes that the sender is willing to receive before receiving an acknowledgment. It helps in flow control and avoids overwhelming the receiver.
 
-- Checksum: A 16-bit field that ensures the integrity of the TCP segment by verifying the correctness of the transmitted data.
+- Checksum: A 16-bit field that ensures the integrity of the TCP segment by verifying the correctness of the transmitted data. The calculation of the checksum involves the following steps:
+  - The data to be transmitted is divided into a series of words (usually 16 bits or 32 bits).
+  - These words are then summed together, typically using one's complement arithmetic.
+  - The resulting sum is complemented (bitwise negated) to obtain the checksum value.
 
 - Urgent Pointer: If the URG (urgent) flag is set, this 16-bit field points to the sequence number of the last urgent data byte in the TCP segment.
 
