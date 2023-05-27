@@ -38,6 +38,8 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two wid
 
 - Options: This variable-length field allows for additional TCP functionality, such as setting maximum segment size, timestamping, and window scaling.
 
+***Examples: Web Browsing, Email, File Transfer, Remote Desktop Protocol, Database Access***
+
 ### UDP
 - Source Port: Similar to TCP, this 16-bit field identifies the sending application or process within the source device.
 
@@ -46,6 +48,8 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two wid
 - Length: This 16-bit field specifies the length of the UDP datagram, including the header and the data.
 
 - Checksum: A 16-bit field that ensures the integrity of the UDP datagram by verifying the correctness of the transmitted data.
+
+***Examples: Real-Time Streaming, DNS, IoT, DHCP***
 
 ## Mechanisms:
 
@@ -60,5 +64,3 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two wid
 - Ordering: TCP ensures in-order delivery of data segments, while UDP does not guarantee the order of data delivery. UDP is more appropriate for applications where real-time data is more critical than maintaining strict ordering.
 
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/521e79ad-fa11-47e0-be43-04e56fa5ceb3)
-
-
