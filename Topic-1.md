@@ -23,10 +23,12 @@ Processor technology refers to the underlying architecture and design principles
 ## implementation techniques
 When implementing a processor, there are various techniques that can be employed to optimize its performance, power consumption, and area utilization. Some common implementation techniques include:
 
-    Pipelining: Pipelining divides the execution of instructions into multiple stages, allowing different stages of different instructions to be executed simultaneously. This technique improves throughput and instruction-level parallelism.
+1. Pipelining: Pipelining divides the execution of instructions into multiple stages, allowing different stages of different instructions to be executed simultaneously. This technique improves throughput and instruction-level parallelism.
 
-    Caches: Caches are small, high-speed memory units located close to the processor, used to store frequently accessed data and instructions. They help reduce memory access latency and improve overall system performance.
+2. Caches: Caches are small, high-speed memory units located close to the processor, used to store frequently accessed data and instructions. They help reduce memory access latency and improve overall system performance.
 
-    Branch Prediction: Branch prediction techniques aim to reduce the performance impact of conditional branch instructions. Predictive mechanisms anticipate the direction of branches, fetching and executing the predicted instructions ahead of time.
+3. Branch Prediction: Branch prediction techniques aim to reduce the performance impact of conditional branch instructions. Predictive mechanisms anticipate the direction of branches, fetching and executing the predicted instructions ahead of time.
 
-    Speculative Execution: Speculative execution allows the processor to execute instructions before it is certain they are required. This technique aims to improve performance by utilizing idle processor resources and hiding memory latency.
+4. Speculative Execution: Speculative execution allows the processor to execute instructions before it is certain they are required. This technique aims to improve performance by utilizing idle processor resources and hiding memory latency.
+
+
