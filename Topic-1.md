@@ -142,7 +142,7 @@ Generic programming involves writing code that can operate on different data typ
 
 ***Example: A generic sorting algorithm can be implemented in a way that it works with arrays of integers, strings, or any other comparable data type. This avoids the need for writing separate sorting algorithms for each specific data type.***
 
-```
+```python
 def quicksort(arr, compare):
     if len(arr) <= 1:
         return arr
