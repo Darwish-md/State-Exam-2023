@@ -40,3 +40,23 @@ The object-oriented paradigm is a programming paradigm that revolves around the 
         Class diagrams illustrate the inheritance, associations, aggregations, and dependencies between classes.
 
 Overall, the object-oriented paradigm provides a modular and structured approach to software development, allowing for code reuse, maintainability, and scalability. It promotes the modeling of real-world entities and their relationships, enhancing the conceptualization and design of software systems.
+
+# Part 2: Compare the SNMP and RMON network management systems.
+SNMP (Simple Network Management Protocol) and RMON (Remote Monitoring) are both network management systems used to monitor and manage network devices and resources. While they share the goal of network management, there are some key differences between SNMP and RMON:
+ - Architecture:
+     - SNMP: SNMP follows a client-server architecture. It consists of a central management station (the SNMP manager) and managed devices (agents) that communicate with the manager using SNMP messages.
+     - RMON: RMON, on the other hand, is a distributed monitoring system that operates directly on the network devices themselves. It does not require a central management station and distributes monitoring functionality across the network devices.
+ - Monitoring Capability:
+     - SNMP: SNMP primarily focuses on monitoring device performance and collecting statistical information. It provides a standardized set of Management Information Bases (MIBs) that define the types of data that can be monitored.
+     - RMON: RMON provides more extensive monitoring capabilities compared to SNMP. It allows for detailed monitoring of network traffic, including packet-level information, network utilization, error rates, and other network-specific statistics. RMON can provide granular information about individual network segments and protocols.
+ - Data Collection:
+     - SNMP: SNMP uses periodic polling to collect data from managed devices. The SNMP manager sends requests to the agents at regular intervals to retrieve the required information.
+     - RMON: RMON, on the other hand, uses event-driven data collection. It monitors network traffic continuously and generates alarms or triggers specific actions based on predefined conditions or events.
+ - Data Storage and Analysis:
+     - SNMP: SNMP does not provide built-in data storage and analysis capabilities. The SNMP manager typically receives and processes the collected data in real-time or stores it for external analysis.
+     - RMON: RMON includes built-in data storage and analysis capabilities. It can store historical network data, allowing for retrospective analysis and trending. RMON also supports complex filtering and analysis of network traffic data.
+ - Deployment and Compatibility:
+     - SNMP: SNMP is widely adopted and supported by a vast range of network devices and management systems. It is compatible with various network protocols and can be easily integrated into existing network infrastructures.
+     - RMON: RMON is implemented as an extension to SNMP and requires SNMP support in network devices. It may not be as widely supported as SNMP, and its implementation may vary across different devices and vendors.
+
+In summary, SNMP is a standardized network management protocol focused on device performance monitoring, while RMON provides more extensive network traffic monitoring capabilities. SNMP follows a client-server architecture, while RMON is a distributed monitoring system. SNMP uses periodic polling, whereas RMON employs event-driven data collection. Both systems have their strengths and are often used together to provide comprehensive network management solutions.
