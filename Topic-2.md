@@ -1,4 +1,7 @@
 # Part 1: Synthesis of continuous time control systems. The gain and phase margin. Linear systems and their description in time- and frequency domains. Signal transfer in control systems.
+
+## Control Systems:
+
 - A control system is a system that provides the desired response by controlling the output. The input is varied by some mechanism. The traffic lights control system is an example of a control system. 
 
 - Control systems can be classified on the type of signal. A system that deals with continuous-time signals is called a continuous-time system; its opposite is the discrete-time system which uses discrete-time signals. 
