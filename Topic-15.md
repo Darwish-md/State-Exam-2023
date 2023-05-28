@@ -1,6 +1,20 @@
 # Part 1: Basic concepts of object-oriented paradigm. Class, object, instantiation. Inheritance, class hierarchy. Polymorphism, method overloading. Scoping, information hiding, accessibility levels. Abstract classes and interfaces. Class diagram of UML.
 The object-oriented paradigm is a programming paradigm that revolves around the concept of objects, which are instances of classes. It emphasizes organizing code into reusable and modular structures, enabling efficient development, maintenance, and code reuse.
 
+The four pillars of Object-Oriented Programming (OOP) are:
+
+ 1. Encapsulation:
+        Encapsulation is the concept of bundling data and methods (functions) together into a single unit called an object. It hides the internal implementation details of an object and exposes only the necessary interfaces or methods to interact with it. Encapsulation provides data protection and ensures that the object's state can only be accessed or modified through controlled means, promoting data integrity and security.
+
+ 2. Inheritance:
+        Inheritance allows the creation of new classes (derived classes or subclasses) based on existing classes (base classes or superclasses). The derived classes inherit the properties and behaviors of the base class, allowing code reuse and promoting the hierarchical organization of classes. Inheritance enables the modeling of "is-a" relationships, where a derived class is a specialized version of the base class, inheriting its attributes and methods while also adding new functionalities or modifying existing ones.
+
+ 3. Polymorphism:
+        Polymorphism refers to the ability of objects of different classes to respond differently to the same message or method call. It allows objects to exhibit different behaviors based on their specific class implementation. Polymorphism enables code flexibility and extensibility by providing a common interface that can be implemented by multiple classes. This allows for code reuse and promotes modular design, as different objects can be used interchangeably through their common interface.
+
+ 4. Abstraction:
+        Abstraction involves the concept of creating simplified and generalized representations of complex systems. It focuses on identifying the essential features and behaviors of an object or a system while hiding unnecessary details. Abstraction allows programmers to define abstract classes or interfaces that provide a blueprint for creating concrete classes. It enables the separation of the interface from the implementation, allowing for modularity, flexibility, and ease of maintenance.
+        
  - ***Class:***
         A class is a blueprint or template that defines the properties (attributes) and behaviors (methods) of objects.
         It serves as a blueprint for creating multiple objects with similar characteristics.
