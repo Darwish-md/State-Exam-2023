@@ -36,7 +36,8 @@ Continuously monitor the software product's performance, address user feedback, 
   - Benefits and Difficulties:
 Regular maintenance and updates are crucial for improving the software product and addressing user needs. However, managing updates across different platforms can be challenging, requiring coordination and rigorous testing to maintain a consistent user experience.
 
-### SDLC (Software Development Life Cycle) methodologies are structured approaches or frameworks used to guide the process of software development. These methodologies provide a systematic way to plan, design, build, test, deploy, and maintain software products. Here are some commonly used SDLC methodologies:
+### SDLC (Software Development Life Cycle) methodologies 
+are structured approaches or frameworks used to guide the process of software development. These methodologies provide a systematic way to plan, design, build, test, deploy, and maintain software products. Here are some commonly used SDLC methodologies:
 
 1. Waterfall: The Waterfall methodology follows a linear, sequential approach. Each phase (requirements, design, development, testing, deployment, and maintenance) is completed in a strict sequence, and progress moves forward in a waterfall-like manner. It is a document-centric methodology and is best suited for projects with stable and well-defined requirements.
 
