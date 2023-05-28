@@ -51,18 +51,18 @@ Memories refer to electronic components that store data and provide access to it
 # part 2: New elements of HTML5. New features of CSS3. Control structures in web scripts. Sensor through a web page. Providing remote management systems through a web page.
 
 ## New elements of HTML5:
-- <header> - Represents the introductory content or a container for the heading elements of a section or page.
-- <nav> - Defines a section that contains navigation links.
-- <article> - Represents a self-contained composition that can be independently distributed or reusable.
-- <section> - Defines a generic section of content in a document, such as chapters, headers, footers, or any other standalone content.
-- <aside> - Represents content that is tangentially related to the main content, such as sidebars or call-out boxes.
-- <footer> - Defines a footer for a section or page, typically containing information about the author, copyright notice, or related links.
-- <canvas> - Provides a drawing space or an area for dynamic, scriptable rendering of graphics and images.
-- <video> and <audio> - Allow embedding and playback of video and audio content directly within web pages.
-- <datalist> - Specifies a set of pre-defined options for input controls, such as <input> elements with type="text" or type="email".
-- <progress> - Represents the completion progress of a task or process.
-- <meter> - Represents a scalar measurement within a known range, such as disk usage or battery life.
-- <time> - Represents either a specific time or a range of time.
+- header - Represents the introductory content or a container for the heading elements of a section or page.
+- nav - Defines a section that contains navigation links.
+- article - Represents a self-contained composition that can be independently distributed or reusable.
+- section - Defines a generic section of content in a document, such as chapters, headers, footers, or any other standalone content.
+- aside - Represents content that is tangentially related to the main content, such as sidebars or call-out boxes.
+- footer - Defines a footer for a section or page, typically containing information about the author, copyright notice, or related links.
+- canvas - Provides a drawing space or an area for dynamic, scriptable rendering of graphics and images.
+- video and <audio> - Allow embedding and playback of video and audio content directly within web pages.
+- datalist - Specifies a set of pre-defined options for input controls, such as <input> elements with type="text" or type="email".
+- progress - Represents the completion progress of a task or process.
+- meter - Represents a scalar measurement within a known range, such as disk usage or battery life.
+- time - Represents either a specific time or a range of time.
 
 ## New Features of CSS3:
 - Selectors: CSS3 introduced several new selectors, including attribute selectors, pseudo-classes, and pseudo-elements, providing more precise targeting of elements.
