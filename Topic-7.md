@@ -4,7 +4,7 @@ Developing a software product involves several steps and considerations, includi
 1. Platform Selection:
 Identify the target platform(s) based on the intended audience and requirements of the software product. Examples include Windows, macOS, Linux, iOS, Android, or web-based platforms.
 
-- Benefits and Difficulties: Each platform has its own strengths and limitations. Some platforms offer a larger user base and established marketplaces, while others may provide more flexibility or specific features. Consider factors such as target audience, distribution channels, development tools, and ecosystem support when choosing a platform.
+  - Benefits and Difficulties: Each platform has its own strengths and limitations. Some platforms offer a larger user base and established marketplaces, while others may provide more flexibility or specific features. Consider factors such as target audience, distribution channels, development tools, and ecosystem support when choosing a platform.
 
 2. Requirements Gathering and Design:
 Define the requirements and scope of the software product through thorough analysis and discussions with stakeholders. Create design specifications, wireframes, and mockups to visualize the user interface and functionality.
@@ -27,13 +27,13 @@ Implement the software product according to the design specifications using the 
 5. Deployment and Distribution:
 Prepare the software product for deployment on the chosen platform. This may involve packaging the application, creating installation packages, and adhering to platform-specific guidelines. Distribute the software through app stores, web hosting, or other distribution channels.
 
-- Benefits and Difficulties:
+  - Benefits and Difficulties:
 Each platform has its own deployment process and guidelines, which may require additional effort for compatibility testing and meeting platform-specific requirements. The benefits include access to a wide user base and the potential for monetization through app stores or subscription models.
         
 6. Ongoing Maintenance and Updates:
 Continuously monitor the software product's performance, address user feedback, and release updates to enhance functionality, security, and stability. Stay updated with platform-specific updates, patches, and new features to ensure compatibility.
 
-- Benefits and Difficulties:
+  - Benefits and Difficulties:
 Regular maintenance and updates are crucial for improving the software product and addressing user needs. However, managing updates across different platforms can be challenging, requiring coordination and rigorous testing to maintain a consistent user experience.
 
 > SDLC (Software Development Life Cycle) methodologies are structured approaches or frameworks used to guide the process of software development. These methodologies provide a systematic way to plan, design, build, test, deploy, and maintain software products. Here are some commonly used SDLC methodologies:
