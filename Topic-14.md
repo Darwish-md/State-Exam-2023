@@ -39,3 +39,70 @@ NAT (Network Address Translation) can handle single connections without the need
 Think of the port number as a door number in a big apartment building. The public IP address is like the address of the building, and each device has its own door number (port number) to identify it. When data is sent from a device to the internet, the PAT system keeps track of which device it came from by using the port number.
 
 # Part 2: Basic notions concerning data structures: modelling, abstraction, abstract data types. Elementary data structures: lists, stacks, queues. Sets, multisets, arrays. The representation of trees, tree traversal, deletion and insertion.
+## Data structures
+Data structures refer to the way data is organized, stored, and managed in a computer system or program. They provide a systematic way of organizing and manipulating data to perform efficient operations and enable effective algorithms. 
+In simpler terms, data structures are like containers that hold data in specific formats, allowing us to store, retrieve, modify, and process information in a structured manner. They define the organization and relationship of the data elements, determining how data is accessed and operated upon.
+
+## Modelling
+Modelling refers to the process of representing real-world objects, systems, or concepts using data structures. It involves identifying the essential features and relationships of the problem domain and designing a representation that can effectively store and manipulate the required data.
+
+***For example, in a banking system, we can model a customer's account using attributes such as account number, balance, and account holder name, which allows us to simulate and manipulate the account information within the system.***
+
+## Abstraction 
+Abstraction is a concept that simplifies complex systems or objects by focusing on essential characteristics while hiding unnecessary details. In the context of data structures, abstraction allows us to define the behavior and operations of a data structure without revealing its internal implementation. It provides a higher-level view of the data structure, emphasizing its functionality rather than the underlying complexity.
+
+***For example, when we use a car, we don't need to understand all the intricate details of its engine or internal mechanisms. We can abstract the car as a high-level entity with basic operations like starting, accelerating, and braking, without worrying about the complex inner workings.***
+
+## Abstract Data Types (ADTs)
+An abstract data type is a high-level description of a data structure that defines its behavior and operations without specifying its implementation details. It provides a blueprint or a contract for how the data structure should behave and what operations can be performed on it. ADTs define the data and the operations on the data, but they do not specify how those operations are implemented. Examples of ADTs include lists, stacks, queues, trees, and graphs.
+
+ADTs allow programmers to work with data structures in a modular and reusable manner. They provide a clear separation between the interface (the operations and behavior) and the implementation (how the data structure is actually built and manipulated). This separation promotes code organization, encapsulation, and code reusability.
+
+## Elementary data structures
+### Lists: A list is a data structure that represents a collection of elements in a particular order. It allows storing and manipulating a sequence of items. Elements in a list can be added, removed, or accessed at any position.
+
+Example:
+Let's consider a shopping list:
+        Eggs
+        Milk
+        Bread
+In this case, the list represents the items to buy at the grocery store.
+
+### Stacks: A stack is a Last-In-First-Out (LIFO) data structure where elements are added and removed from the same end, called the top. The last element added is the first one to be removed.
+
+Example:
+Think of a stack of books. You add books on top of the stack and remove books from the top. The last book added is the first book to be removed.
+
+### Queues: A queue is a First-In-First-Out (FIFO) data structure where elements are added at one end, called the rear, and removed from the other end, called the front. The first element added is the first one to be removed.
+
+Example:
+Imagine a queue of people waiting in line. The person who joins the queue first is the first one to leave the queue.
+
+### Sets: A set is a data structure that represents a collection of unique elements, where each element occurs only once. It does not maintain any particular order.
+
+Example:
+Let's consider a set of colors:
+        Red
+        Green
+        Blue
+In this set, each color appears only once, and the order of the colors does not matter.
+
+### Multisets: A multiset is similar to a set but allows duplicate elements. It can store multiple occurrences of the same element.
+
+Example:
+Consider a multiset of fruits:
+        Apple
+        Banana
+        Apple
+Here, the multiset allows multiple instances of the same fruit, so it can store more than one apple.
+
+### Arrays: An array is a data structure that stores a fixed-size sequence of elements of the same type. Each element in the array is accessed using an index, which represents its position in the array.
+
+Example:
+An array of numbers: [3, 6, 9, 12]
+Here, the array contains four numbers, and each number can be accessed using its index. For example, the element at index 2 is 9.
+    
+> Note: Difference between primitive and elementary data structures
+  - Primitive data types refer to the basic data types provided by a programming language, typically built into the language itself. These types are used to represent fundamental values, such as numbers, characters, or boolean values. Examples of primitive data types include integers, floating-point numbers, characters, and booleans. Primitive data types are usually low-level and directly supported by the underlying hardware. Examples: Integer, Float, Character, Boolean.
+
+  - On the other hand, elementary data structures refer to fundamental data structures used to organize and store data in computer memory. They are higher-level abstractions that go beyond individual data types. Examples of elementary data structures include arrays, linked lists, stacks, queues, and trees. These data structures are used to organize, manipulate, and store collections of data elements. Examples: Integer, Float, Character, Boolean, Array, Stack, Queue.
