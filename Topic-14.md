@@ -59,7 +59,8 @@ An abstract data type is a high-level description of a data structure that defin
 ADTs allow programmers to work with data structures in a modular and reusable manner. They provide a clear separation between the interface (the operations and behavior) and the implementation (how the data structure is actually built and manipulated). This separation promotes code organization, encapsulation, and code reusability.
 
 ## Elementary data structures
-### Lists: A list is a data structure that represents a collection of elements in a particular order. It allows storing and manipulating a sequence of items. Elements in a list can be added, removed, or accessed at any position.
+### Lists: 
+A list is a data structure that represents a collection of elements in a particular order. It allows storing and manipulating a sequence of items. Elements in a list can be added, removed, or accessed at any position.
 
 Example:
 Let's consider a shopping list:
@@ -68,17 +69,20 @@ Let's consider a shopping list:
         Bread
 In this case, the list represents the items to buy at the grocery store.
 
-### Stacks: A stack is a Last-In-First-Out (LIFO) data structure where elements are added and removed from the same end, called the top. The last element added is the first one to be removed.
+### Stacks: 
+A stack is a Last-In-First-Out (LIFO) data structure where elements are added and removed from the same end, called the top. The last element added is the first one to be removed.
 
 Example:
 Think of a stack of books. You add books on top of the stack and remove books from the top. The last book added is the first book to be removed.
 
-### Queues: A queue is a First-In-First-Out (FIFO) data structure where elements are added at one end, called the rear, and removed from the other end, called the front. The first element added is the first one to be removed.
+### Queues: 
+A queue is a First-In-First-Out (FIFO) data structure where elements are added at one end, called the rear, and removed from the other end, called the front. The first element added is the first one to be removed.
 
 Example:
 Imagine a queue of people waiting in line. The person who joins the queue first is the first one to leave the queue.
 
-### Sets: A set is a data structure that represents a collection of unique elements, where each element occurs only once. It does not maintain any particular order.
+### Sets: 
+A set is a data structure that represents a collection of unique elements, where each element occurs only once. It does not maintain any particular order.
 
 Example:
 Let's consider a set of colors:
@@ -87,7 +91,8 @@ Let's consider a set of colors:
         Blue
 In this set, each color appears only once, and the order of the colors does not matter.
 
-### Multisets: A multiset is similar to a set but allows duplicate elements. It can store multiple occurrences of the same element.
+### Multisets: 
+A multiset is similar to a set but allows duplicate elements. It can store multiple occurrences of the same element.
 
 Example:
 Consider a multiset of fruits:
@@ -96,7 +101,8 @@ Consider a multiset of fruits:
         Apple
 Here, the multiset allows multiple instances of the same fruit, so it can store more than one apple.
 
-### Arrays: An array is a data structure that stores a fixed-size sequence of elements of the same type. Each element in the array is accessed using an index, which represents its position in the array.
+### Arrays: 
+An array is a data structure that stores a fixed-size sequence of elements of the same type. Each element in the array is accessed using an index, which represents its position in the array.
 
 Example:
 An array of numbers: [3, 6, 9, 12]
@@ -106,3 +112,42 @@ Here, the array contains four numbers, and each number can be accessed using its
   - Primitive data types refer to the basic data types provided by a programming language, typically built into the language itself. These types are used to represent fundamental values, such as numbers, characters, or boolean values. Examples of primitive data types include integers, floating-point numbers, characters, and booleans. Primitive data types are usually low-level and directly supported by the underlying hardware. Examples: Integer, Float, Character, Boolean.
 
   - On the other hand, elementary data structures refer to fundamental data structures used to organize and store data in computer memory. They are higher-level abstractions that go beyond individual data types. Examples of elementary data structures include arrays, linked lists, stacks, queues, and trees. These data structures are used to organize, manipulate, and store collections of data elements. Examples: Integer, Float, Character, Boolean, Array, Stack, Queue.
+
+
+### Trees
+Trees are hierarchical data structures composed of nodes connected by edges. They have a root node at the top, and each node can have child nodes branching out from it. Here's an explanation of tree representation, traversal, deletion, and insertion:
+
+- Representation of Trees:
+Trees can be represented using various approaches, but the most common is through linked nodes. Each node contains a value and references to its child nodes. The structure of the tree depends on the specific type of tree being used, such as binary trees, AVL trees, or B-trees.
+
+- Tree Traversal:
+Tree traversal refers to the process of visiting and accessing all nodes in a tree. There are three common methods for tree traversal:
+
+   - Pre-order Traversal: In pre-order traversal, we visit the root node first, then recursively traverse the left subtree, and finally traverse the right subtree. This follows the order of "root-left-right".
+
+   - In-order Traversal: In in-order traversal, we traverse the left subtree first, then visit the root node, and finally traverse the right subtree. This follows the order of "left-root-right". In binary search trees (BST), an in-order traversal results in nodes being visited in ascending order.
+
+   - Post-order Traversal: In post-order traversal, we traverse the left subtree first, then the right subtree, and finally visit the root node. This follows the order of "left-right-root".
+
+- Deletion and Insertion in Trees:
+Deletion and insertion operations in trees depend on the specific type of tree and its rules. Here are some general concepts:
+
+   - Deletion: When deleting a node from a tree, its position needs to be carefully considered. In some cases, such as in binary search trees, the node may need to be replaced by its successor or predecessor based on certain conditions. Deleting a node may require adjusting the structure and links of the surrounding nodes to maintain the integrity of the tree.
+
+   - Insertion: When inserting a new node into a tree, its position is determined based on specific rules. In binary search trees, for example, smaller values are inserted to the left of a node, while larger values are inserted to the right. The insertion operation may require creating new nodes and updating the links of existing nodes to accommodate the new node.
+
+***Example:***
+Consider a binary search tree (BST) with the following values: 5, 2, 8, 1, 3, 6, 9. Here's a simplified representation of the tree:
+```
+        5
+       / \
+      2   8
+     / \ / \
+    1  3 6  9
+```
+    
+Pre-order traversal: 5, 2, 1, 3, 8, 6, 9
+In-order traversal: 1, 2, 3, 5, 6, 8, 9
+Post-order traversal: 1, 3, 2, 6, 9, 8, 5
+
+For deletion and insertion operations, specific rules and algorithms need to be followed based on the type of tree being used. These operations ensure that the tree structure remains balanced and maintains any desired properties associated with the particular type of tree.
