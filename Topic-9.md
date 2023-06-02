@@ -95,3 +95,10 @@ Suppose we want to design a simple 4-bit binary adder using VHDL and implement i
 
 4. Agile Methods: A collaborative, iterative approach that emphasizes adaptability, customer involvement, and delivering working software in short iterations. Example: Scrum, where a development team works in sprints to deliver software features in regular intervals.
 
+## MVC (Model-View-Controller):
+MVC is a design pattern commonly used in software development.
+- Model: Represents the data and business logic of the application.
+- View: Provides the user interface for displaying information to the user.
+- Controller: Handles user input, interacts with the model, and updates the view accordingly.
+***Example:*** In a web application, the model would store data (e.g., user information), the view would display the web pages, and the controller would handle user actions (e.g., submitting a form).
+
