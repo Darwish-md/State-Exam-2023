@@ -102,3 +102,32 @@ MVC is a design pattern commonly used in software development.
 - Controller: Handles user input, interacts with the model, and updates the view accordingly.
 ***Example:*** In a web application, the model would store data (e.g., user information), the view would display the web pages, and the controller would handle user actions (e.g., submitting a form).
 
+## Fundamentals OO design
+The four pillars of Object-Oriented Programming (OOP) are:
+1. Encapsulation: Encapsulation is the concept of bundling data and methods (functions) together into a single unit called an object. It hides the internal implementation details of an object and exposes only the necessary interfaces or methods to interact with it. Encapsulation provides data protection and ensures that the object's state can only be accessed or modified through controlled means, promoting data integrity and security.
+
+2. Inheritance: Inheritance allows the creation of new classes (derived classes or subclasses) based on existing classes (base classes or superclasses). The derived classes inherit the properties and behaviors of the base class, allowing code reuse and promoting the hierarchical organization of classes. Inheritance enables the modeling of "is-a" relationships, where a derived class is a specialized version of the base class, inheriting its attributes and methods while also adding new functionalities or modifying existing ones.
+
+3. Polymorphism: Polymorphism refers to the ability of objects of different classes to respond differently to the same message or method call. It allows objects to exhibit different behaviors based on their specific class implementation. Polymorphism enables code flexibility and extensibility by providing a common interface that can be implemented by multiple classes. This allows for code reuse and promotes modular design, as different objects can be used interchangeably through their common interface.
+
+4. Abstraction: Abstraction involves the concept of creating simplified and generalized representations of complex systems. It focuses on identifying the essential features and behaviors of an object or a system while hiding unnecessary details. Abstraction allows programmers to define abstract classes or interfaces that provide a blueprint for creating concrete classes. It enables the separation of the interface from the implementation, allowing for modularity, flexibility, and ease of maintenance.
+
+## Patterns of OO design
+Design patterns in object-oriented programming (OO) are reusable solutions to common problems that arise when designing and implementing software systems. They provide a structured approach to solving specific types of problems and promote code reusability, maintainability, and scalability.
+
+1. Creational Patterns: These patterns focus on object creation mechanisms. They provide ways to create objects in a flexible and controlled manner. Examples include:
+        1. Singleton Pattern: Ensures that only one instance of a class is created.
+        2. Factory Pattern: Provides an interface for creating objects, but allows subclasses to decide which class to instantiate.
+        3. Builder Pattern: Separates the construction of complex objects from their representation.
+
+2. Structural Patterns: These patterns deal with the composition of classes and objects to form larger structures. They help create relationships between objects and classes to achieve desired functionality. Examples include:
+        Adapter Pattern: Converts the interface of one class into another interface that clients expect.
+        Composite Pattern: Allows clients to treat individual objects and compositions of objects uniformly.
+        Decorator Pattern: Dynamically adds new functionality to an existing object.
+
+    Behavioral Patterns: These patterns focus on the interaction and communication between objects. They define how objects collaborate and fulfill their responsibilities. Examples include:
+        Observer Pattern: Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.
+        Strategy Pattern: Defines a family of interchangeable algorithms and encapsulates each one, allowing them to be used interchangeably.
+        Command Pattern: Encapsulates a request as an object, allowing clients to parameterize clients with different requests.
+
+By using these design patterns, developers can follow established best practices and solutions to common problems in software development. This improves code quality, promotes modular and maintainable code, and facilitates collaboration among developers working on the same project.
