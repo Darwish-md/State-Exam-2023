@@ -116,9 +116,9 @@ The four pillars of Object-Oriented Programming (OOP) are:
 Design patterns in object-oriented programming (OO) are reusable solutions to common problems that arise when designing and implementing software systems. They provide a structured approach to solving specific types of problems and promote code reusability, maintainability, and scalability.
 
 1. Creational Patterns: These patterns focus on object creation mechanisms. They provide ways to create objects in a flexible and controlled manner. Examples include:
-        - Singleton Pattern: Ensures that only one instance of a class is created.
-        - Factory Pattern: Provides an interface for creating objects, but allows subclasses to decide which class to instantiate.
-        - Builder Pattern: Separates the construction of complex objects from their representation.
+   - Singleton Pattern: Ensures that only one instance of a class is created.
+   - Factory Pattern: Provides an interface for creating objects, but allows subclasses to decide which class to instantiate.
+   - Builder Pattern: Separates the construction of complex objects from their representation.
 
 2. Structural Patterns: These patterns deal with the composition of classes and objects to form larger structures. They help create relationships between objects and classes to achieve desired functionality. Examples include:
         Adapter Pattern: Converts the interface of one class into another interface that clients expect.
