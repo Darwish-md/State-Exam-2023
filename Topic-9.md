@@ -121,13 +121,13 @@ Design patterns in object-oriented programming (OO) are reusable solutions to co
    - Builder Pattern: Separates the construction of complex objects from their representation.
 
 2. Structural Patterns: These patterns deal with the composition of classes and objects to form larger structures. They help create relationships between objects and classes to achieve desired functionality. Examples include:
-        Adapter Pattern: Converts the interface of one class into another interface that clients expect.
-        Composite Pattern: Allows clients to treat individual objects and compositions of objects uniformly.
-        Decorator Pattern: Dynamically adds new functionality to an existing object.
+   - Adapter Pattern: Converts the interface of one class into another interface that clients expect.
+   - Composite Pattern: Allows clients to treat individual objects and compositions of objects uniformly.
+   - Decorator Pattern: Dynamically adds new functionality to an existing object.
 
-    Behavioral Patterns: These patterns focus on the interaction and communication between objects. They define how objects collaborate and fulfill their responsibilities. Examples include:
-        Observer Pattern: Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.
-        Strategy Pattern: Defines a family of interchangeable algorithms and encapsulates each one, allowing them to be used interchangeably.
-        Command Pattern: Encapsulates a request as an object, allowing clients to parameterize clients with different requests.
+3. Behavioral Patterns: These patterns focus on the interaction and communication between objects. They define how objects collaborate and fulfill their responsibilities. Examples include:
+   - Observer Pattern: Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.
+   - Strategy Pattern: Defines a family of interchangeable algorithms and encapsulates each one, allowing them to be used interchangeably.
+   - Command Pattern: Encapsulates a request as an object, allowing clients to parameterize clients with different requests.
 
 By using these design patterns, developers can follow established best practices and solutions to common problems in software development. This improves code quality, promotes modular and maintainable code, and facilitates collaboration among developers working on the same project.
