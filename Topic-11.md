@@ -51,18 +51,18 @@ Example: Bubble Sort and Selection Sort.
 Example: Solving the Traveling Salesman Problem using a brute-force approach.
 
 ## Searching algorithms:
-1. Linear Search:
+1. ***Linear Search:***
   - Time Complexity: O(n)
   - Linear search is a simple algorithm that checks each element in a collection sequentially until the desired element is found or the end of the collection is reached.
   - In the worst case, when the desired element is at the end of the collection or not present at all, linear search has to check every element.
 
-2. Binary Search:
+2. ***Binary Search:***
   - Time Complexity: O(log n)
   - Binary search is an efficient search algorithm that requires the collection to be sorted. It repeatedly divides the search space in half and compares the middle element with the desired element.
   - If the middle element is equal to the desired element, the search is successful. Otherwise, the search continues in the left or right half of the collection, discarding the other half.
   - Binary search eliminates half of the remaining elements at each step, resulting in a logarithmic time complexity.   
   
-3. Hashing:
+3. ***Hashing:***
   - Time Complexity: O(1) on average (assuming a good hash function)
   - Hashing involves mapping the search key to an index in an array (hash table) using a hash function.
   - This method allows for constant-time average case lookup, making it highly efficient for large data sets.
@@ -164,7 +164,7 @@ Step-by-step execution of bucket sort:
         The final sorted array is [0.15, 0.37, 0.64, 0.79, 0.82].
 ```
 
-### How Hash function works?
+### Note: How Hash function works?
 Suppose you have a hash map that stores people's names and their corresponding ages. The hash map is implemented using a hash table with 10 slots (0 to 9). The goal is to efficiently search for the age of a person given their name.
 1. Creating the Hash Function:
   - The hash function for this example could be based on the length of the name. The idea is to map each name to an index in the hash table.
@@ -192,7 +192,7 @@ Suppose you have a hash map that stores people's names and their corresponding a
 - Some languages or libraries use the term "hash map" to refer to a general-purpose hash-based data structure that allows null keys and values, while "hash table" might refer to a specific implementation that handles collisions using techniques like separate chaining or open addressing.
 - Hash tables might have a fixed initial size or allow manual resizing, while hash maps may automatically resize themselves to accommodate a variable number of elements more efficiently.
 
-## Note: other types of complexity
+### Note: other types of complexity
 In addition to time complexity, there are two other primary forms of complexity used to analyze and rate algorithms: space complexity and auxiliary space complexity.
 1. Space Complexity:
  - Space complexity refers to the amount of memory or storage space required by an algorithm to solve a problem based on the input size.
