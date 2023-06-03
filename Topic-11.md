@@ -16,4 +16,33 @@ Each IPC mechanism has its own characteristics and is suitable for different sce
  - Sockets offer a versatile and network-capable IPC mechanism for distributed systems, allowing processes to communicate across different machines or networked environments.
 
 # Part 2: Time complexity of algorithms: insertion sort, merge sort, searching in linear and logarithmic time. Quick sort, the minimal number of necessary comparisons. Sorting in linear time: radix sort, bucket sort.
-## 
+## Time complexity of algorithms
+The time complexity of an algorithm is a measure of the amount of time required by an algorithm to run, as a function of the input size. It provides an estimation of how the running time of an algorithm increases with the increase in the input size. Time complexity is typically expressed using big O notation, which represents the upper bound or worst-case scenario of the algorithm's running time.
+
+Time complexity helps in analyzing the efficiency and scalability of algorithms. It allows us to compare algorithms and determine which one is more efficient for solving a particular problem. Generally, we aim to design algorithms with lower time complexity to achieve faster execution and better performance.
+
+Commonly used notations in time complexity analysis include:
+
+1. O(1) - Constant Time Complexity: The algorithm takes a constant amount of time to execute, regardless of the input size. It is the most efficient time complexity.
+
+Example: Accessing an element in an array by its index.
+
+2. O(log n) - Logarithmic Time Complexity: The algorithm's running time increases logarithmically with the input size. It is commonly seen in algorithms that divide the problem into smaller subproblems at each step.
+
+Example: Binary search algorithm on a sorted array.
+
+3. O(n) - Linear Time Complexity: The algorithm's running time grows linearly with the input size. It executes a constant amount of operations for each element in the input.
+
+Example: Iterating through an array to find the maximum element.
+
+4. O(n log n) - Linearithmic Time Complexity: The algorithm's running time grows in proportion to the product of the input size and the logarithm of the input size.
+
+Example: Sorting algorithms like Merge Sort and Heap Sort.
+
+5. O(n^2) - Quadratic Time Complexity: The algorithm's running time increases quadratically with the input size. It often arises in algorithms that involve nested loops.
+
+Example: Bubble Sort and Selection Sort.
+
+6. O(2^n) - Exponential Time Complexity: The algorithm's running time doubles with each increase in the input size. It is highly inefficient and should be avoided for large inputs.
+
+Example: Solving the Traveling Salesman Problem using a brute-force approach.
