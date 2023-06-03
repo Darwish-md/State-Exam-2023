@@ -16,6 +16,7 @@ Each IPC mechanism has its own characteristics and is suitable for different sce
  - Sockets offer a versatile and network-capable IPC mechanism for distributed systems, allowing processes to communicate across different machines or networked environments.
 
 # Part 2: Time complexity of algorithms: insertion sort, merge sort, searching in linear and logarithmic time. Quick sort, the minimal number of necessary comparisons. Sorting in linear time: radix sort, bucket sort.
+
 ## Time complexity of algorithms
 - The time complexity of an algorithm is a measure of the amount of time required by an algorithm to run, as a function of the input size. It provides an estimation of how the running time of an algorithm increases with the increase in the input size. Time complexity is typically expressed using big O notation, which represents the upper bound or worst-case scenario of the algorithm's running time.
 
@@ -77,6 +78,7 @@ Example: Solving the Traveling Salesman Problem using a brute-force approach.
     Insertion sort has a worst-case time complexity of O(n^2) and is efficient for small input sizes or nearly sorted arrays.
 
 *Example:*
+```
 Consider an unsorted array: [5, 2, 1, 9, 4]
 Step-by-step execution of insertion sort:
         Pass 1: [2, 5, 1, 9, 4]
@@ -84,6 +86,7 @@ Step-by-step execution of insertion sort:
         Pass 3: [1, 2, 5, 9, 4]
         Pass 4: [1, 2, 4, 5, 9]
         The final sorted array is [1, 2, 4, 5, 9].
+```
 
 2. ***Merge Sort:***
     Merge sort is a divide-and-conquer algorithm that recursively divides the input array into smaller halves until each half contains only one element.
@@ -92,6 +95,7 @@ Step-by-step execution of insertion sort:
     Merge sort has a worst-case time complexity of O(n log n) and is known for its stability and efficient performance on large input sizes.
 
 *Example:*
+```
 Consider an unsorted array: [7, 3, 1, 4, 6, 2, 5]
 Step-by-step execution of merge sort:
         Dividing: [7, 3, 1, 4, 6, 2, 5]
@@ -101,6 +105,7 @@ Step-by-step execution of merge sort:
         Merging: [1, 3, 4, 7] | [2, 5, 6]
         Merging: [1, 2, 3, 4, 5, 6, 7]
         The final sorted array is [1, 2, 3, 4, 5, 6, 7].
+```
 
 3. ***Quick Sort:***
     Quick sort is a divide-and-conquer algorithm that selects a pivot element and partitions the array around the pivot.
@@ -109,6 +114,7 @@ Step-by-step execution of merge sort:
     Quick sort has an average-case time complexity of O(n log n), making it one of the fastest sorting algorithms.
 
 *Example:*
+```
 Consider an unsorted array: [6, 3, 9, 1, 5]
 Step-by-step execution of quick sort:
         Selecting pivot (e.g., 5)
@@ -119,6 +125,7 @@ Step-by-step execution of quick sort:
         [6, 9]: Selecting pivot (e.g., 6)
         Partitioning: [6] | [9]
         The final sorted array is [1, 3, 5, 6, 9].
+```
 
 4. ***Radix Sort:***
     Radix sort is a non-comparative sorting algorithm that sorts integers by grouping them based on each digit's value.
@@ -127,12 +134,14 @@ Step-by-step execution of quick sort:
     Radix sort has a time complexity of O(k * n), where k is the number of digits in the largest number and n is the size of the input.
 
 *Example:*
+```
 Consider an unsorted array: [170, 45, 75, 90, 802, 24, 2, 66]
 Step-by-step execution of radix sort (using least significant digit (LSD) radix sort):
         Sorting by ones digit: [170, 90, 802, 2, 24, 45, 75, 66]
         Sorting by tens digit: [802, 2, 24, 45, 66, 170, 75, 90]
         Sorting by hundreds digit: [2, 24, 45, 66, 75, 90, 170, 802]
         The final sorted array is [2, 24, 45, 66, 75, 90, 170, 802].
+```
 
 5. ***Bucket Sort:
     Bucket sort divides the input range into several equally sized buckets and distributes the elements into these buckets based on their values.
@@ -141,6 +150,7 @@ Step-by-step execution of radix sort (using least significant digit (LSD) radix 
     Bucket sort has a time complexity of O(n) on average but can degrade to O(n^2) in the worst case if the elements are unevenly distributed.
 
 *Example:*
+```
 Consider an unsorted array: [0.82, 0.37, 0.64, 0.15, 0.79]
 Step-by-step execution of bucket sort:
         Dividing the range into buckets: [0.15], [0.37], [0.64], [0.79], [0.82]
@@ -152,7 +162,8 @@ Step-by-step execution of bucket sort:
         [0.82]
         Concatenating the sorted buckets: [0.15, 0.37, 0.64, 0.79, 0.82]
         The final sorted array is [0.15, 0.37, 0.64, 0.79, 0.82].
-        
+```
+
 ### How Hash function works?
 Suppose you have a hash map that stores people's names and their corresponding ages. The hash map is implemented using a hash table with 10 slots (0 to 9). The goal is to efficiently search for the age of a person given their name.
 1. Creating the Hash Function:
