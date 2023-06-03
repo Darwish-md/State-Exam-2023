@@ -69,3 +69,20 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two wid
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/521e79ad-fa11-47e0-be43-04e56fa5ceb3)
 
 ## three-way handshake
+The three-way handshake is a method used in TCP (Transmission Control Protocol) to establish a connection between a client and a server. It ensures that both the client and server are ready to send and receive data before the actual transmission begins. Let's walk through the three-way handshake process with an example:
+
+1. Client (C) sends a SYN packet to the server (S):
+    C: SYN = 1, Sequence Number = X
+    This packet is sent by the client to initiate the connection. The SYN flag is set to 1 to indicate that the client wants to synchronize and establish a connection. The Sequence Number is set to X, which is a randomly chosen initial sequence number.
+
+2. Server (S) receives the SYN packet and responds with a SYN-ACK packet:
+    S: SYN = 1, ACK = 1, Sequence Number = Y, Acknowledgment Number = X + 1
+    The server receives the SYN packet and acknowledges it by sending a SYN-ACK packet back to the client. The SYN flag is set to 1 to indicate synchronization, and the ACK flag is set to 1 to acknowledge the client's SYN packet. The server chooses its own initial sequence number Y, and the Acknowledgment Number is set to the client's initial sequence number (X) incremented by 1.
+
+3. Client (C) receives the SYN-ACK packet and sends an ACK packet to the server:
+    C: ACK = 1, Sequence Number = X + 1, Acknowledgment Number = Y + 1
+    The client receives the SYN-ACK packet from the server, confirming that the server is ready to establish a connection. The client responds by sending an ACK packet to acknowledge the server's SYN-ACK packet. The ACK flag is set to 1, and the Sequence Number is set to the client's initial sequence number (X) incremented by 1. The Acknowledgment Number is set to the server's initial sequence number (Y) incremented by 1.
+
+At this point, the three-way handshake is complete. The client and server have exchanged SYN, SYN-ACK, and ACK packets, confirming their readiness to establish a connection. They have agreed on initial sequence numbers and acknowledged each other's packets.
+
+After the three-way handshake, both the client and server can begin sending and receiving data over the established connection. The sequence numbers and acknowledgment numbers are used to ensure reliable and ordered delivery of data packets between the client and server.
