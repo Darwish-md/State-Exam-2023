@@ -127,6 +127,12 @@ Step-by-step execution of quick sort:
         The final sorted array is [1, 3, 5, 6, 9].
 ```
 
+### The minimal number of necessary comparisons in Quick sort:
+- This depends on the pivot selection strategy and the order of the input elements. In the average case, Quick sort requires O(n log n) comparisons, where "n" is the number of elements in the input array. However, in the best case scenario, Quick sort can achieve a minimal number of necessary comparisons.
+
+- Best Case Scenario:
+The best case scenario in Quick sort occurs when the chosen pivot element is always the median element of the partitioned subarray. In this case, each partition splits the array into two nearly equal halves. As a result, the algorithm achieves the best possible time complexity of O(n log n) with the minimal number of comparisons.
+
 4. ***Radix Sort:***
   - Radix sort is a non-comparative sorting algorithm that sorts integers by grouping them based on each digit's value.
   - It sorts the numbers digit by digit from the least significant digit (LSD) to the most significant digit (MSD).
