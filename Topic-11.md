@@ -138,7 +138,8 @@ The best case scenario in Quick sort occurs when the chosen pivot element is alw
   - It sorts the numbers digit by digit from the least significant digit (LSD) to the most significant digit (MSD).
   - Radix sort uses a stable sorting algorithm, such as counting sort or bucket sort, as a subroutine to sort the numbers based on each digit.
   - Radix sort has a time complexity of O(k * n), where k is the number of digits in the largest number and n is the size of the input.
-
+  - Radix sort can achieve linear time complexity when the range of values and the number of digits in the elements are small.
+  
 *Example:*
 ```
 Consider an unsorted array: [170, 45, 75, 90, 802, 24, 2, 66]
@@ -154,7 +155,8 @@ Step-by-step execution of radix sort (using least significant digit (LSD) radix 
    - Each bucket is then sorted individually, either using another sorting algorithm or recursively applying bucket sort.
    - After sorting each bucket, the elements are concatenated to form the final sorted array.
    - Bucket sort has a time complexity of O(n) on average but can degrade to O(n^2) in the worst case if the elements are unevenly distributed.
-
+   - Bucket sort can achieve linear time complexity when the input elements are uniformly distributed across the buckets and the number of buckets is proportional to the input size.
+   
 *Example:*
 ```
 Consider an unsorted array: [0.82, 0.37, 0.64, 0.15, 0.79]
