@@ -17,9 +17,11 @@ Each IPC mechanism has its own characteristics and is suitable for different sce
 
 # Part 2: Time complexity of algorithms: insertion sort, merge sort, searching in linear and logarithmic time. Quick sort, the minimal number of necessary comparisons. Sorting in linear time: radix sort, bucket sort.
 ## Time complexity of algorithms
-The time complexity of an algorithm is a measure of the amount of time required by an algorithm to run, as a function of the input size. It provides an estimation of how the running time of an algorithm increases with the increase in the input size. Time complexity is typically expressed using big O notation, which represents the upper bound or worst-case scenario of the algorithm's running time.
+- The time complexity of an algorithm is a measure of the amount of time required by an algorithm to run, as a function of the input size. It provides an estimation of how the running time of an algorithm increases with the increase in the input size. Time complexity is typically expressed using big O notation, which represents the upper bound or worst-case scenario of the algorithm's running time.
 
-Time complexity helps in analyzing the efficiency and scalability of algorithms. It allows us to compare algorithms and determine which one is more efficient for solving a particular problem. Generally, we aim to design algorithms with lower time complexity to achieve faster execution and better performance.
+- an algorithm has a logarithmic time complexity if the number of operations it performs is proportional to the logarithm of the size of the input. The base of the logarithm can vary, but commonly used bases include 2 (log₂) and the natural logarithm (logₑ).
+
+- Time complexity helps in analyzing the efficiency and scalability of algorithms. It allows us to compare algorithms and determine which one is more efficient for solving a particular problem. Generally, we aim to design algorithms with lower time complexity to achieve faster execution and better performance.
 
 Commonly used notations in time complexity analysis include:
 
@@ -46,3 +48,148 @@ Example: Bubble Sort and Selection Sort.
 6. O(2^n) - Exponential Time Complexity: The algorithm's running time doubles with each increase in the input size. It is highly inefficient and should be avoided for large inputs.
 
 Example: Solving the Traveling Salesman Problem using a brute-force approach.
+
+## Searching algorithms:
+1. Linear Search:
+  - Time Complexity: O(n)
+  - Linear search is a simple algorithm that checks each element in a collection sequentially until the desired element is found or the end of the collection is reached.
+  - In the worst case, when the desired element is at the end of the collection or not present at all, linear search has to check every element.
+
+2. Binary Search:
+  - Time Complexity: O(log n)
+  - Binary search is an efficient search algorithm that requires the collection to be sorted. It repeatedly divides the search space in half and compares the middle element with the desired element.
+  - If the middle element is equal to the desired element, the search is successful. Otherwise, the search continues in the left or right half of the collection, discarding the other half.
+  - Binary search eliminates half of the remaining elements at each step, resulting in a logarithmic time complexity.   
+  
+3. Hashing:
+  - Time Complexity: O(1) on average (assuming a good hash function)
+  - Hashing involves mapping the search key to an index in an array (hash table) using a hash function.
+  - This method allows for constant-time average case lookup, making it highly efficient for large data sets.
+  - However, the time complexity can degrade to O(n) in the worst case due to collisions or a poor hash function.
+
+> O(1) represents constant time complexity in computer science. It means that the runtime or the number of operations required by an algorithm remains constant regardless of the size of the input.
+
+## Soring Algorithms
+    Insertion Sort:
+        Insertion sort is a simple comparison-based sorting algorithm that builds the final sorted array one element at a time.
+        It maintains a sorted subarray to the left of the current element and inserts the current element into its correct position within that subarray.
+        The algorithm iterates through the input array, comparing each element with the elements in the sorted subarray and inserting it at the appropriate position.
+        Insertion sort has a worst-case time complexity of O(n^2) and is efficient for small input sizes or nearly sorted arrays.
+
+    Example:
+    Consider an unsorted array: [5, 2, 1, 9, 4]
+    Step-by-step execution of insertion sort:
+        Pass 1: [2, 5, 1, 9, 4]
+        Pass 2: [1, 2, 5, 9, 4]
+        Pass 3: [1, 2, 5, 9, 4]
+        Pass 4: [1, 2, 4, 5, 9]
+        The final sorted array is [1, 2, 4, 5, 9].
+
+    Merge Sort:
+        Merge sort is a divide-and-conquer algorithm that recursively divides the input array into smaller halves until each half contains only one element.
+        It then merges the sorted halves to produce a sorted output array.
+        The merging process compares the elements from the two halves and combines them in sorted order.
+        Merge sort has a worst-case time complexity of O(n log n) and is known for its stability and efficient performance on large input sizes.
+
+    Example:
+    Consider an unsorted array: [7, 3, 1, 4, 6, 2, 5]
+    Step-by-step execution of merge sort:
+        Dividing: [7, 3, 1, 4, 6, 2, 5]
+        Dividing: [7, 3, 1, 4] | [6, 2, 5]
+        Dividing: [7, 3] | [1, 4] | [6, 2] | [5]
+        Merging: [3, 7] | [1, 4] | [2, 6] | [5]
+        Merging: [1, 3, 4, 7] | [2, 5, 6]
+        Merging: [1, 2, 3, 4, 5, 6, 7]
+        The final sorted array is [1, 2, 3, 4, 5, 6, 7].
+
+    Quick Sort:
+        Quick sort is a divide-and-conquer algorithm that selects a pivot element and partitions the array around the pivot.
+        It recursively applies the same process to the subarrays on the left and right of the pivot until the entire array is sorted.
+        The pivot selection and partitioning steps determine the efficiency of the algorithm.
+        Quick sort has an average-case time complexity of O(n log n), making it one of the fastest sorting algorithms.
+
+    Example:
+    Consider an unsorted array: [6, 3, 9, 1, 5]
+    Step-by-step execution of quick sort:
+        Selecting pivot (e.g., 5)
+        Partitioning: [3, 1] | [5] | [6, 9]
+        Applying quick sort recursively on the subarrays:
+        [3, 1]: Selecting pivot (e.g., 1)
+        Partitioning: [1] | [3]
+        [6, 9]: Selecting pivot (e.g., 6)
+        Partitioning: [6] | [9]
+        The final sorted array is [1, 3, 5, 6, 9].
+
+    Radix Sort:
+        Radix sort is a non-comparative sorting algorithm that sorts integers by grouping them based on each digit's value.
+        It sorts the numbers digit by digit from the least significant digit (LSD) to the most significant digit (MSD).
+        Radix sort uses a stable sorting algorithm, such as counting sort or bucket sort, as a subroutine to sort the numbers based on each digit.
+        Radix sort has a time complexity of O(k * n), where k is the number of digits in the largest number and n is the size of the input.
+
+    Example:
+    Consider an unsorted array: [170, 45, 75, 90, 802, 24, 2, 66]
+    Step-by-step execution of radix sort (using least significant digit (LSD) radix sort):
+        Sorting by ones digit: [170, 90, 802, 2, 24, 45, 75, 66]
+        Sorting by tens digit: [802, 2, 24, 45, 66, 170, 75, 90]
+        Sorting by hundreds digit: [2, 24, 45, 66, 75, 90, 170, 802]
+        The final sorted array is [2, 24, 45, 66, 75, 90, 170, 802].
+
+    Bucket Sort:
+        Bucket sort divides the input range into several equally sized buckets and distributes the elements into these buckets based on their values.
+        Each bucket is then sorted individually, either using another sorting algorithm or recursively applying bucket sort.
+        After sorting each bucket, the elements are concatenated to form the final sorted array.
+        Bucket sort has a time complexity of O(n) on average but can degrade to O(n^2) in the worst case if the elements are unevenly distributed.
+
+    Example:
+    Consider an unsorted array: [0.82, 0.37, 0.64, 0.15, 0.79]
+    Step-by-step execution of bucket sort:
+        Dividing the range into buckets: [0.15], [0.37], [0.64], [0.79], [0.82]
+        Sorting each bucket individually (e.g., using insertion sort):
+        [0.15]
+        [0.37]
+        [0.64]
+        [0.79]
+        [0.82]
+        Concatenating the sorted buckets: [0.15, 0.37, 0.64, 0.79, 0.82]
+        The final sorted array is [0.15, 0.37, 0.64, 0.79, 0.82].
+        
+### How Hash function works?
+Suppose you have a hash map that stores people's names and their corresponding ages. The hash map is implemented using a hash table with 10 slots (0 to 9). The goal is to efficiently search for the age of a person given their name.
+1. Creating the Hash Function:
+  - The hash function for this example could be based on the length of the name. The idea is to map each name to an index in the hash table.
+  - Let's say the hash function calculates the hash value by taking the length of the name and performing modulo division with the number of slots in the hash table. So, hash_value = length_of_name % 10.
+2. Inserting Data into the Hash Map:
+  - Suppose you want to insert the name "John" with age 25 into the hash map.
+  - The hash function calculates the hash value for the name "John" as follows: hash_value = 4 (length of "John" is 4, and 4 % 10 = 4).
+  - The key-value pair (name: "John", age: 25) is stored at index 4 of the hash table.
+3. Searching for a Value:
+  - Now, let's say you want to find the age of a person named "John".
+  - The hash function calculates the hash value for the name "John" as hash_value = 4.
+  - The search operation looks for the value associated with the key "John" at index 4 in the hash table.
+  - If the value is found, the search operation returns the corresponding age (in this case, 25).
+  - If there are no collisions (i.e., no other names mapped to index 4), the search operation is completed in constant time O(1).
+4. Handling Collisions:
+  - However, collisions may occur if multiple names result in the same hash value.
+  - For example, if there is another person named "Tom" with age 30, and the hash function calculates the hash value as 4 (length of "Tom" is 3, and 3 % 10 = 3), a collision occurs.
+  - To handle collisions, various techniques like separate chaining or open addressing can be used.
+  - In open addressing, when a collision occurs, the algorithm searches for the next available slot in the hash table by sequentially checking the subsequent indices until an empty slot is found.
+  - With separate chaining, each index of the hash table stores a linked list or another data structure to handle multiple elements that map to the same index.
+  - So, in our example, at index 4, we would have a linked list with two entries: ("John", 25) and ("Tom", 30).
+  - During the search operation for "John", the hash map will traverse the linked list at index 4 and return the age associated with the matching key.
+ 
+### Note: The difference between hash map and hash table
+- Some languages or libraries use the term "hash map" to refer to a general-purpose hash-based data structure that allows null keys and values, while "hash table" might refer to a specific implementation that handles collisions using techniques like separate chaining or open addressing.
+- Hash tables might have a fixed initial size or allow manual resizing, while hash maps may automatically resize themselves to accommodate a variable number of elements more efficiently.
+
+## Note: other types of complexity
+In addition to time complexity, there are two other primary forms of complexity used to analyze and rate algorithms: space complexity and auxiliary space complexity.
+1. Space Complexity:
+ - Space complexity refers to the amount of memory or storage space required by an algorithm to solve a problem based on the input size.
+ - It measures the maximum amount of additional memory the algorithm needs to allocate during its execution.
+ - Space complexity is typically expressed in terms of the input size, often denoted as "n."
+ - Common notations for space complexity include O(1) (constant space), O(n) (linear space), O(n^2) (quadratic space), and so on.
+2. Auxiliary Space Complexity:
+ - Auxiliary space complexity is a specific type of space complexity that excludes the space used by the input itself.
+ - It measures the amount of extra space used by an algorithm apart from the space required to hold the input.
+ - Auxiliary space complexity is often used to assess the additional space used for variables, data structures, recursion stacks, and other intermediate computations during the algorithm's execution.
+ - Similar to space complexity, auxiliary space complexity is typically expressed using big O notation, such as O(1), O(n), O(n^2), etc.
