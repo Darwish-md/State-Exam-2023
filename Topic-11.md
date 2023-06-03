@@ -70,30 +70,30 @@ Example: Solving the Traveling Salesman Problem using a brute-force approach.
 > O(1) represents constant time complexity in computer science. It means that the runtime or the number of operations required by an algorithm remains constant regardless of the size of the input.
 
 ## Soring Algorithms
-    Insertion Sort:
-        Insertion sort is a simple comparison-based sorting algorithm that builds the final sorted array one element at a time.
-        It maintains a sorted subarray to the left of the current element and inserts the current element into its correct position within that subarray.
-        The algorithm iterates through the input array, comparing each element with the elements in the sorted subarray and inserting it at the appropriate position.
-        Insertion sort has a worst-case time complexity of O(n^2) and is efficient for small input sizes or nearly sorted arrays.
+1. ***Insertion Sort:***
+    Insertion sort is a simple comparison-based sorting algorithm that builds the final sorted array one element at a time.
+    It maintains a sorted subarray to the left of the current element and inserts the current element into its correct position within that subarray.
+    The algorithm iterates through the input array, comparing each element with the elements in the sorted subarray and inserting it at the appropriate position.
+    Insertion sort has a worst-case time complexity of O(n^2) and is efficient for small input sizes or nearly sorted arrays.
 
-    Example:
-    Consider an unsorted array: [5, 2, 1, 9, 4]
-    Step-by-step execution of insertion sort:
+*Example:*
+Consider an unsorted array: [5, 2, 1, 9, 4]
+Step-by-step execution of insertion sort:
         Pass 1: [2, 5, 1, 9, 4]
         Pass 2: [1, 2, 5, 9, 4]
         Pass 3: [1, 2, 5, 9, 4]
         Pass 4: [1, 2, 4, 5, 9]
         The final sorted array is [1, 2, 4, 5, 9].
 
-    Merge Sort:
-        Merge sort is a divide-and-conquer algorithm that recursively divides the input array into smaller halves until each half contains only one element.
-        It then merges the sorted halves to produce a sorted output array.
-        The merging process compares the elements from the two halves and combines them in sorted order.
-        Merge sort has a worst-case time complexity of O(n log n) and is known for its stability and efficient performance on large input sizes.
+2. ***Merge Sort:***
+    Merge sort is a divide-and-conquer algorithm that recursively divides the input array into smaller halves until each half contains only one element.
+    It then merges the sorted halves to produce a sorted output array.
+    The merging process compares the elements from the two halves and combines them in sorted order.
+    Merge sort has a worst-case time complexity of O(n log n) and is known for its stability and efficient performance on large input sizes.
 
-    Example:
-    Consider an unsorted array: [7, 3, 1, 4, 6, 2, 5]
-    Step-by-step execution of merge sort:
+*Example:*
+Consider an unsorted array: [7, 3, 1, 4, 6, 2, 5]
+Step-by-step execution of merge sort:
         Dividing: [7, 3, 1, 4, 6, 2, 5]
         Dividing: [7, 3, 1, 4] | [6, 2, 5]
         Dividing: [7, 3] | [1, 4] | [6, 2] | [5]
@@ -102,15 +102,15 @@ Example: Solving the Traveling Salesman Problem using a brute-force approach.
         Merging: [1, 2, 3, 4, 5, 6, 7]
         The final sorted array is [1, 2, 3, 4, 5, 6, 7].
 
-    Quick Sort:
-        Quick sort is a divide-and-conquer algorithm that selects a pivot element and partitions the array around the pivot.
-        It recursively applies the same process to the subarrays on the left and right of the pivot until the entire array is sorted.
-        The pivot selection and partitioning steps determine the efficiency of the algorithm.
-        Quick sort has an average-case time complexity of O(n log n), making it one of the fastest sorting algorithms.
+3. ***Quick Sort:***
+    Quick sort is a divide-and-conquer algorithm that selects a pivot element and partitions the array around the pivot.
+    It recursively applies the same process to the subarrays on the left and right of the pivot until the entire array is sorted.
+    The pivot selection and partitioning steps determine the efficiency of the algorithm.
+    Quick sort has an average-case time complexity of O(n log n), making it one of the fastest sorting algorithms.
 
-    Example:
-    Consider an unsorted array: [6, 3, 9, 1, 5]
-    Step-by-step execution of quick sort:
+*Example:*
+Consider an unsorted array: [6, 3, 9, 1, 5]
+Step-by-step execution of quick sort:
         Selecting pivot (e.g., 5)
         Partitioning: [3, 1] | [5] | [6, 9]
         Applying quick sort recursively on the subarrays:
@@ -120,29 +120,29 @@ Example: Solving the Traveling Salesman Problem using a brute-force approach.
         Partitioning: [6] | [9]
         The final sorted array is [1, 3, 5, 6, 9].
 
-    Radix Sort:
-        Radix sort is a non-comparative sorting algorithm that sorts integers by grouping them based on each digit's value.
-        It sorts the numbers digit by digit from the least significant digit (LSD) to the most significant digit (MSD).
-        Radix sort uses a stable sorting algorithm, such as counting sort or bucket sort, as a subroutine to sort the numbers based on each digit.
-        Radix sort has a time complexity of O(k * n), where k is the number of digits in the largest number and n is the size of the input.
+4. ***Radix Sort:***
+    Radix sort is a non-comparative sorting algorithm that sorts integers by grouping them based on each digit's value.
+    It sorts the numbers digit by digit from the least significant digit (LSD) to the most significant digit (MSD).
+    Radix sort uses a stable sorting algorithm, such as counting sort or bucket sort, as a subroutine to sort the numbers based on each digit.
+    Radix sort has a time complexity of O(k * n), where k is the number of digits in the largest number and n is the size of the input.
 
-    Example:
-    Consider an unsorted array: [170, 45, 75, 90, 802, 24, 2, 66]
-    Step-by-step execution of radix sort (using least significant digit (LSD) radix sort):
+*Example:*
+Consider an unsorted array: [170, 45, 75, 90, 802, 24, 2, 66]
+Step-by-step execution of radix sort (using least significant digit (LSD) radix sort):
         Sorting by ones digit: [170, 90, 802, 2, 24, 45, 75, 66]
         Sorting by tens digit: [802, 2, 24, 45, 66, 170, 75, 90]
         Sorting by hundreds digit: [2, 24, 45, 66, 75, 90, 170, 802]
         The final sorted array is [2, 24, 45, 66, 75, 90, 170, 802].
 
-    Bucket Sort:
-        Bucket sort divides the input range into several equally sized buckets and distributes the elements into these buckets based on their values.
-        Each bucket is then sorted individually, either using another sorting algorithm or recursively applying bucket sort.
-        After sorting each bucket, the elements are concatenated to form the final sorted array.
-        Bucket sort has a time complexity of O(n) on average but can degrade to O(n^2) in the worst case if the elements are unevenly distributed.
+5. ***Bucket Sort:
+    Bucket sort divides the input range into several equally sized buckets and distributes the elements into these buckets based on their values.
+    Each bucket is then sorted individually, either using another sorting algorithm or recursively applying bucket sort.
+    After sorting each bucket, the elements are concatenated to form the final sorted array.
+    Bucket sort has a time complexity of O(n) on average but can degrade to O(n^2) in the worst case if the elements are unevenly distributed.
 
-    Example:
-    Consider an unsorted array: [0.82, 0.37, 0.64, 0.15, 0.79]
-    Step-by-step execution of bucket sort:
+*Example:*
+Consider an unsorted array: [0.82, 0.37, 0.64, 0.15, 0.79]
+Step-by-step execution of bucket sort:
         Dividing the range into buckets: [0.15], [0.37], [0.64], [0.79], [0.82]
         Sorting each bucket individually (e.g., using insertion sort):
         [0.15]
