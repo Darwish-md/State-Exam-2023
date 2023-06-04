@@ -3,9 +3,13 @@
 ## processor technology
 Processor technology refers to the underlying architecture and design principles used in creating a central processing unit (CPU) or a microprocessor. There are several types of processor technologies available, including:
 
-1. CISC (Complex Instruction Set Computer): CISC processors have a rich set of instructions, allowing complex operations to be executed in a single instruction. They often have variable-length instructions, which can lead to more compact code but also more complex decoding logic.
+1. CISC (Complex Instruction Set Computer): 
+  - CISC processors have a rich set of instructions, allowing complex operations to be executed in a single instruction. 
+  - They often have variable-length instructions, which can lead to more compact code but also more complex decoding logic.
 
-2. RISC (Reduced Instruction Set Computer): RISC processors have a simplified instruction set, typically with fixed-length instructions. They focus on executing simple instructions quickly, enabling a more efficient use of hardware resources.
+2. RISC (Reduced Instruction Set Computer): 
+  - RISC processors have a simplified instruction set, typically with fixed-length instructions. 
+  - They focus on executing simple instructions quickly, enabling a more efficient use of hardware resources.
 
  > Difference between CISC & RISC
 
