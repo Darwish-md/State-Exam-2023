@@ -17,14 +17,22 @@ Processor technology refers to the underlying architecture and design principles
 
    ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/c30c4632-e5d6-4154-9458-8569a50608ba)
 
-3. Superscalar Processors: Superscalar processors are designed to achieve higher performance by executing multiple instructions simultaneously within a single processor cycle. Unlike scalar processors that execute one instruction at a time, superscalar processors employ advanced techniques like instruction-level parallelism (ILP) to execute multiple instructions in parallel. They feature multiple functional units, instruction fetch, and decode units, and sophisticated branch prediction mechanisms to exploit parallelism and execute instructions out of order, optimizing the utilization of available resources.
+3. Superscalar Processors: 
+  - Superscalar processors are designed to achieve higher performance by executing multiple instructions simultaneously within a single processor cycle. 
+  - Unlike scalar processors that execute one instruction at a time, superscalar processors employ advanced techniques like instruction-level parallelism (ILP) to execute multiple instructions in parallel. 
+  - They feature multiple functional units, instruction fetch, and decode units, and sophisticated branch prediction mechanisms to exploit parallelism and execute instructions out of order, optimizing the utilization of available resources.
 
-4. Vector Processors: Vector processors are specialized processors designed to efficiently execute operations on large arrays or vectors of data simultaneously. They excel at performing repetitive computations on large data sets by using vector instructions, ***which allow a single instruction to operate on multiple data elements in parallel***. Vector processors are particularly useful for tasks such as scientific simulations, image processing, and multimedia applications that involve heavy data parallelism.
+4. Vector Processors: 
+  - Vector processors are specialized processors designed to efficiently execute operations on large arrays or vectors of data simultaneously. 
+  - They excel at performing repetitive computations on large data sets by using vector instructions, ***which allow a single instruction to operate on multiple data elements in parallel***. 
+  - Vector processors are particularly useful for tasks such as scientific simulations, image processing, and multimedia applications that involve heavy data parallelism.
 
-5. Multicore Processors: MA multicore processor is a type of computer processor that integrates multiple independent processing cores on a single chip. Each core in a multicore processor can execute tasks independently, allowing for parallel processing. These cores can work on different tasks simultaneously, which can lead to improved performance and increased throughput for multi-threaded applications. Multicore processors are commonly used in modern computers, servers, and mobile devices.
+5. Multicore Processors: MA multicore processor is a type of computer processor that integrates multiple independent processing cores on a single chip. 
+  - Each core in a multicore processor can execute tasks independently, allowing for parallel processing. These cores can work on different tasks simultaneously, which can lead to improved performance and increased throughput for multi-threaded applications. 
+  - Multicore processors are commonly used in modern computers, servers, and mobile devices.
 
 ## implementation techniques
-When implementing a processor, there are various techniques that can be employed to optimize its performance, power consumption, and area utilization. Some common implementation techniques include:
+When implementing a processor, there are various techniques that can be employed to optimize its [1]performance, [2]power consumption, and area [3]utilization. Some common implementation techniques include:
 
 1. Pipelining: Pipelining divides the execution of instructions into multiple stages, allowing different stages of different instructions to be executed simultaneously. This technique improves throughput and instruction-level parallelism.
 
