@@ -12,3 +12,23 @@ function uploadPost(string memory _postHash) external {}
 function tipPostOwner(uint256 _id) external payable {}
 function getAllPosts() external view returns (Post[] memory _posts) {}
 function getMyNfts() external view returns (uint256[] memory _ids) {}
+
+require("@nomiclabs/hardhat-waffle");
+module.exports = {
+  defaultNetwork: "hardhat",
+  paths: {
+    artifacts: "./src/artifacts",
+  },
+  networks: {
+    hardhat: {
+      chainId: 1337
+    },
+  },
+  solidity:{
+    compilers: [
+      {
+        version: "0.8.1",
+      },
+    ],
+  }
+};
