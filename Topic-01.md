@@ -32,7 +32,7 @@ Processor technology refers to the underlying architecture and design principles
   - Multicore processors are commonly used in modern computers, servers, and mobile devices.
 
 ## implementation techniques
-When implementing a processor, there are various techniques that can be employed to optimize its [1]performance, [2]power consumption, and area [3]utilization. Some common implementation techniques include:
+When implementing a processor, there are various techniques that can be employed to optimize its [1]performance, [2]power consumption, and [3]area utilization. Some common implementation techniques include:
 
 1. Pipelining: Pipelining divides the execution of instructions into multiple stages, allowing different stages of different instructions to be executed simultaneously. This technique improves throughput and instruction-level parallelism.
 
@@ -45,7 +45,14 @@ When implementing a processor, there are various techniques that can be employed
 ## design technologies
 1. HDLs (Hardware Description Languages): HDLs like VHDL (Very High-Speed Integrated Circuit Hardware Description Language) and Verilog are used for designing and describing digital circuits, including processors. They allow designers to simulate and synthesize the design.
 
-2. RTL (Register Transfer Level): RTL design is a common abstraction level used for describing the functionality and behavior of digital systems. It represents the flow of data between registers and the operations performed on the data. In RTL design, the behavior and functionality of a digital circuit or processor are expressed in terms of registers, logic gates, and data transfers between them. It represents the digital system in a way that is closer to the hardware implementation compared to higher-level abstractions like behavioral or algorithmic descriptions. RTL descriptions are typically written using hardware description languages (HDLs). RTL serves as an intermediate step between the high-level architectural design and the final gate-level implementation of a digital system. It allows designers to verify the correctness of the design, analyze its timing and performance, and perform optimizations before translating it into lower-level representations, such as gates and flip-flops.
+2. RTL (Register Transfer Level): 
+  - RTL design is a common abstraction level used for describing the functionality and behavior of digital systems. 
+  - It represents the flow of data between registers and the operations performed on the data. 
+  - In RTL design, the behavior and functionality of a digital circuit or processor are expressed in terms of registers, logic gates, and data transfers between them. 
+  - It represents the digital system in a way that is ***closer to the hardware implementation*** compared to higher-level abstractions like behavioral or algorithmic descriptions. 
+  - RTL descriptions are typically written using hardware description languages (HDLs).
+  - RTL serves as an intermediate step between the high-level architectural design and the final gate-level implementation of a digital system. 
+  - It allows designers to [1]verify the correctness of the design, [2]analyze its timing and performance, and [3]perform optimizations before translating it into lower-level representations, such as gates and flip-flops.
 
 3. Simulation and Emulation: 
 > Simulation: Simulation is like creating a virtual version of a processor or system using software. It allows designers to test and observe how the processor or system behaves and performs under different conditions. It's like running a computer game on your computer to see how it works, without needing the actual hardware. Simulation helps designers catch and fix issues before moving to the physical implementation stage.
