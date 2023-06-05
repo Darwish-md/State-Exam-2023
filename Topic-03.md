@@ -102,14 +102,33 @@ Heuristic methods involve using rules of thumb, intuition, or educated guesses t
 ### Note: 2 examples for rule of thumb:
 - 10% Rule: In personal finance, a rule of thumb might suggest saving at least 10% of your income for long-term savings or retirement.
 - Half Your Age Plus Seven: This rule of thumb is sometimes used to determine socially acceptable age differences in romantic relationships. It suggests that the youngest person you can date should be half your age plus seven.
+
 ### 4. Divide and Conquer:
 This method involves breaking a complex problem into smaller, more manageable sub-problems. Each sub-problem is solved independently, and their solutions are combined to obtain the solution to the original problem. This approach simplifies the problem-solving process and facilitates problem decomposition.
+
+Consider the problem of finding the maximum number in an array. You have an array of numbers, and your task is to identify the largest number in that array.
 
 ### 5. Analytical Methods:
 Analytical methods involve analyzing the problem, identifying patterns, and using logical reasoning to deduce solutions. These methods often rely on mathematical or logical models to understand the problem structure and make informed decisions.
 
 ## Methods for Solving Constraint Satisfaction Problems:
-Constraint satisfaction problems (CSPs) are a specific type of problem where a set of variables must be assigned values while satisfying a given set of constraints. CSPs have specific methods tailored to their characteristics, including:
+CSPs provide an efficient way to solve various problems. A CSP consists of three main components: variables (V), domains (D), and constraints (C).
+
+Variables (V) represent the elements in the problem. They are denoted as V1, V2, up to Vn, forming a finite set.
+
+Domains (D) represent the possible values that each variable can take. Each variable has one corresponding domain. For example, D1, D2, up to Dn represent the domains. The domain of a variable can be any set of values, such as numbers, colors, or any other relevant values.
+
+Constraints (C) define the allowable combinations of values for the variables. Each constraint is represented as a tuple Ci, consisting of a scope and a relation. The scope contains the variables involved in the constraint, while the relation specifies the relationship between those variables. Constraints are used to enforce specific conditions. 
+
+For instance, a constraint might state that V1 cannot be equal to V2. This constraint restricts the values that V1 and V2 can take, ensuring they are not equal.
+
+In a Constraint Satisfaction Problem, multiple constraints are applied to different combinations of variables. The goal is to assign values from the domain to all variables in a way that satisfies all the constraints without conflicts.
+
+For example, Sudoku is a CSP where the variables represent the 81 cells of the grid. The domains consist of the numbers 1 to 9, and the constraints ensure that no two numbers appear in the same row, column, or subgrid.
+
+Another example is the map coloring problem, where the variables represent regions on a map, the domains are the available colors (e.g., red, green, blue), and the constraints prevent neighboring regions from having the same color.
+
+Examples:
 
 ### 1. Backtracking:
 Backtracking is a widely used method for solving CSPs. It systematically explores potential solutions, incrementally assigning values to variables and backtracking when a constraint is violated. It explores the search space in a depth-first manner, trying different variable-value assignments until a valid solution is found or all possibilities are exhausted.
@@ -117,13 +136,10 @@ Backtracking is a widely used method for solving CSPs. It systematically explore
 ### 2. Constraint Propagation:
 Constraint propagation methods use inference techniques to reduce the search space by enforcing constraints. They exploit relationships between variables and constraints to eliminate inconsistent values and focus the search on more promising assignments. Examples include arc consistency and constraint propagation algorithms like AC-3.
 
-### 3. Local Search:
-Local search methods aim to find feasible solutions by iteratively improving an initial assignment. They explore the solution space by making local changes to the current assignment, evaluating their quality based on constraints, and moving towards better solutions. Examples include hill climbing, simulated annealing, and genetic algorithms.
-
-### 4. Integer Programming:
-Integer programming is a mathematical optimization technique used to solve CSPs with integer variables. It formulates the problem as a mathematical program with linear or nonlinear objective functions and constraints, aiming to find the optimal solution within the given constraints.
-
-### 5. Constraint Logic Programming:
-Constraint logic programming combines logic programming with constraint satisfaction techniques. It allows expressing problems declaratively using constraints and logic rules and relies on backtracking and constraint propagation to search for solutions.
-
-In summary, general problem-solving methods provide a broad set of techniques applicable to various problems, while methods for solving constraint satisfaction problems are specialized approaches tailored to problems that involve assigning values to variables while satisfying constraints.
+In summary:
+- CSPs are a specific class of problems that involve variables, domains, and constraints, while heuristics and searching algorithms are general problem-solving techniques.
+- CSPs focus on explicitly modeling variables, domains, and constraints, whereas heuristics provide practical guidelines or rules of thumb to find solutions efficiently.
+    Searching algorithms explore a problem's solution space systematically, while CSPs focus on finding valid assignments to variables that satisfy constraints.
+- CSPs often involve backtracking, constraint propagation, or specialized algorithms like Arc Consistency, while heuristics and searching algorithms can be more flexible in their approach.
+- CSPs have a higher level of complexity due to the explicit modeling of variables and constraints, whereas heuristics and searching algorithms can be applied to a broader range of problem types.
+- CSPs require a specific problem representation with variables, domains, and constraints, while heuristics and searching algorithms offer more adaptable problem representations.
