@@ -35,6 +35,17 @@ The function of a combinational logic circuit can be specified using three main 
 ## Encoders:
 An encoder is a circuit that converts multiple inputs into a smaller number of output lines based on the input pattern. It generates a unique binary code on the output lines for each input combination. Encoders are frequently used in applications such as data compression, data transmission, and address encoding.
 
+It has n inputs and m outputs, where 2^m=n
+
+If the input I3 is high in 4-2 encoder, then output lines will be 1 1 (=3).
+
+Types:
+- priority encoder
+- Decimal to BCD
+- octal to binary
+
+![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/cbdbfdf2-2c92-489d-9c9c-dc31266aa20c)
+
 ## Decoders: 
 A decoder is the opposite of an encoder. It takes a coded input and activates one of many output lines based on the input code. Decoders are commonly used in applications such as address decoding, data decoding, and control signal generation.
 
