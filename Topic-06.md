@@ -119,8 +119,8 @@ Memories refer to electronic components that store data and provide access to it
        - Example: h2 + p selects the p element that is immediately preceded by an h2 element.
 
    8- General Sibling Selector:
-          Selects elements that are siblings of another element.
-          Example: h2 ~ p selects all p elements that are siblings of an <h2> element.
+       - Selects elements that are siblings of another element.
+       - Example: h2 ~ p selects all p elements that are siblings of an h2 element.
 
    9- :hover Selector:
        - Selects elements when they are being hovered over.
