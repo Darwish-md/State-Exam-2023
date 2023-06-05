@@ -66,7 +66,7 @@ When implementing a processor, there are various techniques that can be employed
   - This gate-level representation is optimized for factors like size, power consumption, and timing to meet the requirements of the specific technology used for implementation.
 
 ## Typically Peripherals for Embedded Systems:
-Embedded systems are computer systems comprising of a processor, memory, and input/output peripheral devices and they range from simple microcontroller boards like Arduino to more complex systems which use multiple peripherals and networking equipment to communicate with other systems. Peripherals are devices or components that are connected to an embedded system to provide additional functionality and enable communication with the external world. 
+Embedded systems are *computer systems* comprising of a [1]processor, [2]memory, and [3]input/output peripheral devices and they range from simple microcontroller boards like Arduino to more complex systems which use multiple peripherals and networking equipment to communicate with other systems. Peripherals are devices or components that are connected to an embedded system to provide additional functionality and enable communication with the external world. 
 
 > *Some commonly used peripherals in embedded systems include*:
 
