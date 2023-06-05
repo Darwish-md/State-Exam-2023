@@ -15,6 +15,8 @@ The function of a combinational logic circuit can be specified using three main 
 
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/ef11759b-7c43-43d7-b89f-5fc9672ccb44)
 
+![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/aa442431-b4d6-4949-a80e-21e8bd7e6227)
+
 ## Multiplexers (MUX):
 - A multiplexer is a digital circuit that selects one of many input signals and forwards it to a single output line based on a set of control signals. It has multiple data inputs, one or more select inputs, and a single output. The output represents the selected input based on the control signals. 
 - Multiplexers are commonly used for data routing, signal selection, and data transmission. 
