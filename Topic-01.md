@@ -146,7 +146,7 @@ It refers to the action of transferring the actual parameters to the formal para
 
 - Pass by Reference: Here, both the actual and formal parameters refer to the same memory location. Changes made to the formal parameter within the subprogram will impact the original actual parameter.
 
-- ``Pass by Name: This method allows passing the name of the formal parameter as the actual parameter. The order of parameters becomes irrelevant in this case.``
+- ~~Pass by Name: This method allows passing the name of the formal parameter as the actual parameter. The order of parameters becomes irrelevant in this case.~~
 
 - Pass by Result or "Pass by Copy-Result": In this method, the formal parameter's initial value is undefined, and the value is only copied back to the actual parameter when the subprogram completes execution.
 
