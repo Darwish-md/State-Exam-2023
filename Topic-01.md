@@ -84,7 +84,7 @@ Embedded systems are *computer systems* comprising of a [1]processor, [2]memory,
 
 7. Network (Ethernet) – Ethernet ports are a family of wired computer networking technologies used to connect multiple devices physically.
 
-Peripherals are typically connected to the embedded system using various interfaces like GPIO (General Purpose Input/Output) pins, serial buses (e.g., I2C, SPI), or dedicated communication protocols (e.g., USB, Ethernet):
+Peripherals are typically connected to the embedded system using various interfaces like [1]GPIO (General Purpose Input/Output) pins, [2]serial buses (e.g., I2C, SPI), or [3]dedicated communication protocols (e.g., USB, Ethernet):
 
 - Serial Communication Interfaces (SCI) – These are relatively slow, asynchronous communication ports that are used to communicate with other embedded systems and devices.
 
