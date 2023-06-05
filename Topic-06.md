@@ -13,10 +13,13 @@ Flip-flops are edge-triggered latches that change their state only when the cont
 
 There are other types of flip-flops such as JK flip-flops and T flip-flops, each with specific characteristics and applications.
 
+- The key difference between a JK flip-flop and a normal SR (Set-Reset) flip-flop lies in the behavior when both inputs are set to 1. When J = 1 and K = 1, the flip-flop toggles its state. If Q is 0, it becomes 1, and if Q is 1, it becomes 0.
+- In a T flip-flop, the inputs J and K of a JK flip-flop are tied together, meaning they have the same value. When both J and K inputs are set to the same value in a JK flip-flop, it essentially behaves as a T flip-flop.
+
 These components are crucial for various applications, including memory units, counters, and registers, enabling the implementation of complex digital systems.
 
 ## Counters:
-Counters are devices used to keep track of the occurrence of events or processes, typically in relation to a clock signal. Counters are widely used in various applications, such as frequency dividers, event counting, address generation for memories, and control circuits. They enable the implementation of sequential operations and provide a means to keep track of events and generate specific patterns based on the count values.
+Counters are devices used to keep track of the occurrence of events or processes, typically in relation to a clock signal. Counters are widely used in various applications, such as [1]frequency dividers, [2]event counting, [3]address generation for memories, and [4]control circuits. They enable the implementation of sequential operations and provide a means to keep track of events and generate specific patterns based on the count values.
 
 1. Ripple Counters:
  A ripple counter is a type of counter that consists of flip-flops connected in a chain. Each flip-flop represents a bit in the counter, and the counter counts from an initial value (e.g., 0000 or 0) to a maximum value (e.g., 1111 or 15). In a 4-bit ripple counter, four T flip-flops are connected in sequence. With each clock pulse, the count changes sequentially through the flip-flops. However, there is a delay in propagating the changes from one flip-flop to the next, resulting in the term "ripple."
