@@ -11,6 +11,8 @@ The function of a combinational logic circuit can be specified using three main 
 
 - Logic Diagram: A logic diagram presents a graphical representation of the logic circuit, depicting the interconnections and wiring of each logic gate.
 
+![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/b17c6cc2-b1cd-448f-bace-f59c26e6e378)
+
 ## Multiplexers (MUX):
 - A multiplexer is a digital circuit that selects one of many input signals and forwards it to a single output line based on a set of control signals. It has multiple data inputs, one or more select inputs, and a single output. The output represents the selected input based on the control signals. 
 - Multiplexers are commonly used for data routing, signal selection, and data transmission. 
@@ -18,8 +20,6 @@ The function of a combinational logic circuit can be specified using three main 
 - In a 4x1 multiplexer, we have 4 data inputs, 2 selection lines, and 1 output. 
 
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/e6483ac5-8ee4-40e9-96e8-118852c612a7)
-
-![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/b17c6cc2-b1cd-448f-bace-f59c26e6e378)
 
 ## Demultiplexers (DEMUX):
 - A demultiplexer is the reverse of a multiplexer. It takes a single input and routes it to one of many possible output lines based on control signals. Demultiplexers are often used to decode a single input into multiple outputs, enabling data distribution and signal demultiplexing. 
