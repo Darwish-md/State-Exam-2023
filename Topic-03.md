@@ -74,7 +74,7 @@ ALUs are digital circuits that perform arithmetic and logical operations on bina
 General problem-solving methods refer to a set of techniques that can be applied to a wide range of problems, regardless of their specific domain. These methods provide a systematic approach to analyze problems, generate solutions, and evaluate their effectiveness. Some common general problem-solving methods include:
 
 ### 1. Trial and Error: 
-This method involves trying different solutions and observing the outcomes until a successful one is found. It is a simple but often time-consuming approach that relies on repeated attempts and learning from failures.
+This method involves trying different solutions and observing the outcomes until a successful one is found. It is a simple but often time-consuming approach that relies on repeated attempts and learning from failures like solving a puzzle.
 
 ### 2. Algorithmic Methods:
 Algorithmic methods involve step-by-step procedures or instructions to solve a problem. Algorithms provide a clear sequence of operations that lead to a solution. Examples include search algorithms, sorting algorithms, and mathematical algorithms.
