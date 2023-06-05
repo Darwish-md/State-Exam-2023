@@ -81,7 +81,7 @@ Memories refer to electronic components that store data and provide access to it
 - aside - Represents content that is tangentially related to the main content, such as sidebars or call-out boxes.
 - footer - Defines a footer for a section or page, typically containing information about the author, copyright notice, or related links.
 - canvas - Provides a drawing space or an area for dynamic, scriptable rendering of graphics and images.
-- video and <audio> - Allow embedding and playback of video and audio content directly within web pages.
+- video and audio - Allow embedding and playback of video and audio content directly within web pages.
 - datalist - Specifies a set of pre-defined options for input controls, such as <input> elements with type="text" or type="email".
 - progress - Represents the completion progress of a task or process.
 - meter - Represents a scalar measurement within a known range, such as disk usage or battery life.
