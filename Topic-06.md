@@ -89,6 +89,47 @@ Memories refer to electronic components that store data and provide access to it
 
 ## New Features of CSS3:
 - Selectors: CSS3 introduced several new selectors, including attribute selectors, pseudo-classes, and pseudo-elements, providing more precise targeting of elements.
+    selectors are used to target and select specific HTML elements or groups of elements to apply styles and effects. CSS3 introduced several new selectors that provide more flexibility and control over element selection. Here are some commonly used CSS3 selectors:
+
+    Element Selector:
+        Selects elements based on their element type.
+        Example: p selects all <p> elements.
+
+    Class Selector:
+        Selects elements based on their class attribute.
+        Example: .my-class selects all elements with class="my-class".
+
+    ID Selector:
+        Selects elements based on their ID attribute.
+        Example: #my-id selects the element with id="my-id".
+
+    Attribute Selector:
+        Selects elements based on their attribute values.
+        Example: [type="submit"] selects all elements with type="submit".
+
+    Descendant Selector:
+        Selects elements that are descendants of another element.
+        Example: div p selects all <p> elements that are descendants of <div> elements.
+
+    Child Selector:
+        Selects elements that are direct children of another element.
+        Example: ul > li selects all <li> elements that are direct children of <ul> elements.
+
+    Adjacent Sibling Selector:
+        Selects elements that are immediately preceded by another element.
+        Example: h2 + p selects the <p> element that is immediately preceded by an <h2> element.
+
+    General Sibling Selector:
+        Selects elements that are siblings of another element.
+        Example: h2 ~ p selects all <p> elements that are siblings of an <h2> element.
+
+    :hover Selector:
+        Selects elements when they are being hovered over.
+        Example: a:hover selects all <a> elements when they are being hovered over.
+
+    :nth-child Selector:
+        Selects elements based on their position within a parent element.
+        Example: li:nth-child(odd) selects all odd-numbered <li> elements.
 - Box Model Enhancements: CSS3 introduced box-sizing property, allowing control over how the width and height of an element are calculated.
 - Flexbox: Flexbox is a powerful layout model that provides flexible and responsive layout capabilities, allowing easy alignment and distribution of elements.
 - Grid Layout: CSS3 Grid Layout provides a two-dimensional grid system, enabling complex and flexible page layouts.
