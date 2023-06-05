@@ -115,11 +115,11 @@ Communication protocols can be categorized into several types based on their cha
 
 2. Network Communication Protocols:
     
-- Ethernet: Ethernet is a widely used protocol for wired local area networks (LANs). It provides a standard way of transmitting data packets over a network using various physical media, such as twisted pair cables or fiber optics. Ethernet enables embedded systems to connect to the internet, communicate with other devices, and access network-based services.
+- Ethernet: Ethernet is a widely used protocol for ***wired local area networks (LANs)***. It provides a standard way of transmitting data packets over a network using various physical media, such as twisted pair cables or fiber optics. Ethernet enables embedded systems to connect to the internet, communicate with other devices, and access network-based services.
 
-- CAN (Controller Area Network): CAN is a robust serial communication protocol commonly used in automotive and industrial applications. It allows for reliable and deterministic communication between devices connected in a network. CAN is well-suited for real-time applications and provides features like message prioritization, error detection, and fault tolerance. It is commonly used in automotive systems, industrial control systems, and automation applications.
+- CAN (Controller Area Network): CAN is a robust serial communication protocol commonly used in ***automotive and industrial applications***. It allows for reliable and deterministic communication between devices connected in a network. CAN is well-suited for real-time applications and provides features like message prioritization, error detection, and fault tolerance. It is commonly used in automotive systems, industrial control systems, and automation applications.
 
-- MQTT (Message Queuing Telemetry Transport): MQTT is a lightweight publish-subscribe messaging protocol designed for resource-constrained devices and networks. It is commonly used in Internet of Things (IoT) applications to facilitate communication between embedded devices and IoT platforms or brokers. MQTT follows a publish-subscribe model, where devices can publish messages to specific topics, and other devices can subscribe to those topics to receive the messages.
+- MQTT (Message Queuing Telemetry Transport): MQTT is a lightweight publish-subscribe messaging protocol designed for resource-constrained devices and networks. It is commonly used in ***Internet of Things (IoT) applications*** to facilitate communication between embedded devices and IoT platforms or brokers. MQTT follows a publish-subscribe model, where devices can publish messages to specific topics, and other devices can subscribe to those topics to receive the messages.
 
 3. Wireless Communication Protocols:
 
