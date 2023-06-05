@@ -59,7 +59,11 @@ When implementing a processor, there are various techniques that can be employed
 
 > Emulation: Emulation is similar to simulation, but ***it goes a step further by using specialized hardware to mimic the behavior of the actual processor or system***. It provides a more accurate representation of how the real hardware would perform. Emulation is like using a special device that imitates a gaming console to play games just like you would on the actual console. It helps designers test their designs more accurately, including software running on the target hardware.
 
-4. Synthesis: Synthesis is the process of converting a high-level design description (like RTL) into a lower-level representation that can be physically implemented. It's like translating a blueprint of a house into a detailed construction plan that specifies the materials, measurements, and steps needed to build the house. Synthesis converts the design into a gate-level representation, which consists of logic gates, flip-flops, and other basic components. This gate-level representation is optimized for factors like size, power consumption, and timing to meet the requirements of the specific technology used for implementation.
+4. Synthesis: 
+  - Synthesis is the process of converting a high-level design description (like RTL) into a lower-level representation that can be physically implemented.
+  - It's like translating a blueprint of a house into a detailed construction plan that specifies the materials, measurements, and steps needed to build the house. 
+  - Synthesis converts the design into a gate-level representation, which consists of logic gates, flip-flops, and other basic components. 
+  - This gate-level representation is optimized for factors like size, power consumption, and timing to meet the requirements of the specific technology used for implementation.
 
 ## Typically Peripherals for Embedded Systems:
 Embedded systems are computer systems comprising of a processor, memory, and input/output peripheral devices and they range from simple microcontroller boards like Arduino to more complex systems which use multiple peripherals and networking equipment to communicate with other systems. Peripherals are devices or components that are connected to an embedded system to provide additional functionality and enable communication with the external world. 
