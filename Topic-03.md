@@ -1,5 +1,9 @@
 # part 1: Combinational logic design. Multiplexers/Demultiplexers. Encoders/Decoders. Comparators. Parity generators/checkers. Arithmetical logical units.
-Combinational Logic is a form of digital logic that utilizes Boolean circuits to produce outputs solely based on the current input, without any dependency on past inputs. In contrast to sequential logic, which retains memory of previous inputs, combinational logic operates in a memory-less manner. It finds application in computer circuits for performing Boolean algebraic operations on input signals and stored data. Various elements present in computers, such as multiplexers, demultiplexers, encoders, decoders, comparators, and arithmetic logic units, are constructed using combinational logic. These circuits are built by combining or connecting basic gates like NAND, NOR, or NOT to create more complex circuits. The function of a combinational logic circuit can be specified using three main approaches:
+Combinational Logic is a form of digital logic that utilizes Boolean circuits to produce outputs solely based on the current input, without any dependency on past inputs (operates in a memory-less manner).
+Various elements present in computers, such as multiplexers, demultiplexers, encoders, decoders, comparators, and arithmetic logic units, are constructed using combinational logic. 
+These circuits are built by combining or connecting basic gates like NAND, NOR, or NOT to create more complex circuits. 
+
+The function of a combinational logic circuit can be specified using three main approaches:
 
 - Boolean Algebra: This involves expressing the operations of the logic circuit using algebraic expressions, defining the behavior of the circuit for each input variable as either True or False.
 
