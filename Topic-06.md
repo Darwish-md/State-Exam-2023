@@ -1,4 +1,4 @@
-# part 1: Sequential logical: Latches and Flip-Flops. Counters. Shift registers. Memories.
+# Part 1: Sequential logical: Latches and Flip-Flops. Counters. Shift registers. Memories.
 Sequential logic refers to a type of digital logic that utilizes memory elements to store and remember information, allowing for the creation of circuits with memory capabilities. It enables the implementation of circuits that can retain and process data based on their previous states. Here are some important components and concepts related to sequential logic:
 
 ## Latches:
@@ -52,7 +52,7 @@ Flip-flops can be used to store a single bit of binary data. To store multiple b
 ## Memories:
 Memories refer to electronic components that store data and provide access to it when required. They are essential for storing instructions, data, and intermediate results in computer systems. Memories can be classified into different types, such as random-access memory (RAM), read-only memory (ROM), and flash memory, each with specific characteristics regarding data storage and retrieval.
 
-# part 2: New elements of HTML5. New features of CSS3. Control structures in web scripts. Sensor through a web page. Providing remote management systems through a web page.
+# Part 2: New elements of HTML5. New features of CSS3. Control structures in web scripts. Sensor through a web page. Providing remote management systems through a web page.
 
 ## New elements of HTML5:
 - header - Represents the introductory content or a container for the heading elements of a section or page.
