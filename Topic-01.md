@@ -197,10 +197,10 @@ I/O (Input/Output) tools in programming languages provide functionality for read
 
 ## Exception Handling:
 Exception handling is a mechanism to handle and recover from unexpected or exceptional events during program execution. It allows the program to gracefully handle errors and prevent abnormal termination. Examples are:     
-    - ArithmeticError: Raised for arithmetic errors, such as division by zero or invalid operations.
-    - FileNotFoundError: Raised when a file or directory is not found.
-    - IndexError: Raised when an index is out of range.
-    - TypeError: Raised when an operation is performed on an object of inappropriate type.
+  - ArithmeticError: Raised for arithmetic errors, such as division by zero or invalid operations.
+  - FileNotFoundError: Raised when a file or directory is not found.
+  - IndexError: Raised when an index is out of range.
+  - TypeError: Raised when an operation is performed on an object of inappropriate type.
 
 ***Example: When dividing a number by zero, a divide-by-zero exception can occur. Exception handling allows catching such exceptions and taking appropriate actions, such as displaying an error message or executing alternative code.***
 
