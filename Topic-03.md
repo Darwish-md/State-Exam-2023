@@ -99,6 +99,9 @@ They can be categorized into two main types: informed search and uninformed sear
 ### 3. Heuristic Methods:
 Heuristic methods involve using rules of thumb, intuition, or educated guesses to guide the problem-solving process. These methods aim to find reasonably good solutions in a more efficient manner, although they may not guarantee the optimal solution.
 
+### Note: 2 examples for rule of thumb:
+- 10% Rule: In personal finance, a rule of thumb might suggest saving at least 10% of your income for long-term savings or retirement.
+- Half Your Age Plus Seven: This rule of thumb is sometimes used to determine socially acceptable age differences in romantic relationships. It suggests that the youngest person you can date should be half your age plus seven.
 ### 4. Divide and Conquer:
 This method involves breaking a complex problem into smaller, more manageable sub-problems. Each sub-problem is solved independently, and their solutions are combined to obtain the solution to the original problem. This approach simplifies the problem-solving process and facilitates problem decomposition.
 
