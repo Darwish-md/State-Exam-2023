@@ -50,7 +50,9 @@ Types:
 A decoder is the opposite of an encoder. It takes a coded input and activates one of many output lines based on the input code. Decoders are commonly used in applications such as address decoding, data decoding, and control signal generation.
 
 ## Comparators: 
-Comparators are circuits that compare two digital values and determine their relationship, such as equality or magnitude. They produce an output based on the comparison result, often indicating whether one value is greater than, less than, or equal to the other. Comparators are used in applications such as arithmetic operations, data sorting, and decision-making.
+Comparators are circuits that compare two digital values or two words and determine their relationship, such as equality or magnitude. They produce an output based on the comparison result, often indicating whether one value is greater than, less than, or equal to the other. Comparators are used in applications such as arithmetic operations, data sorting, and decision-making.
+
+### Note: a "word" typically refers to the natural unit of data that a particular processor or system can process or manipulate at one time.
 
 ## Parity Generators/Checkers:
 Parity generators generate a parity bit based on a set of data bits, ensuring data integrity during transmission or storage. Parity checkers validate the integrity of received data by comparing it with the generated parity bit. Parity bits can detect and sometimes correct single-bit errors in the data.
