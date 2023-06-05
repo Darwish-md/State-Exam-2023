@@ -36,9 +36,13 @@ The four pillars of Object-Oriented Programming (OOP) are:
         Polymorphism allows objects of different classes to be treated as objects of a common superclass, providing flexibility and extensibility.
         Method overloading is a form of polymorphism that enables a class to have multiple methods with the same name but different parameters.
         The appropriate method is determined based on the number, type, or order of the parameters.
-          - overloading: same name different signature (different parameters).
-          - overriding: same method signature, different implementation.
-        For example, a class "Shape" can have a method named "calculateArea()" that is implemented differently in subclasses like "Circle" and "Rectangle."
+        
+      overloading: same name different signature (different parameters).
+          
+      overriding: same method signature, different implementation.
+      
+      For example, a class "Shape" can have a method named "calculateArea()" that is implemented differently in subclasses like "Circle" and "Rectangle."
+ 
  - ***Scoping, Information Hiding, and Accessibility Levels:***
         Scoping defines the visibility and accessibility of variables and methods within a program.
         Information hiding (encapsulation) restricts direct access to internal data and provides controlled access through methods.
