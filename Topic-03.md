@@ -55,7 +55,15 @@ Comparators are circuits that compare two digital values or two words and determ
 ### Note: a "word" typically refers to the natural unit of data that a particular processor or system can process or manipulate at one time.
 
 ## Parity Generators/Checkers:
-Parity generators generate a parity bit based on a set of data bits, ensuring data integrity during transmission or storage. Parity checkers validate the integrity of received data by comparing it with the generated parity bit. Parity bits can detect and sometimes correct single-bit errors in the data.
+Parity generators generate a parity bit based on a set of data bits, ensuring data integrity during transmission or storage. The purpose of a parity bit is to provide a simple form of error detection in data transmission or storage systems.
+
+The parity bit is an additional bit appended to a group of data bits. It can be set to either 0 or 1, depending on the parity rule being used. The two most common types of parity are even parity and odd parity.
+
+1- Even Parity: In even parity, the parity bit is set to 0 or 1 in a way that the total number of 1s (including the parity bit) in the data group is always even. If the data group already contains an even number of 1s, the parity bit is set to 0. If the data group has an odd number of 1s, the parity bit is set to 1 so that the total number of 1s becomes even.
+
+2- Odd Parity: In odd parity, the parity bit is set to 0 or 1 in a way that the total number of 1s (including the parity bit) in the data group is always odd. If the data group already contains an odd number of 1s, the parity bit is set to 0. If the data group has an even number of 1s, the parity bit is set to 1 so that the total number of 1s becomes odd.
+
+The parity generator circuit receives the input data bits and performs the necessary calculations to determine the parity bit. It then combines the parity bit with the input data bits to form the output data.
 
 ## Arithmetic Logic Units (ALUs):
 ALUs are digital circuits that perform arithmetic and logical operations on binary data. They typically support operations like addition, subtraction, bitwise AND, OR, and XOR. ALUs are fundamental components of CPUs (Central Processing Units) and are responsible for executing arithmetic and logical instructions.
