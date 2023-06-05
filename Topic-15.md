@@ -4,7 +4,7 @@ The object-oriented paradigm is a programming paradigm that revolves around the 
 The four pillars of Object-Oriented Programming (OOP) are:
 
  1. Encapsulation:
-        Encapsulation is the concept of bundling data and methods (functions) together into a single unit called an object. It hides the internal implementation details of an object and exposes only the necessary interfaces or methods to interact with it. Encapsulation provides data protection and ensures that the object's state can only be accessed or modified through controlled means, promoting data integrity and security.
+        Encapsulation is the concept of bundling data and methods (functions) together into a single unit called an object. It hides the internal implementation details of an object and exposes only the necessary interfaces or methods to interact with it. Encapsulation provides data protection and ensures that the object's state can only be accessed or modified through controlled means, promoting data integrity and security. (Access Modifiers)
 
  2. Inheritance:
         Inheritance allows the creation of new classes (derived classes or subclasses) based on existing classes (base classes or superclasses). The derived classes inherit the properties and behaviors of the base class, allowing code reuse and promoting the hierarchical organization of classes. Inheritance enables the modeling of "is-a" relationships, where a derived class is a specialized version of the base class, inheriting its attributes and methods while also adding new functionalities or modifying existing ones.
