@@ -129,13 +129,27 @@ Memories refer to electronic components that store data and provide access to it
    10- :nth-child Selector:
        - Selects elements based on their position within a parent element.
        - Example: li:nth-child(odd) selects all odd-numbered li elements.
-- Box Model Enhancements: CSS3 introduced box-sizing property, allowing control over how the width and height of an element are calculated.
+ 
+- Box Model Enhancements: CSS3 introduced box-sizing property, allowing control over how the width and height of an element are calculated:
+   - box-sizing property
+   - Multiple background images
+   - border-radius property
+   - box-shadow property
+   - outline-offset property
+   - overflow-x and overflow-y properties
+ 
 - Flexbox: Flexbox is a powerful layout model that provides flexible and responsive layout capabilities, allowing easy alignment and distribution of elements.
+ 
 - Grid Layout: CSS3 Grid Layout provides a two-dimensional grid system, enabling complex and flexible page layouts.
+ 
 - Transitions and Animations: CSS3 introduced transitions and animations, allowing smooth and visually appealing animations and effects without relying on JavaScript. 
+ 
 - Media Queries: Media queries enable responsive design by allowing different styles to be applied based on the characteristics of the device or viewport, such as screen size, orientation, or resolution.
+ 
 - Shadows and Borders: CSS3 introduced new properties for adding box shadows and rounded corners to elements, enhancing the visual appearance of web pages.
+ 
 - Typography: CSS3 offers advanced typographic features, including custom fonts, text shadows, multi-column layouts, and hyphenation.
+ 
 - Multiple Backgrounds: CSS3 allows multiple background images to be applied to an element, with control over positioning, size, and layering.
  
 ## Control Structures in Web Scripts:
