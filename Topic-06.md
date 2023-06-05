@@ -4,12 +4,16 @@ Sequential logic refers to a type of digital logic that utilizes memory elements
 ## Latches:
 Latches are basic storage elements that operate based on signal levels. They are commonly used in asynchronous sequential circuits. Two commonly used latches are the SR latch and the D latch.
 
-The SR latch consists of two cross-coupled NOR gates or NAND gates. It has two inputs, S (set) and R (reset), and two outputs, Q and Q' (complement of Q). The latch has two stable states: set state and reset state. In the set state, Q is 1 and Q' is 0, while in the reset state, Q is 0 and Q' is 1. The latch retains its state even when the inputs S and R change, except in the case when both S and R are 1 simultaneously, which is an invalid state. To address this, the D latch is used. It has a single input, D, and ensures that only one input (S or R) is active at a time, preventing the invalid state.
+- The SR latch consists of two cross-coupled NOR gates or NAND gates. 
+- It has two inputs, S (set) and R (reset), and two outputs, Q and Q' (complement of Q). The latch has two stable states: set state and reset state. In the set state, Q is 1 and Q' is 0, while in the reset state, Q is 0 and Q' is 1. 
+- The latch can't retain its state when both S and R are 1 simultaneously, which is an invalid state. To address this, the D latch is used. It has a single input, D, and ensures that only one input (S or R) is active at a time, preventing the invalid state.
 
 ## Flip-Flops:
-Flip-flops are edge-triggered latches that change their state only when a control signal (clock) transitions from high to low or low to high. This makes them suitable for synchronous designs. Flip-flops include SR flip-flops and D flip-flops, which are essentially latches with edge-triggered behavior. In addition to these, there are other types of flip-flops such as JK flip-flops and T flip-flops, each with specific characteristics and applications.
+Flip-flops are edge-triggered latches that change their state only when the control signal, the clock, transitions from high to low or low to high, so the clock is used instead of the enable input. This makes them suitable for synchronous designs. Flip-flops include SR flip-flops and D flip-flops, which are essentially latches with edge-triggered behavior.
 
-By utilizing latches and flip-flops, designers can create sequential circuits that can store and process information based on their previous states. These components are crucial for various applications, including memory units, counters, and registers, enabling the implementation of complex digital systems.
+There are other types of flip-flops such as JK flip-flops and T flip-flops, each with specific characteristics and applications.
+
+These components are crucial for various applications, including memory units, counters, and registers, enabling the implementation of complex digital systems.
 
 ## Counters:
 Counters are devices used to keep track of the occurrence of events or processes, typically in relation to a clock signal. Counters are widely used in various applications, such as frequency dividers, event counting, address generation for memories, and control circuits. They enable the implementation of sequential operations and provide a means to keep track of events and generate specific patterns based on the count values.
