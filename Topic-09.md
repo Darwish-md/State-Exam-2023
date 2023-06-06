@@ -2,21 +2,21 @@
 ## Programmable Logic Devices
 - Programmable Logic Devices (PLDs) are integrated circuits that can be programmed to perform specific digital functions. They offer flexibility and reconfigurability, allowing designers to implement custom digital systems.
 1. PLDs:
-        PLDs are electronic components that allow the creation of custom digital circuits.
-        Unlike fixed-function integrated circuits, PLDs have an undefined function initially and require programming or reconfiguration.
+  - PLDs are electronic components that allow the creation of custom digital circuits.
+  - Unlike fixed-function integrated circuits, PLDs have an undefined function initially and require programming or reconfiguration.
 
 2. Advantages of PLDs:
-        Flexibility: PLDs offer reconfigurability, allowing experimentation and addition of new features without the need for new hardware designs.
-        Programmable Logic: PLDs have programmable logic, enabling the implementation of various digital functions.
-        Cost-Efficiency: PLDs are affordable and can be easily programmed and tested in live circuits.
+  - Flexibility: PLDs offer reconfigurability, allowing experimentation and addition of new features without the need for new hardware designs.
+  - Programmable Logic: PLDs have programmable logic, enabling the implementation of various digital functions.
+  - Cost-Efficiency: PLDs are affordable and can be easily programmed and tested in live circuits.
 
 3. Implementation of PLDs:
-        Logic Structure: PLDs typically consist of an array of AND gates and an array of OR gates, allowing the implementation of sum-of-product (SOP) logic functions.
-        Programming Technology: One common method is using fuses, where intact fuses represent "1" and blown fuses represent "0". The fuses are selectively blown to define the desired logic paths.
+  - Logic Structure: PLDs typically consist of an array of AND gates and an array of OR gates, allowing the implementation of sum-of-product (SOP) logic functions.
+  - Programming Technology: One common method is using fuses, where intact fuses represent "1" and blown fuses represent "0". The fuses are selectively blown to define the desired logic paths.
 
 4. Types of PLDs:
-        Simple Programmable Logic Devices (SPLDs): Examples include ROM (Read-Only Memory), PLA (Programmable Logic Array), and PAL (Programmable Array Logic).
-        High-Capacity Programmable Logic Devices (HCPLDs): An example is the FPGA (Field-Programmable Gate Array), which offers a larger capacity and greater flexibility.
+  - Simple Programmable Logic Devices (SPLDs): Examples include ROM (Read-Only Memory), PLA (Programmable Logic Array), and PAL (Programmable Array Logic).
+  - High-Capacity Programmable Logic Devices (HCPLDs): An example is the FPGA (Field-Programmable Gate Array), which offers a larger capacity and greater flexibility.
         
  ## Designing a digital system in hardware description language, and implementing it in FPGA devices
 - Designing a digital system using hardware description languages (HDLs) and implementing it in Field-Programmable Gate Array (FPGA) devices involves the following steps:
