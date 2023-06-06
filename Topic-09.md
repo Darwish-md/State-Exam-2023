@@ -118,6 +118,54 @@ Design patterns in object-oriented programming (OO) are reusable solutions to co
 1. Creational Patterns: These patterns focus on object creation mechanisms. They provide ways to create objects in a flexible and controlled manner. Examples include:
    - Singleton Pattern: Ensures that only one instance of a class is created.
    - Factory Pattern: Provides an interface for creating objects, but allows subclasses to decide which class to instantiate.
+```
+   // Shape interface
+interface Shape {
+    void draw();
+}
+
+// Circle class implementing the Shape interface
+class Circle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a Circle.");
+    }
+}
+
+// Square class implementing the Shape interface
+class Square implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a Square.");
+    }
+}
+
+// ShapeFactory class responsible for creating shapes
+class ShapeFactory {
+    public Shape createShape(String shapeType) {
+        if (shapeType.equalsIgnoreCase("circle")) {
+            return new Circle();
+        } else if (shapeType.equalsIgnoreCase("square")) {
+            return new Square();
+        } else {
+            throw new IllegalArgumentException("Invalid shape type.");
+        }
+    }
+}
+
+// Usage
+public class Main {
+    public static void main(String[] args) {
+        ShapeFactory factory = new ShapeFactory();
+
+        Shape circle = factory.createShape("circle");
+        circle.draw();  // Output: Drawing a Circle.
+
+        Shape square = factory.createShape("square");
+        square.draw();  // Output: Drawing a Square.
+    }
+}
+```
    - Builder Pattern: Separates the construction of complex objects from their representation.
 
 2. Structural Patterns: These patterns deal with the composition of classes and objects to form larger structures. They help create relationships between objects and classes to achieve desired functionality. Examples include:
