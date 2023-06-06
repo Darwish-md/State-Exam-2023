@@ -118,8 +118,8 @@ Design patterns in object-oriented programming (OO) are reusable solutions to co
 1. Creational Patterns: These patterns focus on object creation mechanisms. They provide ways to create objects in a flexible and controlled manner. Examples include:
    - Singleton Pattern: Ensures that only one instance of a class is created.
    - Factory Pattern: Provides an interface for creating objects, but allows subclasses to decide which class to instantiate.
-```
-   // Shape interface
+```java
+// Shape interface
 interface Shape {
     void draw();
 }
