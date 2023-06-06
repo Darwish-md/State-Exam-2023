@@ -167,7 +167,7 @@ public class Main {
 }
 ```
    - Builder Pattern: Separates the construction of complex objects from their representation.
-```
+```java
 // House class representing the final constructed object
 class House {
     private String foundation;
@@ -228,6 +228,51 @@ public class Main {
 ```
 2. Structural Patterns: These patterns deal with the composition of classes and objects to form larger structures. They help create relationships between objects and classes to achieve desired functionality. Examples include:
    - Adapter Pattern: Converts the interface of one class into another interface that clients expect.
+```java
+// AmericanSocket interface representing the target interface
+interface AmericanSocket {
+    void plugIn(AmericanPlug plug);
+}
+
+// AmericanPlug class representing the compatible interface
+class AmericanPlug {
+    void insertIntoAmericanSocket() {
+        System.out.println("Plug inserted into American socket.");
+    }
+}
+
+// EuropeanPlug class representing the incompatible interface
+class EuropeanPlug {
+    void insertIntoEuropeanSocket() {
+        System.out.println("Plug inserted into European socket.");
+    }
+}
+
+// Adapter class implementing the target interface and using the incompatible interface
+class PlugAdapter implements AmericanSocket {
+    private EuropeanPlug europeanPlug;
+    
+    public PlugAdapter(EuropeanPlug europeanPlug) {
+        this.europeanPlug = europeanPlug;
+    }
+    
+    @Override
+    public void plugIn(AmericanPlug plug) {
+        europeanPlug.insertIntoEuropeanSocket();
+    }
+}
+
+// Usage
+public class Main {
+    public static void main(String[] args) {
+        AmericanPlug americanPlug = new AmericanPlug();
+        EuropeanPlug europeanPlug = new EuropeanPlug();
+        
+        AmericanSocket americanSocket = new PlugAdapter(europeanPlug);
+        americanSocket.plugIn(americanPlug);
+    }
+}
+```
    - Composite Pattern: Allows clients to treat individual objects and compositions of objects uniformly.
    - Decorator Pattern: Dynamically adds new functionality to an existing object.
 
