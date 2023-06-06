@@ -3,7 +3,7 @@
 - Programmable Logic Devices (PLDs) are integrated circuits that can be programmed to perform specific digital functions. They offer flexibility and reconfigurability, allowing designers to implement custom digital systems.
 1. PLDs:
   - PLDs are electronic components that allow the creation of custom digital circuits.
-  - Unlike fixed-function integrated circuits, PLDs have an undefined function initially and require programming or reconfiguration.
+  - Unlike fixed-function integrated circuits (ex: Digital Signal Processor (DSP) chip designed for processing digital signals), PLDs have an undefined function initially and require programming or reconfiguration.
 
 2. Advantages of PLDs:
   - Flexibility: PLDs offer reconfigurability, allowing experimentation and addition of new features without the need for new hardware designs.
