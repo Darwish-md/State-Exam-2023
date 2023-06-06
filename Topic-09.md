@@ -273,11 +273,167 @@ public class Main {
     }
 }
 ```
-   - Composite Pattern: Allows clients to treat individual objects and compositions of objects uniformly.
-   - Decorator Pattern: Dynamically adds new functionality to an existing object.
+   - Composite Pattern: The Composite Pattern can help you represent a structure like folder structure in a hierarchical manner.
+```java
+// Component interface representing the common operations for directories and files
+interface FileSystemComponent {
+    void display();
+}
+
+// File class representing a leaf node in the hierarchy
+class File implements FileSystemComponent {
+    private String name;
+    
+    public File(String name) {
+        this.name = name;
+    }
+    
+    @Override
+    public void display() {
+        System.out.println("File: " + name);
+    }
+}
+
+// Directory class representing a composite node in the hierarchy
+class Directory implements FileSystemComponent {
+    private String name;
+    private List<FileSystemComponent> components;
+    
+    public Directory(String name) {
+        this.name = name;
+        this.components = new ArrayList<>();
+    }
+    
+    public void addComponent(FileSystemComponent component) {
+        components.add(component);
+    }
+    
+    public void removeComponent(FileSystemComponent component) {
+        components.remove(component);
+    }
+    
+    @Override
+    public void display() {
+        System.out.println("Directory: " + name);
+        for (FileSystemComponent component : components) {
+            component.display();
+        }
+    }
+}
+
+// Usage
+public class Main {
+    public static void main(String[] args) {
+        FileSystemComponent file1 = new File("file1.txt");
+        FileSystemComponent file2 = new File("file2.txt");
+        
+        Directory directory1 = new Directory("Folder1");
+        directory1.addComponent(file1);
+        
+        Directory directory2 = new Directory("Folder2");
+        directory2.addComponent(file2);
+        
+        Directory rootDirectory = new Directory("Root");
+        rootDirectory.addComponent(directory1);
+        rootDirectory.addComponent(directory2);
+        
+        rootDirectory.display();
+    }
+}
+```
+   - Decorator Pattern: Dynamically adds new functionality to an existing object:
+   Imagine you have a basic coffee class that represents a simple cup of coffee. You want to enhance the functionality of this coffee class by adding additional toppings, such as milk and sugar. The Decorator Pattern can help you achieve this.
+```java
+// Coffee interface representing the base component
+interface Coffee {
+    String getDescription();
+    double getCost();
+}
+
+// SimpleCoffee class representing the base component implementation
+class SimpleCoffee implements Coffee {
+    @Override
+    public String getDescription() {
+        return "Simple Coffee";
+    }
+    
+    @Override
+    public double getCost() {
+        return 1.0;
+    }
+}
+
+// CoffeeDecorator class representing the decorator
+abstract class CoffeeDecorator implements Coffee {
+    protected Coffee coffee;
+    
+    public CoffeeDecorator(Coffee coffee) {
+        this.coffee = coffee;
+    }
+    
+    @Override
+    public String getDescription() {
+        return coffee.getDescription();
+    }
+    
+    @Override
+    public double getCost() {
+        return coffee.getCost();
+    }
+}
+
+// MilkDecorator class representing a specific decorator
+class MilkDecorator extends CoffeeDecorator {
+    public MilkDecorator(Coffee coffee) {
+        super(coffee);
+    }
+    
+    @Override
+    public String getDescription() {
+        return coffee.getDescription() + ", Milk";
+    }
+    
+    @Override
+    public double getCost() {
+        return coffee.getCost() + 0.5;
+    }
+}
+
+// SugarDecorator class representing another specific decorator
+class SugarDecorator extends CoffeeDecorator {
+    public SugarDecorator(Coffee coffee) {
+        super(coffee);
+    }
+    
+    @Override
+    public String getDescription() {
+        return coffee.getDescription() + ", Sugar";
+    }
+    
+    @Override
+    public double getCost() {
+        return coffee.getCost() + 0.3;
+    }
+}
+
+// Usage
+public class Main {
+    public static void main(String[] args) {
+        Coffee simpleCoffee = new SimpleCoffee();
+        Coffee coffeeWithMilk = new MilkDecorator(simpleCoffee);
+        Coffee coffeeWithMilkAndSugar = new SugarDecorator(coffeeWithMilk);
+        
+        System.out.println("Coffee: " + coffeeWithMilkAndSugar.getDescription());
+        System.out.println("Cost: $" + coffeeWithMilkAndSugar.getCost());
+    }
+}
+```
 
 3. Behavioral Patterns: These patterns focus on the interaction and communication between objects. They define how objects collaborate and fulfill their responsibilities. Examples include:
    - Observer Pattern: Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.
+```
+
+```
    - Strategy Pattern: Defines a family of interchangeable algorithms and encapsulates each one, allowing them to be used interchangeably.
    - Command Pattern: Encapsulates a request as an object, allowing clients to parameterize clients with different requests.
 
