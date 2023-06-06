@@ -12,10 +12,10 @@
 
 3. Implementation of PLDs:
   - Logic Structure: PLDs typically consist of an array of AND gates and an array of OR gates, allowing the implementation of sum-of-product (SOP) logic functions.
-  - Programming Technology: One common method is using fuses, where intact fuses represent "1" and blown fuses represent "0". The fuses are selectively blown to define the desired logic paths. In this programming approach, the unprogrammed state of a fuse represents a logical "1," while a blown or programmed fuse represents a logical "0." By programming or blowing specific fuses, you can configure the device to implement the desired digital logic functions.
+  - Programming Technology: One common method is using fuses, where intact fuses represent "1" and blown fuses represent "0". In this programming approach, the unprogrammed state of a fuse represents a logical "1," while a blown or programmed fuse represents a logical "0." By programming or blowing specific fuses, you can configure the device to implement the desired digital logic functions.
 
 4. Types of PLDs:
-  - Simple Programmable Logic Devices (SPLDs): Examples include ROM (Read-Only Memory), PLA (Programmable Logic Array), and PAL (Programmable Array Logic).
+  - Simple Programmable Logic Devices (SPLDs): Examples include PLA (Programmable Logic Array), and PAL (Programmable Array Logic).
   - High-Capacity Programmable Logic Devices (HCPLDs): An example is the FPGA (Field-Programmable Gate Array), which offers a larger capacity and greater flexibility.
         
  ## Designing a digital system in hardware description language, and implementing it in FPGA devices
