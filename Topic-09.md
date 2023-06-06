@@ -430,10 +430,8 @@ public class Main {
 ```
 
 3. Behavioral Patterns: These patterns focus on the interaction and communication between objects. They define how objects collaborate and fulfill their responsibilities. Examples include:
-   - Observer Pattern: Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.
-```
-
-```
+   - Observer Pattern: Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically:
+      Imagine you have a messaging app where users can send and receive messages. You want to implement a feature where users can be notified whenever a new message arrives. The         Observer Pattern can help you achieve this.
    - Strategy Pattern: Defines a family of interchangeable algorithms and encapsulates each one, allowing them to be used interchangeably.
    - Command Pattern: Encapsulates a request as an object, allowing clients to parameterize clients with different requests.
 
