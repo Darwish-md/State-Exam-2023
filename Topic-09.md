@@ -167,7 +167,65 @@ public class Main {
 }
 ```
    - Builder Pattern: Separates the construction of complex objects from their representation.
+```
+// House class representing the final constructed object
+class House {
+    private String foundation;
+    private String walls;
+    private String roof;
+    
+    // Constructor with required parameters
+    public House(String foundation, String walls, String roof) {
+        this.foundation = foundation;
+        this.walls = walls;
+        this.roof = roof;
+    }
+    
+    // Getters for the attributes
+    // ...
+}
 
+// HouseBuilder class responsible for constructing the house
+class HouseBuilder {
+    private String foundation;
+    private String walls;
+    private String roof;
+    
+    // Methods for setting the attributes
+    public HouseBuilder setFoundation(String foundation) {
+        this.foundation = foundation;
+        return this;
+    }
+    
+    public HouseBuilder setWalls(String walls) {
+        this.walls = walls;
+        return this;
+    }
+    
+    public HouseBuilder setRoof(String roof) {
+        this.roof = roof;
+        return this;
+    }
+    
+    // Method to build the house
+    public House build() {
+        return new House(foundation, walls, roof);
+    }
+}
+
+// Usage
+public class Main {
+    public static void main(String[] args) {
+        House house = new HouseBuilder()
+            .setFoundation("Concrete")
+            .setWalls("Bricks")
+            .setRoof("Tiles")
+            .build();
+            
+        // house is now constructed using the builder pattern
+    }
+}
+```
 2. Structural Patterns: These patterns deal with the composition of classes and objects to form larger structures. They help create relationships between objects and classes to achieve desired functionality. Examples include:
    - Adapter Pattern: Converts the interface of one class into another interface that clients expect.
    - Composite Pattern: Allows clients to treat individual objects and compositions of objects uniformly.
