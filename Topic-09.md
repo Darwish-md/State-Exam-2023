@@ -43,18 +43,18 @@
 ***Example***:
 Suppose we want to design a simple 4-bit binary adder using VHDL and implement it in an FPGA device. Here's a high-level overview of the process:
 1. Design in VHDL:
-        Define the architecture: Create a module for the 4-bit binary adder, including input ports (A, B) and output ports (Sum, Carry).
-        Write VHDL code: Implement the behavior of the adder using VHDL code, specifying the addition operation, carry calculation, and output generation.
+  - Define the architecture: Create a module for the 4-bit binary adder, including input ports (A, B) and output ports (Sum, Carry).
+  - Write VHDL code: Implement the behavior of the adder using VHDL code, specifying the addition operation, carry calculation, and output generation.
 2. Synthesis:
-        Perform synthesis: Use a synthesis tool to convert the VHDL code into a netlist representation using the FPGA's logic elements (e.g., lookup tables, flip-flops).
-        Optimize the design: The synthesis tool optimizes the design by minimizing logic elements and improving performance.
+  - Perform synthesis: Use a synthesis tool to convert the VHDL code into a netlist representation using the FPGA's logic elements (e.g., lookup tables, flip-flops).
+  - Optimize the design: The synthesis tool optimizes the design by minimizing logic elements and improving performance.
 3. Implementation in FPGA:
-        Select an FPGA device: Choose an FPGA device suitable for the design's logic capacity and I/O requirements.
-        Map the design: Use a place-and-route tool to map the synthesized netlist to specific logic elements, routing resources, and I/O pins on the FPGA.
-        Generate programming files: The place-and-route tool generates a bitstream file that can be loaded onto the FPGA to configure it with the binary adder design.
+  - Select an FPGA device: Choose an FPGA device suitable for the design's logic capacity and I/O requirements.
+  - Map the design: Use a place-and-route tool to map the synthesized netlist to specific logic elements, routing resources, and I/O pins on the FPGA.
+  - Generate programming files: The place-and-route tool generates a bitstream file that can be loaded onto the FPGA to configure it with the binary adder design.
 4. Testing and Verification:
-        Test the implemented design: Apply test vectors to the input ports (A, B) and observe the outputs (Sum, Carry) to verify the correctness of the binary adder.
-        Debug and iterate: If any issues are found, debug the design, make necessary modifications, and retest until the binary adder functions as intended.
+  - Test the implemented design: Apply test vectors to the input ports (A, B) and observe the outputs (Sum, Carry) to verify the correctness of the binary adder.
+  - Debug and iterate: If any issues are found, debug the design, make necessary modifications, and retest until the binary adder functions as intended.
         
 # Part 2: Basic concepts of system engineering, different paradigms. Characteristics of the classical methods: waterfall, evolution, incremental, agile methods. Fundamentals and patterns of OOdesign. MVC
 ## Basic concepts of system engineering
