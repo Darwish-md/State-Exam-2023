@@ -22,10 +22,10 @@
 - Designing a digital system using hardware description languages (HDLs) and implementing it in Field-Programmable Gate Array (FPGA) devices involves the following steps:
 
     1. Designing in Hardware Description Language:
-        Select an HDL: Popular HDLs include VHDL (VHSIC Hardware Description Language) and Verilog. These languages allow designers to describe the behavior and structure of digital systems.
-        Define the system architecture: Determine the desired functionality and structure of the digital system, such as the modules, input/output ports, and internal connections.
-        Write HDL code: Use the selected HDL to write code that represents the desired behavior of the digital system. This includes designing modules, defining signals, specifying data flow, and implementing control logic.
-        Simulate the design: Use simulation tools to verify the functionality and correctness of the design before proceeding to implementation.
+      - Select an HDL: Popular HDLs include VHDL (VHSIC Very High Speed Integracted Circuit Hardware Description Language) and Verilog. These languages allow designers to describe the behavior and structure of digital systems.
+      - Define the system architecture: Determine the desired functionality and structure of the digital system, such as the modules, input/output ports, and internal connections.
+      - Write HDL code: Use the selected HDL to write code that represents the desired behavior of the digital system. This includes designing modules, defining signals, specifying data flow, and implementing control logic.
+      - Simulate the design: Use simulation tools to verify the functionality and correctness of the design before proceeding to implementation.
 
     2. Synthesis:
         Perform synthesis: Synthesis tools analyze the HDL code and generate a netlist, which represents the circuit's structure using primitive logic elements available in the target PLD or FPGA.
