@@ -64,7 +64,7 @@ Suppose we want to design a simple 4-bit binary adder using VHDL and implement i
 
 - The goal of systems engineering is to create reliable, efficient, and cost-effective systems that meet stakeholder needs. It involves considering various factors, such as technical feasibility, safety, reliability, cost, and schedule, throughout the entire lifecycle of the system. 
 
-- Systems engineering have five core concepts, commonly known as VICAT:
+### Systems engineering have five core concepts, commonly known as VICAT:
 1. Value: The primary goal of systems engineering is to provide value by meeting the needs and requirements of stakeholders. It is crucial to ensure that the system delivers the desired outcomes and benefits.
 
 2. Context: Understanding the context in which the system will be deployed is essential. Engineers need to consider the specific environment, constraints, and user requirements to design a system that fits seamlessly into its intended operational context.
@@ -75,7 +75,7 @@ Suppose we want to design a simple 4-bit binary adder using VHDL and implement i
 
 5. Interdisciplinarity: Systems engineering embraces an interdisciplinary approach. It recognizes that complex systems require expertise from various disciplines to address all the stakeholders' requirements adequately. Teams comprising members from different fields collaborate to integrate their knowledge and perspectives into the system design process.
 
-- Here are the key steps involved in systems engineering:
+### Here are the key steps involved in systems engineering:
 1. Understanding Stakeholder Needs: Systems engineers begin by gathering information from stakeholders, such as users, customers, and experts, to understand their needs, expectations, and requirements for the system.
 
 2. System Analysis and Design: Based on the gathered information, systems engineers analyze and design the system. They break down the system into smaller components, define their interactions and functions, and develop a blueprint or plan for the system.
