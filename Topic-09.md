@@ -71,9 +71,9 @@ Suppose we want to design a simple 4-bit binary adder using VHDL and implement i
 
 3. Trade-offs: During the design process, trade-offs must be carefully evaluated. These trade-offs involve factors such as cost, time, and performance. Engineers need to make informed decisions to strike the right balance between these elements to achieve an optimal solution.
 
-4. Abstraction: Abstraction is a fundamental skill in systems engineering. It involves the ability to conceptualize and design a system independently of the specific solution. This allows engineers to focus on the system's architecture, functionality, and requirements without being tied to any particular implementation details.
+4. Abstraction: Abstraction involves the ability to design a system independently of the specific solution. This allows engineers to focus on the system's architecture, functionality, and requirements without being tied to any particular implementation details.
 
-5. Interdisciplinarity: Systems engineering embraces an interdisciplinary approach. It recognizes that complex systems require expertise from various disciplines to address all the stakeholders' requirements adequately. Teams comprising members from different fields collaborate to integrate their knowledge and perspectives into the system design process.
+5. Interdisciplinarity: when designing complex systems, experts from different fields work together as a team. Each team member brings their unique knowledge and skills from their respective disciplines to address the various requirements of the system and meet the needs of different stakeholders.
 
 ### Here are the key steps involved in systems engineering:
 1. Understanding Stakeholder Needs: Systems engineers begin by gathering information from stakeholders, such as users, customers, and experts, to understand their needs, expectations, and requirements for the system.
