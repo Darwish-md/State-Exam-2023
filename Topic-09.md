@@ -21,22 +21,22 @@
  ## Designing a digital system in hardware description language, and implementing it in FPGA devices
 - Designing a digital system using hardware description languages (HDLs) and implementing it in Field-Programmable Gate Array (FPGA) devices involves the following steps:
 
-    1. Designing in Hardware Description Language:
-      - Select an HDL: Popular HDLs include VHDL (VHSIC Very High Speed Integracted Circuit Hardware Description Language) and Verilog. These languages allow designers to describe the behavior and structure of digital systems.
-      - Define the system architecture: Determine the desired functionality and structure of the digital system, such as the modules, input/output ports, and internal connections.
-      - Write HDL code: Use the selected HDL to write code that represents the desired behavior of the digital system. This includes designing modules, defining signals, specifying data flow, and implementing control logic.
-      - Simulate the design: Use simulation tools to verify the functionality and correctness of the design before proceeding to implementation.
+  1. Designing in Hardware Description Language:
+    - Select an HDL: Popular HDLs include VHDL (VHSIC Very High Speed Integracted Circuit Hardware Description Language) and Verilog. These languages allow designers to describe the behavior and structure of digital systems.
+    - Define the system architecture: Determine the desired functionality and structure of the digital system, such as the modules, input/output ports, and internal connections.
+    - Write HDL code: Use the selected HDL to write code that represents the desired behavior of the digital system. This includes designing modules, defining signals, specifying data flow, and implementing control logic.
+    - Simulate the design: Use simulation tools to verify the functionality and correctness of the design before proceeding to implementation.
 
-    2. Synthesis:
+  2. Synthesis:
         Perform synthesis: Synthesis tools analyze the HDL code and generate a netlist, which represents the circuit's structure using primitive logic elements available in the target PLD or FPGA.
         Optimize the design: Synthesis tools optimize the design by minimizing logic elements, reducing power consumption, and improving performance.
 
-    3. Implementation in FPGA Devices:
+  3. Implementation in FPGA Devices:
         Select an FPGA device: Choose an FPGA device based on factors such as required logic capacity, I/O interfaces, speed requirements, and cost.
         Map the design to FPGA resources: Use place-and-route tools to map the synthesized netlist to specific logic elements, routing resources, and I/O pins on the chosen FPGA device.
         Generate programming files: The place-and-route tools generate programming files, such as a bitstream, that can be loaded onto the FPGA to configure it with the desired digital system.
 
-    4. Testing and Verification:
+  4. Testing and Verification:
         Test the implemented design: Verify the functionality of the digital system by running test vectors or applying stimuli to the input ports and observing the outputs.
         Debug and iterate: If any issues or errors are identified, debug the design, make necessary modifications, and retest until the desired functionality is achieved.
 
