@@ -28,17 +28,17 @@
     - Simulate the design: Use simulation tools to verify the functionality and correctness of the design before proceeding to implementation.
 
   2. Synthesis:
-        Perform synthesis: Synthesis tools analyze the HDL code and generate a netlist, which represents the circuit's structure using primitive logic elements available in the target PLD or FPGA.
-        Optimize the design: Synthesis tools optimize the design by minimizing logic elements, reducing power consumption, and improving performance.
+    - Perform synthesis: Synthesis tools analyze the HDL code and generate a netlist, which represents the circuit's structure using primitive logic elements available in the target PLD or FPGA.
+    - Optimize the design: Synthesis tools optimize the design by minimizing logic elements, reducing power consumption, and improving performance.
 
   3. Implementation in FPGA Devices:
-        Select an FPGA device: Choose an FPGA device based on factors such as required logic capacity, I/O interfaces, speed requirements, and cost.
-        Map the design to FPGA resources: Use place-and-route tools to map the synthesized netlist to specific logic elements, routing resources, and I/O pins on the chosen FPGA device.
-        Generate programming files: The place-and-route tools generate programming files, such as a bitstream, that can be loaded onto the FPGA to configure it with the desired digital system.
+    - Select an FPGA device: Choose an FPGA device based on factors such as required logic capacity, I/O interfaces, speed requirements, and cost.
+    - Map the design to FPGA resources: Use place-and-route tools to map the synthesized netlist to specific logic elements, routing resources, and I/O pins on the chosen FPGA device.
+    - Generate programming files: The place-and-route tools generate programming files, such as a bitstream, that can be loaded onto the FPGA to configure it with the desired digital system.
 
   4. Testing and Verification:
-        Test the implemented design: Verify the functionality of the digital system by running test vectors or applying stimuli to the input ports and observing the outputs.
-        Debug and iterate: If any issues or errors are identified, debug the design, make necessary modifications, and retest until the desired functionality is achieved.
+    - Test the implemented design: Verify the functionality of the digital system by running test vectors or applying stimuli to the input ports and observing the outputs.
+    - Debug and iterate: If any issues or errors are identified, debug the design, make necessary modifications, and retest until the desired functionality is achieved.
 
 ***Example***:
 Suppose we want to design a simple 4-bit binary adder using VHDL and implement it in an FPGA device. Here's a high-level overview of the process:
