@@ -80,7 +80,7 @@ are different approaches used to guide the process of software development. Thes
     - Sprint Retrospective: Reflect on the sprint and identify areas for improvement.
     - Repeat Steps 2-6 for subsequent sprints.
     
-3. Iterative: Iterative methodologies involve incremental development and refinement through repeated cycles. Each iteration builds upon the previous one, allowing for continuous improvement and feedback incorporation. This approach is beneficial when requirements are not fully known or may evolve during development.
+3. Iterative: Iterative methodologies involve incremental development and refinement through repeated cycles. It follows a repetitive cycle of development, where each cycle involves completing multiple phases: requirements gathering, design, development, testing, and evaluation. This approach is beneficial when requirements are not fully known or may evolve during development.
 
 - Benefits:
     - Early and continuous delivery of partial functionality.
