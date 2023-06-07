@@ -6,7 +6,14 @@ Diodes are used to protect circuits by limiting the voltage and also transform A
 
 ![](Aspose.Words.8d449dfa-7070-4593-b476-884127e421df.001.png)
 
+We can get a diode by combining a P type material with N type material.
+
 There are two terminals that are known as anode and cathode. The arrowhead is the anode that represents the direction of the conventional current flow in the forward-biased condition. The other end is the cathode.
+
+The current should flow from the anode to cathode (+ of battery to anode), otherwise the current won't flow unless we apply very high voltage exceeding the threshold. Also the current should be flowing from the high voltage to lower voltage.
+
+Power consumed by diode P=VI.
+
 ### <a name="_g7iyf3snf0tc"></a>**Types of Diodes:**
 1. Light Emitting Diode
 1. Laser diode
