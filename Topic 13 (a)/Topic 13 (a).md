@@ -65,6 +65,28 @@ Unlike scalar processors that operate on only a single pair of data, a vector pr
 
 These instructions are said to be single instruction multiple data or vector instructions. The CPU used in recent times makes use of vector processing as it is more advantageous than scalar processing.
 
+In summary:
+
+- Superscalar processors execute multiple instructions simultaneously by exploiting instruction-level parallelism.
+- Vector processors process data in parallel by applying the same operation to multiple elements simultaneously.
+  For example, let's consider adding two arrays of numbers using a vector processor. Instead of adding each pair of elements individually, a vector processor can perform a single addition operation that simultaneously adds corresponding elements from both arrays. This means that the addition operation is applied to multiple elements at the same time, allowing for faster and more efficient computation.
+- VLIW processors execute multiple operations in a single instruction, with the compiler determining the parallelism.
+suppose we have the following code:
+```
+int a = 5;
+int b = 3;
+int c = 2;
+int d = 4;
+
+int result1, result2;
+
+result1 = a * b;
+result2 = c + d;
+```
+The VLIW instruction could look something like this `MUL result1, a, b  | ADD result2, c, d` 
+
+In this instruction, the multiplication operation (MUL) is assigned to functional units capable of performing multiplication, and the addition operation (ADD) is assigned to functional units capable of performing addition. Both operations can be executed simultaneously in separate functional units of the VLIW processor.
+
 **Bibliography:**
 
 1. <https://www.javatpoint.com/types-of-microprocessors>
