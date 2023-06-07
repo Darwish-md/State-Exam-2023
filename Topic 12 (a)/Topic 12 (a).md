@@ -69,6 +69,8 @@ When more than one instance of the entity on the left, and only one instance of 
 
 When more than one instance of the entity on the left, and more than one instance of an entity on the right are associated with the relationship then it is known as a many-to-many relationship. For example, an Employee can assign many projects and a project can have many employees.
 
+Many-to-many relationship can be achieved by using a joint entity or a junction table.
+ 
 ![DBMS ER model concept](Aspose.Words.0523d677-2a32-4695-b37b-06044e13fc8b.011.png)
 # <a name="_xdbbefr7ktrn"></a>**Relational data model, relation, scheme, attribute.**
 ## <a name="_720iu95hmvt8"></a>**Relational Model:**
