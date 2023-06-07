@@ -16,6 +16,12 @@ There are two terminals that are known as anode and cathode. The arrowhead is th
 1. Photodiode
 1. PN junction diode
 
+**Tunnel Diode:** A diode with a highly doped PN junction, exhibiting negative resistance. Used in microwave circuits, oscillators, and high-speed applications.
+
+**Photodiode:** A diode that generates a current proportional to the incident light intensity. Used in light detection, optical communication, and sensing applications.
+
+**Laser Diode:** A diode that emits coherent light through stimulated emission. Used in laser pointers, optical data storage, fiber optic communication, and medical devices.
+
 **Light Emitting Diode (LED)**
 
 When an electric current between the electrodes passes through this diode, light is produced. In other words, light is generated when a sufficient amount of forwarding current passes through it. In many diodes, this light generated is not visible as there are frequency levels that do not allow visibility. LEDs are available in different colors. There are tricolor LEDs that can emit three colors at a time. Light color depends on the energy gap of the semiconductor used.
