@@ -99,7 +99,8 @@ A database schema defines how data is organized within a relational database; th
 
 A database schema is the skeleton structure that represents the logical view of the entire database. It defines how the data is organized and how the relations among them are associated. It formulates all the constraints that are to be applied to the data. It defines its entities and the relationship among them. It contains a descriptive detail of the database, which can be depicted by means of schema diagrams. It’s the database designers who design the schema to help programmers understand the database and make it useful.
 ## <a name="_7kn6iho4ij7x"></a>**Attribute:**
-In a database management system (DBMS), an attribute refers to a database component, such as a table. It also may refer to a database field. Attributes describe the instances in the column of a database. In relational databases, attributes are the describing characteristics or properties that define all items pertaining to a certain category applied to all cells of a column.
+In the context of a database, the term "attribute" is most commonly used to refer to the column name or the specific data element within a table.
+In a relational database, a table consists of columns (also known as attributes) and rows (also known as records or tuples). Each column represents a specific attribute or property of the data being stored, and each row represents an individual instance or record.
 # <a name="_auh4nsy4tk6r"></a>**Building up a relational scheme from an ER diagram.**
 A database designer usually starts by designing the visual ERD, once this is done, we can convert this conceptual model into a logical model which breaks down entities, attributes, and relationships into tables, columns, fields, and keys. To convert an ERD to a relational schema, we will use these steps:
 
