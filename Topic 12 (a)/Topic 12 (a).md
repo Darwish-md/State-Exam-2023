@@ -81,6 +81,17 @@ It represents the database as a collection of relations. A relation is nothing b
 A relation is sometimes used to refer to a table in a relational database but is more commonly used to describe the relationships that can be created between those tables in a relational database.
 
 In relational databases, a relationship exists between two tables when one of them has a foreign key that references the primary key of the other table. This single fact allows relational databases to split and store data in different tables, yet still link the disparate data items together. It is one of the features that makes relational databases such powerful and efficient stores of information. Relation, therefore, is the defining feature of relational databases.
+
+Child is the referencing relation and it contains the foreign key which points to the primary key of the parent relation ( or the referenced relation )
+Parent doesn't need any more attributes but child does.
+We cannot delte the parent tuple without deleting all tuples in the child referencing that tuple primary key
+So we have 3 options: 
+1-cascade :delte child tuples referencing deleted tuples from parent
+2- set null : foreign keys to null
+3- restrict : prohibits the deletion
+But we can delete the child relation with no errors 
+Ex:
+Employee child referencing AND Department parent referenced
 ## <a name="_c3usnvbgjc2v"></a>**Schema:**
 A database schema defines how data is organized within a relational database; this is inclusive of logical constraints such as table names, fields, data types, and the relationships between these entities. Schemas commonly use visual representations to communicate the architecture of the database.
 
