@@ -26,11 +26,37 @@ To optimize the query, we start from the bottom of the tree and work our way up 
 There are different ways to find the best optimization strategy. One approach is an exhaustive search, where we generate all possible query trees and choose the one that gives us the best result. However, this method can be time-consuming and requires a lot of memory.
 
 Alternatively, we can use rule-based heuristics. These are like shortcuts or guidelines that help us make decisions during optimization. For example, a rule could suggest performing select and project operations before joining operations. These heuristics are faster than an exhaustive search but may not always give the absolute best solution.
+
+### Example:
+Here's a simplified example to illustrate tree-based optimization in relational algebra:
+
+Let's consider a database with two tables: "Customers" and "Orders". The goal is to retrieve the names of customers who have placed orders.
+
+The SQL query for this task might look like:
+```sql
+SELECT Customers.Name
+FROM Customers
+JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+```
+To optimize this query using tree-based optimization, the optimizer analyzes the query and generates an execution plan in the form of a tree structure. Here's a simplified representation of the execution plan:
+
+```
+          JOIN
+         /    \
+    Customers  Orders
+```
+
+In this plan, the "Customers" and "Orders" tables are joined on the common attribute "CustomerID". The execution starts from the "Customers" table, and for each customer, it matches the corresponding orders from the "Orders" table.
+
+The optimizer determines this plan based on factors like the ***available indexes, statistics about the data, and estimated costs of different operations***. It evaluates various alternatives and chooses the plan that minimizes the overall cost of executing the query.
+
+By organizing the execution plan as a tree structure, the database system can efficiently traverse the data and retrieve the desired results. It can optimize the access patterns, minimize data transfer, and reduce the need for additional operations, resulting in improved query performance.
+
 # <a name="_v8s1mbsg5xja"></a>**Cost-based optimization.**
 Cost-based optimization is a technique used by the optimizer in a database system to find the most efficient way to execute a query. The optimizer assigns a numerical cost to each step or operation in a potential execution plan. It then calculates the total cost estimate for each possible plan or strategy.
 
-The goal of cost-based optimization is to choose the plan with the lowest cost estimate. This is why it's called a "cost-based" optimizer. The cost of an operation is influenced by factors like the number of rows returned, known as cardinality, and the selectivity of the rows selected. Selectivity refers to the number of rows selected compared to the total number of rows in a table or database.
+The goal of cost-based optimization is to choose the plan with the lowest cost estimate. This is why it's called a "cost-based" optimizer. The cost of an operation is influenced by factors like the number of rows returned, known as ***cardinality***, and the selectivity of the rows selected. Selectivity refers to the ***number of rows selected compared to the total number of rows in a table or database.***
 
-The cost estimate also takes into account other factors, such as the cost of accessing data from secondary storage (like reading or writing data blocks), the amount of memory required for executing the query, the cost of storing intermediate files generated during query execution, the computational cost (like CPU operations on data buffers), and the communication cost associated with sending the query and its results between different places.
+The cost estimate also takes into account other factors, such as ***the cost of accessing data from secondary storage (like reading or writing data blocks), the amount of memory required for executing the query, the cost of storing intermediate files generated during query execution, the computational cost (like CPU operations on data buffers), and the communication cost associated with sending the query and its results between different places.***
 
 By evaluating the costs of different plans, the optimizer can choose the one that minimizes the overall cost. This helps the database system execute queries more efficiently and optimize system performance.
