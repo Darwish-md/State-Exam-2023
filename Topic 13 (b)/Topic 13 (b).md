@@ -3,7 +3,12 @@ A query is a request for information from a database. Before the database can gi
 
 This process is divided into three steps: parsing and translation, optimization, and evaluation.
 
-1. **Parsing and Translation**: When you write a query in SQL, the database system doesn't understand it directly. It's like giving instructions to a person in a language they don't know. So, in this step, the query is translated from a high-level language (SQL) to a low-level language called relational algebra. Relational algebra is a way to represent the query in a form that the database can understand. The parser checks the syntax of the query and makes sure the table and column names are correct. Then it translates the query into relational algebra.
+1. **Parsing and Translation**: When you write a query in SQL, the database system doesn't understand it directly. It's like giving instructions to a person in a language they don't know. So, in this step, the query is translated from a high-level language (SQL) to a low-level language called ***relational algebra***. Relational algebra is a way to represent the query in a form that the database can understand. The parser checks the syntax of the query and makes sure the table and column names are correct. Then it translates the query into relational algebra.
+
+### Note: Relational algebra:
+- It is a procedural language
+- It provides a set of operations and rules to perform various operations on relations
+- it is a set of algebraic operations.
 
 For example, let's say you want to find the names of all employees whose salary is more than $100,000. In SQL, your statement might look like this: SELECT EMP\_NAME FROM EMPLOYEE WHERE SALARY > 100,000. This SQL statement can be converted into different variations of relational algebra, and two examples could be: σsalary>100000 (πemp\_name (Employee)) and πemp\_name (σsalary>100000 (Employee)).
 
