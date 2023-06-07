@@ -8,7 +8,7 @@ Pipeline processing is a technique used in computer architecture to improve the 
 1. Memory Access (MEM): If required, this stage accesses the memory to read or write data.
 1. Write Back (WB): The results of the executed instructions are written back to the registers or memory.
 ### <a name="_2qmvjgi4teis"></a>**Advantages of pipeline processing:**
-1. Increased Throughput: By allowing multiple instructions to be in different stages of execution simultaneously, the overall throughput of the processor is increased. This leads to higher performance and faster execution of programs.
+1. Increased Throughput (# of instructions per time unit): By allowing multiple instructions to be in different stages of execution simultaneously, the overall throughput of the processor is increased. This leads to higher performance and faster execution of programs.
 1. Resource Utilization: Pipeline processing allows better utilization of the processor's resources. Each stage of the pipeline can be optimized for a specific operation, maximizing the efficiency of the processor.
 1. Reduced Latency: The pipelining technique helps reduce the overall latency of instruction execution. As instructions move through the pipeline, the time taken to execute each instruction decreases.
 ## <a name="_gyrz4n5yrrm7"></a>**Hazards:**
