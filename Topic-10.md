@@ -18,10 +18,8 @@ Configuring a web server using SSL (Secure Sockets Layer) involves setting up a 
 
 Here are the key steps involved in configuring a web server using SSL with OpenSSL:
 
-1. Generate a Private Key and Certificate Signing Request (CSR): A private key is a secret cryptographic key used for encryption and decryption. The CSR is a file containing information about the server and is used to request a digital certificate from a Certificate Authority (CA). Example command:
-```
-openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out server.csr
-```
+1. Generate a Private Key and Certificate Signing Request (CSR): A private key is a secret cryptographic key used for encryption and decryption. The CSR is a file containing information about the server and is used to request a digital certificate from a Certificate Authority (CA).
+
 2. Obtain a Digital Certificate: The CSR is submitted to a CA to obtain a digital certificate. The CA verifies the server's identity and issues a signed certificate. The certificate contains the server's public key and other information. This certificate is used to establish trust between the server and clients.
 
 3. Configure the Web Server: The web server (e.g., Apache, Nginx) needs to be configured to use the generated private key and certificate. The server's configuration file is updated to include the SSL/TLS settings and specify the paths to the private key and certificate files.
