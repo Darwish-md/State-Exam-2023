@@ -106,7 +106,10 @@ A database designer usually starts by designing the visual ERD, once this is don
 
 1. Convert the strong entity types into a table. Identify the primary key attribute and mention it. The attributes will be the columns.
 1. Convert the weak entity types into their table, but here the primary key will be the primary key of the strong entity type as a foreign key. The attributes will be the columns.
-1. We can now convert the relationships. There are three degrees of relationships; Binary relationships are those where two different entity types are participating. Like a student enrolled in a course. A unary relationship describes when the same entity type is the only participant. For example, a record of citizens where citizens in the same entity are married to each other, is a unary relationship. A ternary relationship is one where three different entity types are participating, for example, an online store might have tables representing customer, product, and supplier. With degrees and cardinality, we can create relations in order using primary keys and foreign keys.
+1. We can now convert the relationships. There are three degrees of relationships;
+ - Binary relationships are those where two different entity types are participating. Like a student enrolled in a course.
+ - A unary relationship describes when the same entity type is the only participant. For example, a record of citizens where citizens in the same entity are married to each other, is a unary relationship.
+ - A ternary relationship is one where three different entity types are participating, for example, an online store might have tables representing customer, product, and supplier. With degrees and cardinality, we can create relations in order using primary keys and foreign keys.
 
 **Bibliography:**
 
