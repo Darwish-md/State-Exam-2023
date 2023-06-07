@@ -85,10 +85,10 @@ In relational databases, a relationship exists between two tables when one of th
 Child is the referencing relation and it contains the foreign key which points to the primary key of the parent relation ( or the referenced relation ).
 Parent doesn't need any more attributes but child does.
 
-We cannot delte the parent tuple without deleting all tuples in the child referencing that tuple primary key, so we have 3 options: 
- 1-cascade :delte child tuples referencing deleted tuples from parent
- 2- set null : foreign keys to null
- 3- restrict : prohibits the deletion
+- We cannot delte the parent tuple without deleting all tuples in the child referencing that tuple primary key, so we have 3 options: 
+  1-cascade :delte child tuples referencing deleted tuples from parent
+  2- set null : foreign keys to null
+  3- restrict : prohibits the deletion
  
 But we can delete the child relation with no errors 
 Ex:
