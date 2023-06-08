@@ -22,7 +22,7 @@ Adversarial searches have some features which make them unique as compared to th
 ## <a name="_e87unflml6kr"></a>**Games:**
 "Searches in which two or more players with conflicting goals are trying to explore the same search space for the solution, are called adversarial searches, often known as Games."
 
-Games are modeled as a Search problem and heuristic evaluation function, and these are the two main factors that help to model and solve games in AI.
+Games are modeled as a Search problem and heuristic evaluation function, and ***these are the two main factors that help to model and solve games in AI:***
 ### <a name="_n1c7kfszhn3y"></a>**Types of Games in AI:**
 **Perfect information:** A game with perfect information is one in which agents can look into the complete board. Agents have all the information about the game, and they can see each other moves also. Examples are Chess, Checkers, Go, etc.
 
