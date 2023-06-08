@@ -27,3 +27,16 @@
     5. Encryption and Decryption: With the shared session key in place, the client and server can now encrypt and decrypt the data transmitted between them. The encryption algorithms used, such as AES or DES, ensure the confidentiality and integrity of the data.
    
 ## configuration of user settings:
+- SSH configuration file (ssh_config): Users can modify this global configuration file to set options that apply to all SSH connections from their account.
+
+- User-specific configuration file (~/.ssh/config): Users can create this file to override or supplement the global SSH configuration and define specific options for individual hosts or groups of hosts.
+
+- Authentication methods: Users can configure their preferred authentication method(s) (e.g., password-based, public key, certificate-based) for SSH connections.
+
+- Key-based authentication: Users can generate and configure SSH key pairs for more secure authentication, involving public-private key management and configuration.
+
+- SSH agent: Users can configure their SSH agent settings to securely manage and handle private keys for convenient, passphrase-protected key authentication.
+
+- Proxy settings: SSH can work through proxies like SOCKS or HTTP, and users can configure SSH to establish connections in restricted network environments.
+
+- Tunneling and port forwarding: Users can configure SSH to create encrypted tunnels for secure network connections and access remote services through port forwarding.
