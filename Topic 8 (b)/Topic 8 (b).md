@@ -7,6 +7,17 @@ In practice, it can be difficult to tell from immediate bandwidth and packet-per
 When you are not tending to an immediate problem, MRTG is useful for studying trends in traffic on your network. It will help you understand how traffic is distributed across your network, plan capacity needs for the future, and so on.
 
 While MRTG is most often used to collect data from router interfaces, it can also collect traffic data from switches or servers. In this way, you can monitor the bandwidth use of a particular machine. In fact, MRTG can be configured to collect any statistical data that a device makes available via SNMP.
+
+- Purpose:
+  - Monitor traffic patterns of multiple networks simultaneously.
+  - Detect abnormal traffic loads quickly during crisis situations or network troubleshooting.
+- Benefits:
+  - Studying traffic trends helps understand network behavior and distribution. 
+  - Capacity planning and future network design can be optimized based on traffic insights.
+- capability:
+  - Primarily collects data from router interfaces but can also gather traffic data from switches or servers.
+  - Configurable to collect statistical data available via SNMP from any device.
+  
 ## <a name="_26j3f98r4ffr"></a>**Nagios:**
 Nagios is an open-source monitoring system for computer systems. It was designed to run on the Linux operating system and can monitor devices running Linux, Windows, and Unix operating systems (OSes).
 
