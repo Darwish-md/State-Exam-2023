@@ -8,13 +8,13 @@ When you are not tending to an immediate problem, MRTG is useful for studying tr
 
 While MRTG is most often used to collect data from router interfaces, it can also collect traffic data from switches or servers. In this way, you can monitor the bandwidth use of a particular machine. In fact, MRTG can be configured to collect any statistical data that a device makes available via SNMP.
 
-- Purpose:
+- Purpose: (Monitor and detect)
   - Monitor traffic patterns of multiple networks simultaneously.
   - Detect abnormal traffic loads quickly during crisis situations or network troubleshooting.
-- Benefits:
+- Benefits: (study and optimize) 
   - Studying traffic trends helps understand network behavior and distribution. 
   - Capacity planning and future network design can be optimized based on traffic insights.
-- capability:
+- capability: (what it does, how it does)
   - Primarily collects data from router interfaces but can also gather traffic data from switches or servers.
   - Configurable to collect statistical data available via SNMP from any device.
   
