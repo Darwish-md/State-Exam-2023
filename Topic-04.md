@@ -1,7 +1,11 @@
 # Part 1: The SSH protocol, key generation, configuration of user settings
 ## The SSH protocol:
-- The SSH (Secure Shell) protocol is a network protocol that provides secure communication and remote administration capabilities over an unsecured network. It allows users to securely connect to a remote server or device and execute commands, transfer files, and manage systems remotely. SSH utilizes encryption and authentication mechanisms to ensure the confidentiality, integrity, and authenticity of the communication by running on top of the TCP protocol and always listens to the TCP/IP port number 22 by default, and it is secure since it encrypts the data using encryption algorithms like Advanced Encryption Standard AES or Data Encryption Standard DES. 
-- When establishing an SSH connection, there are three key steps:
+- The SSH (Secure Shell) protocol is a network protocol that provides secure communication and remote administration capabilities over an unsecured network. 
+- It allows users to securely connect to a remote server or device and execute commands, transfer files, and manage systems remotely. 
+- SSH utilizes encryption and authentication mechanisms to ensure the confidentiality, integrity, and authenticity of the communication by ***running on top of the TCP protocol and always listens to the TCP/IP port number 22 by default***, and it is secure since it encrypts the data using encryption ***algorithms like Advanced Encryption Standard AES or Data Encryption Standard DES.***
+
+### Establishing an SSH connection
+There are three key steps:
   
   1. Verification of server: The client initiates the SSH connection and verifies the authenticity of the server by checking its public key.
   
