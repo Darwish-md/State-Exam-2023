@@ -8,6 +8,8 @@ When you are not tending to an immediate problem, MRTG is useful for studying tr
 
 While MRTG is most often used to collect data from router interfaces, it can also collect traffic data from switches or servers. In this way, you can monitor the bandwidth use of a particular machine. In fact, MRTG can be configured to collect any statistical data that a device makes available via SNMP.
 
+MRTG was created in 1995, and could be summarized as in the following:
+
 - Purpose: (Monitor and detect)
   - Monitor traffic patterns of multiple networks simultaneously.
   - Detect abnormal traffic loads quickly during crisis situations or network troubleshooting.
@@ -20,7 +22,7 @@ While MRTG is most often used to collect data from router interfaces, it can als
   - Configurable to collect statistical data available via SNMP from any device.
 
 ## <a name="_26j3f98r4ffr"></a>**Nagios:**
-Nagios is an open-source monitoring system for computer systems. It was designed to run on the Linux operating system and can monitor devices running Linux, Windows, and Unix operating systems (OSes).
+Nagios is an open-source monitoring system for computer systems (NetSaint 1999). It was designed to run on the Linux operating system and can monitor devices running Linux, Windows, and Unix operating systems (OSes).
 
 Nagios software runs periodic checks on critical parameters of application, network, and server resources. For example, Nagios can monitor memory usage, disk usage, microprocessor load, the number of currently running processes, and log files. Nagios also can monitor services, such as Simple Mail Transfer Protocol (SMTP), Post Office Protocol 3 (POP3), Hypertext Transfer Protocol (HTTP), and other common network protocols. Active checks are initiated by Nagios, while passive checks come from external applications connected to the monitoring tool.
 ### <a name="_e78si9vm1olg"></a>**Features of Nagios:**
