@@ -45,6 +45,16 @@ The Zero-sum game involved embedded thinking in which one agent or player is try
 - The opponent also thinks about what to do
 
 Each of the players is trying to find out the response of his opponent to their actions. This requires embedded thinking or backward reasoning to solve game problems in AI.
+
+## Game Tree
+The game tree represents all possible moves and states of a game, with each node representing a game state and edges representing possible moves. The depth of the game tree depends on the number of moves and the complexity of the game.
+
+## Conditions for a Winning Strategy
+The existence of a winning strategy depends on various factors, including:
+1- the complexity of the game
+2- the branching factor of the game tree
+3- and the availability of perfect information. 
+
 ## <a name="_jzmce0t9yegv"></a>**Mini-Max Algorithm:**
 Mini-max algorithm is a recursive or backtracking algorithm that is used in decision-making and game theory. It provides an optimal move for the player assuming that the opponent is also playing optimally. It uses recursion to search through the game tree. The Min-Max algorithm is mostly used for game playing in AI. Such as Chess, Checkers, tic-tac-toe, go, and various tow-players game. This algorithm computes the minimax decision for the current state. In this algorithm two players play the game, one is called MAX and the other is called MIN. Both the players fight it as the opposing player gets the minimum benefit while they get the maximum benefit. Both Players of the game are opponents of each other, where MAX will select the maximized value and MIN will select the minimized value. The minimax algorithm performs a depth-first search algorithm for the exploration of the complete game tree. The minimax algorithm proceeds all the way down to the terminal node of the tree, then backtrack the tree as the recursion.
 
