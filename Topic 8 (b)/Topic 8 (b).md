@@ -16,8 +16,9 @@ While MRTG is most often used to collect data from router interfaces, it can als
   - Capacity planning and future network design can be optimized based on traffic insights.
 - capability: (what it does, how it does)
   - Primarily collects data from router interfaces but can also gather traffic data from switches or servers.
+  - MRTG collects data on network traffic and presents it in the form of HTML graphs for easy visualization and analysis.
   - Configurable to collect statistical data available via SNMP from any device.
-  
+
 ## <a name="_26j3f98r4ffr"></a>**Nagios:**
 Nagios is an open-source monitoring system for computer systems. It was designed to run on the Linux operating system and can monitor devices running Linux, Windows, and Unix operating systems (OSes).
 
