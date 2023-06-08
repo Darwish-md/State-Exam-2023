@@ -32,7 +32,7 @@ Games are modeled as a [1]Search problem and [2]heuristic evaluation function, a
 
 **Non-deterministic games:** Non-deterministic are those games that have various unpredictable events and have a factor of chance or luck. This factor of chance or luck is introduced by either dice or cards. These are random, and each action response is not fixed. Such games are also called stochastic games. Examples: Backgammon, Monopoly, Poker, etc.
 ## <a name="_pdt6h4qr0fjh"></a>**Zero-Sum Game:**
-Zero-sum games are adversarial search that involves pure competition. In a Zero-sum game, each agent's gain or loss of utility is exactly balanced by the losses or gains of the utility of another agent. One player in the game tries to maximize one single value, while the other player tries to minimize it. Each move by one player in the game is called a play. Chess and tic-tac-toe are examples of a Zero-sum games.
+Zero-sum games are adversarial search that involves pure competition. ***In a Zero-sum game, For one player to win, the other has to lose***. One player in the game tries to maximize one single value, while the other player tries to minimize it. Each move by one player in the game is called a play. Chess and tic-tac-toe are examples of a Zero-sum games.
 ## <a name="_uieky064ml4r"></a>**Zero-sum game: Embedded thinking**
 The Zero-sum game involved embedded thinking in which one agent or player is trying to figure out:
 
