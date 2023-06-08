@@ -22,7 +22,7 @@ MRTG was created in 1995, and could be summarized as in the following:
   - Configurable to collect statistical data available via SNMP from any device.
 
 ## <a name="_26j3f98r4ffr"></a>**Nagios:**
-Nagios is an open-source monitoring system for computer systems (NetSaint 1999). It was designed to run on the Linux operating system and can monitor devices running Linux, Windows, and Unix operating systems (OSes).
+Nagios is an open-source monitoring system for computer systems (NetSaint 1999). There is a commercial version which is Nagios XI. It was designed to run on the Linux operating system and can monitor devices running Linux, Windows, and Unix operating systems (OSes).
 
 Nagios software runs periodic checks on critical parameters of application, network, and server resources. For example, Nagios can monitor memory usage, disk usage, microprocessor load, the number of currently running processes, and log files. Nagios also can monitor services, such as Simple Mail Transfer Protocol (SMTP), Post Office Protocol 3 (POP3), Hypertext Transfer Protocol (HTTP), and other common network protocols. Active checks are initiated by Nagios, while passive checks come from external applications connected to the monitoring tool.
 ### <a name="_e78si9vm1olg"></a>**Features of Nagios:**
