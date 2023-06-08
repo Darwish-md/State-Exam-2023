@@ -3,7 +3,7 @@
 ### <a name="_3m8aqhozbdpi"></a>**Definitions:**
 "Adversarial search is a method applied to a situation where you are planning while another actor prepares against you. Your plans, therefore, could be affected by your opponent’s actions."
 
-"Adversarial search is a search, where we examine the problem which arises when we try to plan ahead of the world and other agents are planning against us."
+"Adversarial search refers to the problem-solving approach where an agent aims to make decisions in an environment where there are competing agents with conflicting objectives."
 
 The use of the adversarial technique can be found in different games as in games the AI agent has been surrounded by a kind of competitive environment. The goal has been defined initially by the user and the agents compete or fight with one another in order to achieve that goal so that the win can be achieved. The adversarial search is important, and each agent must have known the strategy of the next agent this will create a competitive environment in a game.
 ### <a name="_c8da04tgkh91"></a>**Important Features of Adversarial Search:**
