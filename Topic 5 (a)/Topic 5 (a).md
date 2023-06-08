@@ -48,8 +48,25 @@ Each of the players is trying to find out the response of his opponent to their 
 ## <a name="_jzmce0t9yegv"></a>**Mini-Max Algorithm:**
 Mini-max algorithm is a recursive or backtracking algorithm that is used in decision-making and game theory. It provides an optimal move for the player assuming that the opponent is also playing optimally. It uses recursion to search through the game tree. The Min-Max algorithm is mostly used for game playing in AI. Such as Chess, Checkers, tic-tac-toe, go, and various tow-players game. This algorithm computes the minimax decision for the current state. In this algorithm two players play the game, one is called MAX and the other is called MIN. Both the players fight it as the opposing player gets the minimum benefit while they get the maximum benefit. Both Players of the game are opponents of each other, where MAX will select the maximized value and MIN will select the minimized value. The minimax algorithm performs a depth-first search algorithm for the exploration of the complete game tree. The minimax algorithm proceeds all the way down to the terminal node of the tree, then backtrack the tree as the recursion.
 
-|**function** **minimax**(node, depth, maximizingPlayer) **is**  <br>**if** depth ==0 or node is a terminal node then  <br>` `**return** static evaluation of node  <br>  <br>**if** MaximizingPlayer then      // **for** Maximizer Player  <br>` `maxEva= -infinity            <br>` `**for** each child of node do  <br>`  `eva= minimax(child, depth-1, false)  <br>` `maxEva= max(maxEva,eva)        //gives Maximum of the values  <br>` `**return** maxEva  <br>  <br>**else**                         // **for** Minimizer player  <br>` `minEva= +infinity   <br>` `**for** each child of node do  <br>`  `eva= minimax(child, depth-1, true)  <br>` `minEva= min(minEva, eva)         //gives minimum of the values  <br>` `**return** minEva  |
-| :- |
+```
+function minimax(node, depth, maximizingPlayer) is
+    if depth == 0 or node is a terminal node then
+        return static evaluation of node
+
+    if maximizingPlayer then
+        maxEva = -infinity
+        for each child of node do
+            eva = minimax(child, depth-1, false)
+            maxEva = max(maxEva, eva)
+        return maxEva
+
+    else
+        minEva = +infinity
+        for each child of node do
+            eva = minimax(child, depth-1, true)
+            minEva = min(minEva, eva)
+        return minEva
+```
 
 ### <a name="_s0ns734mq2x2"></a>**Properties of Mini-Max algorithm:**
 **Complete** - Min-Max algorithm is Complete. It will definitely find a solution (if exist), in the finite search tree.
@@ -83,11 +100,31 @@ While backtracking the tree, the node values will be passed to upper nodes inste
 We will only pass the alpha, and beta values to the child nodes.
 ### <a name="_hd3mvb7ilpme"></a>**Pseudo-code for Alpha-beta Pruning:**
 
-|**function** **minimax**(node, depth, alpha, beta, maximizingPlayer) **is**  <br>**if** depth ==0 or node is a terminal node then  <br>**return** static evaluation of node  <br>  <br>**if** MaximizingPlayer then      // **for** Maximizer Player  <br>`  `maxEva= -infinity            <br>`  `**for** each child of node do  <br>`    `eva= minimax(child, depth-1, alpha, beta, False)  <br>`  `maxEva= max(maxEva, eva)   <br>`  `alpha= max(alpha, maxEva)      <br>`  `**if** beta<=alpha  <br>`    `**break**  <br>`  `**return** maxEva  <br>    <br>**else**                         // **for** Minimizer player  <br>`  `minEva= +infinity   <br>`  `**for** each child of node do  <br>`    `eva= minimax(child, depth-1, alpha, beta, true)  <br>`  `minEva= min(minEva, eva)   <br>`  `beta= min(beta, eva)  <br>`  `**if** beta<=alpha  <br>`    `**break**          <br>`  `**return** minEva  |
-| :- |
+```
+function minimax(node, depth, alpha, beta, maximizingPlayer) is
+    if depth == 0 or node is a terminal node then
+        return static evaluation of node
 
+    if maximizingPlayer then
+        maxEva = -infinity
+        for each child of node do
+            eva = minimax(child, depth-1, alpha, beta, False)
+            maxEva = max(maxEva, eva)
+            alpha = max(alpha, maxEva)
+            if beta <= alpha then
+                break
+        return maxEva
 
-
+    else
+        minEva = +infinity
+        for each child of node do
+            eva = minimax(child, depth-1, alpha, beta, True)
+            minEva = min(minEva, eva)
+            beta = min(beta, eva)
+            if beta <= alpha then
+                break
+        return minEva
+```
 
 **Appendix:**
 
