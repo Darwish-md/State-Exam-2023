@@ -79,7 +79,7 @@ Addressign modes in the x86 architecture define how the processor accesses data 
  In immediate addressing, the data is directly specified in the instruction itself. For example, MOV EAX, 42 assigns the value 42 to the EAX register.
 
 2. Register Addressing:
- Register addressing involves accessing data stored in registers. The x86 architecture provides several general-purpose registers like EAX, EBX, ECX, and EDX, which can be used for storing and manipulating data. For example, MOV EAX, EBX copies the value from the EBX register to the EAX register.
+ Register addressing involves accessing data stored in registers. For example, MOV EAX, EBX copies the value from the EBX register to the EAX register.
 
 3. Direct Addressing:
  Direct addressing mode involves explicitly specifying the memory location where the data is stored. For example, MOV EAX, [0x1000] loads the value stored at memory address 0x1000 into the EAX register.
