@@ -14,7 +14,18 @@ Modern cars commonly consist of many computers (sometimes as many as 100), or em
 
 They can contain embedded systems, like sensors, and can be embedded systems themselves. Industrial machines often have embedded automation systems that perform specific monitoring and control functions.
 ## <a name="_rq1zhoo1l5g7"></a>**Requirements of an embedded system:**
-The requirements of embedded systems are different from the requirements of the traditional computer-based system. To develop and adopt embedded systems, software such as C++, C, ADA, etc, are used, and some systems which have to specialized use operating systems such as Linux, OSE, Nucleus RTOS, Windows CE, and ThreadX.
+1- Real-time performance: Many embedded systems need to respond to external events and inputs in real time, with predictable and deterministic behavior.
+
+2- Low power consumption: Embedded systems are often designed to operate on limited power sources, such as batteries or energy-efficient power supplies, requiring optimization for low power consumption.
+
+3- Size and cost constraints: Embedded systems are often deployed in space-constrained environments or mass-produced for cost-sensitive markets, so they need to be compact and affordable.
+
+4- Reliability and robustness: Embedded systems are expected to operate reliably for extended periods without failure. They may need to withstand harsh environmental conditions, such as temperature variations, humidity, vibration, and electromagnetic interference.
+
+5- Connectivity and communication: Many embedded systems require connectivity to communicate with other devices or networks, whether it's through wired interfaces like Ethernet or wireless protocols like Wi-Fi, Bluetooth, or cellular networks.
+
+6- Security: With the increasing connectivity of embedded systems, ensuring data security, protection against unauthorized access, and resistance to cyber threats are important considerations.
+
 # <a name="_cmoqrcs5m01m"></a>**Real-time and reactive systems.**
 **Real-time systems** are computer systems that monitor, respond to, or control an external environment. This environment is connected to the computer system through sensors, actuators, and other input-output interfaces.
 ## <a name="_vo6o58mg562b"></a>**Applications and examples of real-time systems:**
