@@ -9,11 +9,16 @@ The use of the adversarial technique can be found in different games as in games
 ### <a name="_c8da04tgkh91"></a>**Important Features of Adversarial Search:**
 Adversarial searches have some features which make them unique as compared to the conventional techniques used in searches. There are certain features that can be observed in adversarial searches and with the help of this one can determine how such features make things more interesting and important in our case.
 
-- The game in which adversarial searches have been used must have been a two-player game.
-- The two-player game must have been in such a way that the game should have been played in the form of turn-taking. As we have observed in chess, ludo, Poker, etc.
-- The information provided should have been perfect otherwise it becomes impossible for the model or the system to determine a strategy and to give a decision based on the results.
-- The rules must have been precise. Formal should have been used in order to get better results.
-- The actions must have been in a smaller number. This can increase the accuracy with better optimization.
+- Two Players: Adversarial searches are used in games with two players competing against each other.
+
+- Turn-Taking: The game should involve players taking turns, like chess or ludo.
+
+- Perfect Information: The players should have complete and perfect knowledge of the game state.
+
+- Precise Rules: The game rules should be well-defined and formalized for better results.
+
+- Few Actions: The number of possible actions should be relatively small for better optimization and accuracy.
+
 ## <a name="_e87unflml6kr"></a>**Games:**
 "Searches in which two or more players with conflicting goals are trying to explore the same search space for the solution, are called adversarial searches, often known as Games."
 
