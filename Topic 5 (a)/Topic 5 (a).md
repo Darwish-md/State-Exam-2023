@@ -34,7 +34,7 @@ Games are modeled as a [1]Search problem and [2]heuristic evaluation function, a
 ## <a name="_pdt6h4qr0fjh"></a>**Zero-Sum Game:**
 Zero-sum games are adversarial search that involves pure competition. ***In a Zero-sum game, For one player to win, the other has to lose***. One player in the game tries to maximize one single value, while the other player tries to minimize it. Each move by one player in the game is called a play. Chess and tic-tac-toe are examples of a Zero-sum games.
 
-Example: If we have 2 companies, company B tries to attract customers from company A, then if B win it means loss to A. However, if company B attracts new different customers, then B can win but neccessarily means a loss for A.
+Example: If we have 2 companies, company B tries to attract customers from company A, then if B wins it means loss for A. However, if company B attracts new different customers, then B can win but doesn't neccessarily means a loss for A.
 
 ## <a name="_uieky064ml4r"></a>**Zero-sum game: Embedded thinking**
 The Zero-sum game involved embedded thinking in which one agent or player is trying to figure out:
