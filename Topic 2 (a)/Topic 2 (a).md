@@ -70,26 +70,14 @@ The Bode plot for a linear, time-invariant system with a transfer function consi
 - how to calculate? It can be read directly from a bode plot, this is done by calculating the vertical distance between the magnitude curve and the x-axis at the frequency, this point is known as the phase crossover frequency.
 - Unit? usually expressed as a magnitude in dB (decibels)
 The gain margin is the difference between the gain at the frequency where the phase shift is 180 degrees and 0 dB. The greater the gain margin, the greater the stability of the system. 
-- formula? The Gain Margin (GM) formula can be expressed as 
-|GM = 0 - G dB|
-| :-: |
-
-where G is gain. This is the magnitude (in dB) as read from the vertical axis of the magnitude plot at the phase crossover frequency.
-
-For example, If the gain is 20 then the gain margin is -20 decibels.
+- formula? The Gain Margin (GM) formula can be expressed as `|GM = 0 - G dB|` where G is gain. This is the magnitude (in dB) as read from the vertical axis of the magnitude plot at the phase crossover frequency. For example, If the gain is 20 then the gain margin is -20 decibels.
 
 ## <a name="_adz3vbijweey"></a>**Phase Margin:**
 - definition? It is the amount of phase, which can be increased or decreased without making the system unstable. The greater the Phase Margin, the greater will be the stability of the system.
 - how to calculate? read the phase margin directly from the Bode plot. This is done by calculating the vertical distance between the phase curve (on the Bode phase plot) and the x-axis at the frequency where the Bode magnitude plot = 0 dB. This point is known as the gain crossover frequency.
 - Unit? usually expressed as a phase in degrees.
 Phase margin is measured at the frequency where gain equals 0 dB.  It is . 
-- formula? The formula for Phase Margin (PM) can be expressed as:
-|PM = 𝜙 - (-180°)|
-| :-: |
-
-Where 𝜙 is the phase lag (a number less than 0). This is the phase as read from the vertical axis of the phase plot at the gain crossover frequency.
-
-For example, the phase lag is -189°. Hence the phase margin is equal to -189° – (-180°) = -9° (unstable).
+- formula? The formula for Phase Margin (PM) can be expressed as `|PM = 𝜙 - (-180°)|` Where 𝜙 is the phase lag (a number less than 0). This is the phase as read from the vertical axis of the phase plot at the gain crossover frequency. For example, the phase lag is -189°. Hence the phase margin is equal to -189° – (-180°) = -9° (unstable).
 
 # <a name="_4qv3f0t1ggkd"></a>**Linear systems and their description in time- and frequency domains.**
 In order to understand the linear control system, we should first understand the principle of superposition. 
