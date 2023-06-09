@@ -102,6 +102,14 @@ In the time domain, a linear system is characterized by its behavior and respons
 In the frequency domain, a linear system is characterized by its behavior and response as a function of frequency. The input and output signals are analyzed in terms of their frequency content and how the system modifies the amplitudes and phases of different frequency components.
 
 The frequency domain representation provides insights into system frequency response, gain, phase shift, resonance, and stability. It enables the design and analysis of frequency-based control techniques such as Bode plots, Nyquist plots, and frequency response analysis. These techniques allow engineers to assess the system's stability, identify resonant frequencies, design filters, and determine the system's performance at different frequencies.
+
+### Transfer function
+- Definition: A transfer function is a mathematical representation that describes how an input signal is transformed into an output signal in a system.
+
+- Input-Output Relationship: The transfer function relates the output of a system to its input, typically in the frequency domain. It shows how the system responds to different frequencies or inputs.
+
+- Mathematical Representation: The transfer function is typically represented as a ratio of polynomials in the complex variable "s", where "s" represents frequency.
+
 ### <a name="_164hul9uy2bc"></a>**Transformation of a Linear System from Time Domain to Frequency Domain:**
 Two common mathematical tools used for these transformations are the Fourier Transform and its variants.
 
@@ -123,7 +131,7 @@ The following are the important properties of the Fourier transform
 
 **Duality** – If h(t) has a Fourier transform H(f), then the Fourier transform of H(t) is H(-f).
 
-**Linear transform** – Fourier transform is a linear transform. Let h(t) and g(t) be two Fourier transforms, which are denoted by H(f) and G(f), respectively. In this case, we can easily calculate the Fourier transform of the linear combination of g and h.
+**Linear transform** –  If we have two functions h(t) and g(t) with Fourier transforms H(f) and G(f) respectively, then the Fourier transform of their linear combination (a * h(t) + b * g(t)) can be calculated as (a * H(f) + b * G(f)), where 'a' and 'b' are constants. 
 
 **Modulation property** – According to the modulation property, a function is modulated by the other function, if it is multiplied in time.
 
