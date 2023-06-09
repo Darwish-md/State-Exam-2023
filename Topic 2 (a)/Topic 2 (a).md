@@ -88,7 +88,12 @@ Suppose we have a system S and we are giving the input to this system as a1 for 
 ## <a name="_1cl5upktvtgp"></a>**Linear System:**
 Linear control systems as those types of control systems which follow the principle of homogeneity and additivity.
 ### <a name="_kwab4d2z3lg2"></a>**Examples of Linear Control System:**
-Consider a purely resistive network with a constant DC source. This circuit follows the principle of homogeneity and additivity. All the undesired effects are neglected and assuming the ideal behavior of each element in the network, we say that we will get linear voltage and current characteristics. This is an example of a linear control system.
+Consider a water tank with a valve controlling the water flow. The valve can be adjusted to control the water level in the tank. If we assume that the valve behaves ideally without any nonlinearities, and the tank and piping have constant characteristics, then we can say that the system exhibits linearity.
+
+In this system:
+- Homogeneity: If we open the valve twice as much, the water flow rate will also double. The relationship between the valve opening and the water flow is linear.
+- Additivity: If we have two valves controlling two separate water sources, the total water flow rate is the sum of the flow rates controlled by each valve. The system response is the combined effect of the individual valve actions.
+
 ## <a name="_9g2aiqjmg89j"></a>**Description of Linear Systems in Time- and Frequency Domains:**
 Linear systems can be described and analyzed in both the time domain and the frequency domain. Here's a description of linear systems in each domain:
 ### <a name="_7zw99y1ev2"></a>**Time Domain:**
