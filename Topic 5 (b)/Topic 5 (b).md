@@ -74,7 +74,7 @@ Consider a situation where you want to digitally control a 12W LED (12V @ 1A) us
 When a Logic 1 (assuming a 5V Microcontroller, Logic 1 is 5V and Logic 0 is 0V) is supplied to the gate of the MOSFET, it turns ON and allows drain current to flow. As a result, the LED is turned ON. Similarly, when a Logic 0 is given to the gate of the MOSFET, it turns OFF and in turn switches OFF the LED. Thus, you can digitally control a high-power device with the combination of a Microcontroller and MOSFET.
 # <a name="_e42muep4fbcy"></a>**CMOS inverter, basic logic gates.**
 ## <a name="_yis3bi5iz7wn"></a>**CMOS Inverter:**
-It is a device that is used to generate logic functions and is the essential component in all integrated circuits. A CMOS inverter is a FET (field effect transistor), composed of a metal gate that lies on top of oxygen’s insulating layer on top of a semiconductor. These inverters are used in most electronic devices which are accountable for generating data n small circuits.
+***It is a device that is used to generate logic functions*** and is the essential component in all integrated circuits. A CMOS inverter is a FET (field effect transistor), composed of a metal gate that lies on top of oxygen’s insulating layer on top of a semiconductor. These inverters are used in most electronic devices which are accountable for generating data n small circuits.
 ### <a name="_auno9r9xrk3p"></a>**CMOS Inverter Schematic Diagram:**
 ![](Aspose.Words.4802c947-49c2-446d-854f-09fa7487078d.007.png)
 
