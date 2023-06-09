@@ -63,7 +63,6 @@ Conversely, if you remove the positive voltage or make it lower than the thresho
 
 By controlling the voltage applied to the MOSFET's gate, you can control whether the light is on or off.
 
-![](Aspose.Words.4802c947-49c2-446d-854f-09fa7487078d.005.png)
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/8b7823f5-d5de-471e-bfbc-5ed942235f76)
 
 
