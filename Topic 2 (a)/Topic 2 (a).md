@@ -66,25 +66,24 @@ The Bode plot for a linear, time-invariant system with a transfer function consi
 - Gain: refers to the difference in magnitude of the input and output signals.
 
 ## <a name="_xojeq2dzkxe8"></a>**Gain Margin:![](Aspose.Words.51b413ed-4bcd-4b1f-9371-11d05ecfb3df.003.png)**
-The gain margin is the difference between the gain at the frequency where the phase shift is 180 degrees and 0 dB. It is the amount of gain that can be increased or decreased without making the system unstable. It is usually expressed as a magnitude in dB (decibels). The greater the gain margin, the greater the stability of the system. 
-
-It can be read directly from a bode plot, this is done by calculating the vertical distance between the magnitude curve and the x-axis at the frequency, this point is known as the phase crossover frequency.
-
-The Gain Margin (GM) formula can be expressed as
-
+- definition? It is the amount of gain that can be increased or decreased without making the system unstable. The greater the gain margin, the greater will be the stability of the system.
+- how to calculate? It can be read directly from a bode plot, this is done by calculating the vertical distance between the magnitude curve and the x-axis at the frequency, this point is known as the phase crossover frequency.
+- Unit? usually expressed as a magnitude in dB (decibels)
+The gain margin is the difference between the gain at the frequency where the phase shift is 180 degrees and 0 dB. The greater the gain margin, the greater the stability of the system. 
+- formula? The Gain Margin (GM) formula can be expressed as 
 |GM = 0 - G dB|
 | :-: |
 
 where G is gain. This is the magnitude (in dB) as read from the vertical axis of the magnitude plot at the phase crossover frequency.
 
 For example, If the gain is 20 then the gain margin is -20 decibels.
+
 ## <a name="_adz3vbijweey"></a>**Phase Margin:**
-Phase margin is measured at the frequency where gain equals 0 dB. The phase margin refers to the amount of phase, which can be increased or decreased without making the system unstable. It is usually expressed as a phase in degrees. The greater the Phase Margin, the greater will be the stability of the system.
-
-We can usually read the phase margin directly from the Bode plot. This is done by calculating the vertical distance between the phase curve (on the Bode phase plot) and the x-axis at the frequency where the Bode magnitude plot = 0 dB. This point is known as the gain crossover frequency.
-
-The formula for Phase Margin (PM) can be expressed as:
-
+- definition? It is the amount of phase, which can be increased or decreased without making the system unstable. The greater the Phase Margin, the greater will be the stability of the system.
+- how to calculate? read the phase margin directly from the Bode plot. This is done by calculating the vertical distance between the phase curve (on the Bode phase plot) and the x-axis at the frequency where the Bode magnitude plot = 0 dB. This point is known as the gain crossover frequency.
+- Unit? usually expressed as a phase in degrees.
+Phase margin is measured at the frequency where gain equals 0 dB.  It is . 
+- formula? The formula for Phase Margin (PM) can be expressed as:
 |PM = 𝜙 - (-180°)|
 | :-: |
 
