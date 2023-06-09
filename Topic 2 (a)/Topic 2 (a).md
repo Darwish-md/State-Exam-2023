@@ -61,6 +61,10 @@ The gain and phase margin are derived from a Bode plot.
 A Bode plot is a graph of the frequency response of a system. It shows the changes in magnitude and phase as a function of frequency.
 
 The Bode plot for a linear, time-invariant system with a transfer function consists of a magnitude plot and a phase plot. This is done on two semi-log scale plots. The top plot is typically magnitude or “gain” in dB. The bottom plot is "phase", most commonly in degrees.
+
+- Phase: phase refers to the delay between the input and output signals.
+- Gain: refers to the difference in magnitude of the input and output signals.
+
 ## <a name="_xojeq2dzkxe8"></a>**Gain Margin:![](Aspose.Words.51b413ed-4bcd-4b1f-9371-11d05ecfb3df.003.png)**
 The gain margin is the difference between the gain at the frequency where the phase shift is 180 degrees and 0 dB. It is the amount of gain that can be increased or decreased without making the system unstable. It is usually expressed as a magnitude in dB (decibels). The greater the gain margin, the greater the stability of the system. 
 
