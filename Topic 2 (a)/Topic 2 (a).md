@@ -53,7 +53,8 @@ They use predictions of the system's future state to determine the inputs.
 
 Overall, continuous control systems are widely used in a variety of applications, such as motor control, temperature control, and process control.
 ## <a name="_7aqsbgoiqfoh"></a>**Synthesis of continuous-time control system:**
-The synthesis of continuous-time control systems is the process of designing a controller that can regulate the output of a system. The controller is designed to ensure that the output of the system follows a desired trajectory. The synthesis of continuous-time control systems involves the design of a feedback control system that can regulate the output of a system. The feedback control system is designed to ensure that the output of the system follows a desired trajectory. The synthesis of continuous-time control systems is an important area of research in control theory and has many applications in engineering and science.
+- The synthesis of continuous-time control systems is the process of designing a controller that can regulate the output of a system. The controller is designed to ensure that the output of the system follows a desired trajectory. 
+- The synthesis of continuous-time control systems involves the design of a feedback control system that can regulate the output of a system. The feedback control system is designed to ensure that the output of the system follows a desired trajectory. The synthesis of continuous-time control systems is an important area of research in control theory and has many applications in engineering and science.
 # <a name="_pwdj2mofzidy"></a>**The gain and phase margin.**
 The gain and phase margin are derived from a Bode plot.
 ## <a name="_eoygdsfdoiho"></a>**Bode Plot:**
