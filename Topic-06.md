@@ -170,7 +170,7 @@ In web scripting, control structures are used to determine the flow of execution
 These control structures provide the ability to create dynamic and interactive web applications by controlling the logic and flow of the scripts.
 
 ## Sensor through a Web Page:
-HTML5 introduced the ability to access various sensors through a web page using JavaScript. Some of the sensors that can be accessed include:
+HTML5 introduced the ability to access various sensors through a web page using JavaScript. The Generic Sensor API is a set of interfaces that expose sensor devices to the web platform. The API has a base sensor interface and a set of sensor classes built on top. Some of the sensors that can be accessed include:
 
  - Geolocation Sensor: Allows obtaining the geographical location of the device, such as latitude and longitude coordinates.
  - Accelerometer Sensor: Measures the acceleration forces acting on the device in three-dimensional space.
