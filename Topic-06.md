@@ -36,11 +36,11 @@ If we have p number of flip-flops in a counter, then the counter will have 2^p u
 ![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/8ab8acd3-f076-48ba-a0d4-4f47fa1b7e77)
 
 3. Ring Counters:
- Ring counters are constructed by connecting ***flip-flops in a shift register***, forming a circular or ring structure. The output of the last flip-flop is fed back to the input of the first flip-flop. There are two types of ring counters: straight ring counters and twisted ring counters.
+ Ring counters are constructed by connecting ***flip-flops in a shift register***, forming a circular or ring structure. The output of the last flip-flop is fed back to the input of the first flip-flop. There are two types of ring counters: straight ring counters and twisted ring counters. 
 
-  - Straight Ring Counters: In a straight ring counter, ***the output of the last flip-flop*** is connected to the input of the first flip-flop. This configuration circulates a single one or zero bit around the ring with each clock pulse, resulting in a rotating pattern. 
+  - Straight Ring Counters: In a straight ring counter, ***the output of the last flip-flop*** is connected to the input of the first flip-flop. This configuration circulates a single one or zero bit around the ring with each clock pulse, resulting in a rotating pattern. the output sequence may go like this: 0001, 0010, 0100, 1000, 0001, and so on. 
 
-  - Twisted Ring Counters (Johnson Counters): In a twisted ring counter, ***the complement of the output of the last flip-flop*** is connected to the input of the first flip-flop. This configuration circulates a stream of ones followed by zeros around the ring, creating a specific pattern.
+  - Twisted Ring Counters (Johnson Counters): In a twisted ring counter, ***the complement of the output of the last flip-flop*** is connected to the input of the first flip-flop. This configuration circulates a stream of ones followed by zeros around the ring, creating a specific pattern. the output sequence may go like this: 0001, 0010, 0100, 1000, 1100, 1110, 1111, 0111, 0011, 0001, and so on.
 
 4. Up/Down Counters:
     Up/down counters are capable of counting both upward and downward. They have an additional control signal that determines the direction of counting. When the control signal is set to "up," the counter increments with each clock pulse, and when set to "down," it decrements. 
