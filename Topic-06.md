@@ -40,13 +40,10 @@ If we have p number of flip-flops in a counter, then the counter will have 2^p u
 
   - Straight Ring Counters: In a straight ring counter, ***the output of the last flip-flop*** is connected to the input of the first flip-flop. This configuration circulates a single one or zero bit around the ring with each clock pulse, resulting in a rotating pattern. 
 
-  - Twisted Ring Counters: In a twisted ring counter, ***the complement of the output of the last flip-flop*** is connected to the input of the first flip-flop. This configuration circulates a stream of ones followed by zeros around the ring, creating a specific pattern.
+  - Twisted Ring Counters (Johnson Counters): In a twisted ring counter, ***the complement of the output of the last flip-flop*** is connected to the input of the first flip-flop. This configuration circulates a stream of ones followed by zeros around the ring, creating a specific pattern.
 
 4. Up/Down Counters:
     Up/down counters are capable of counting both upward and downward. They have an additional control signal that determines the direction of counting. When the control signal is set to "up," the counter increments with each clock pulse, and when set to "down," it decrements.
-
-5. Johnson Counters:
-    Johnson counters, also known as twisted ring counters, are a type of shift register-based counter. They consist of flip-flops connected in a ring with feedback from selected flip-flop outputs to inputs. Johnson counters have a unique characteristic where only one bit changes state with each clock pulse, resulting in a sequence that covers all possible bit combinations.
 
 6. Programmable Counters:
     Programmable counters allow the user to set the count sequence or modify the counting behavior through programming. These counters provide flexibility in selecting the count values, skipping certain counts, or implementing custom counting patterns.
