@@ -9,7 +9,7 @@ The use of the adversarial technique can be found in different games as in games
 ### <a name="_c8da04tgkh91"></a>**Important Features of Adversarial Search:**
 Adversarial searches have some features which make them unique as compared to the conventional techniques used in searches. There are certain features that can be observed in adversarial searches and with the help of this one can determine how such features make things more interesting and important in our case.
 
-- Two Players: Adversarial searches are used in games with two players competing against each other.
+- Two Players: Adversarial searches are used in games with atleast two players competing against each other.
 
 - Turn-Taking: The game should involve players taking turns, like chess or ludo.
 
