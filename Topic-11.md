@@ -7,6 +7,14 @@ Interprocess communication (IPC) refers to the mechanisms and techniques used by
 
 - Pipe: A pipe is a unidirectional communication channel between two processes. It allows one process to send data to another process through a pipe's input and output endpoints. Pipes can be either anonymous pipes, which exist between parent and child processes, or named pipes, which allow communication between unrelated processes. Pipes are commonly used for one-way communication and can provide a simple and efficient means of data transfer between processes.
 
+Let's consider two processes, Process A and Process B, running concurrently. Process A wants to send data to Process B using a pipe.
+
+  - Process A creates a pipe using the pipe system call. The pipe consists of two endpoints: the read end and the write end.
+  - Process A writes data to the write end of the pipe using the write system call. The data is placed in the pipe's buffer.
+  - Process B, which has knowledge of the pipe, reads data from the read end of the pipe using the read system call. The data is retrieved from the pipe's buffer.
+  - Process B can now process the received data as needed.
+
+    The communication between Process A and Process B is unidirectional. If bidirectional communication is required, another pipe can be created with the roles of read and write ends reversed.
 - Socket: Sockets are communication endpoints that enable bidirectional, network-based communication between processes running on different machines or even on the same machine. Sockets use the client-server model, where one process acts as a server, listening for incoming connections, and another process acts as a client, initiating the connection. Sockets provide a flexible and powerful IPC mechanism that supports various protocols, such as TCP/IP or UDP, and can facilitate communication over local networks or the internet.
 
 Each IPC mechanism has its own characteristics and is suitable for different scenarios:
