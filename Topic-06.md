@@ -45,7 +45,7 @@ If we have p number of flip-flops in a counter, then the counter will have 2^p u
 4. Up/Down Counters:
     Up/down counters are capable of counting both upward and downward. They have an additional control signal that determines the direction of counting. When the control signal is set to "up," the counter increments with each clock pulse, and when set to "down," it decrements. 
     
-#### Note:
+Note:
 To count down: instead of connecting the normal outputs of one flip-flop as clock signal for next stage flip-flop, connect the complemented outputs of one flip-flop as clock signal for next stage flip-flop. 
 
 6. Programmable Counters:
