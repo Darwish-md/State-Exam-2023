@@ -6,15 +6,22 @@ Interprocess communication (IPC) refers to the mechanisms and techniques used by
 - Signal: Signals are software interrupts used to notify a process of an event or condition. Processes can send signals to other processes to indicate events or request actions. For example, a process can send a signal to interrupt or terminate another process. Signals are often used for simple and asynchronous communication between processes, such as handling exceptions, catching specific events, or implementing basic interprocess synchronization.
 
 - Pipe: A pipe is a unidirectional communication channel between two processes. It allows one process to send data to another process through a pipe's input and output endpoints. Pipes can be either anonymous pipes, which exist between parent and child processes, or named pipes, which allow communication between unrelated processes. Pipes are commonly used for one-way communication and can provide a simple and efficient means of data transfer between processes. 
-  - Let's consider two processes, Process A and Process B, running concurrently. Process A wants to send data to Process B using a pipe.
+Let's consider two processes, Process A and Process B, running concurrently. Process A wants to send data to Process B using a pipe.
    - Process A creates a pipe using the pipe system call. The pipe consists of two endpoints: the read end and the write end.
    - Process A writes data to the write end of the pipe using the write system call. The data is placed in the pipe's buffer.
    - Process B, which has knowledge of the pipe, reads data from the read end of the pipe using the read system call. The data is retrieved from the pipe's buffer.
    - Process B can now process the received data as needed.
-
-    The communication between Process A and Process B is unidirectional. If bidirectional communication is required, another pipe can be created with the roles of read and write ends reversed.
+   - The communication between Process A and Process B is unidirectional. If bidirectional communication is required, another pipe can be created with the roles of read and write ends reversed.
+   
 - Socket: Sockets are communication endpoints that enable bidirectional, network-based communication between processes running on different machines or even on the same machine. Sockets use the client-server model, where one process acts as a server, listening for incoming connections, and another process acts as a client, initiating the connection. Sockets provide a flexible and powerful IPC mechanism that supports various protocols, such as TCP/IP or UDP, and can facilitate communication over local networks or the internet.
+Let's consider a simple client-server application where a client process wants to request a webpage from a server process using sockets.
 
+  - The server process runs on a specific machine and listens for incoming connections on a designated port, let's say port 80 for HTTP.
+  - The client process wants to request a webpage, so it establishes a connection to the server by creating a socket and specifying the server's IP address and port number.
+  - Once the connection is established, the client sends an HTTP request message to the server through the socket. The request contains information about the desired webpage.
+  - The server receives the request message on its socket, processes the request, and retrieves the requested webpage.
+  - The server then sends the webpage content as an HTTP response message back to the client through the socket.
+  - The client receives the response from the server on its socket and can display or process the webpage as needed.
 Each IPC mechanism has its own characteristics and is suitable for different scenarios:
  - Files are often used for sharing data between processes that need persistent storage or where data needs to be accessed by multiple processes over time.
  - Signals are lightweight and useful for simple event notification and process control.
