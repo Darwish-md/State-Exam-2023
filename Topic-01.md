@@ -139,7 +139,9 @@ Subprograms, also known as subroutines or functions, are self-contained sections
 
 ## Parameter evaluation:
 It is the process of matching formal and actual parameters when calling a subprogram. Formal parameters are defined in the subprogram's specification, while actual parameters are specified in the calls. Three key issues in parameter evaluation are: assigning actual parameters to formal parameters based on order or explicit naming, ensuring the number of actual parameters matches the number of formal parameters (with the option for default values), and handling the relationship between types of formal and actual parameters.
-
+1- number should match unless default values are used
+2- type has to match
+3- order has to match unless explicitly naming parameters
 ## Parameter passing:
 It refers to the action of transferring the actual parameters to the formal parameters when calling a function or subroutine. Various methods exist for parameter passing:
 - Pass by Value: In this method, the value of the actual parameter is copied to the formal parameter. Any modifications made to the formal parameter within the subprogram do not affect the original actual parameter.
