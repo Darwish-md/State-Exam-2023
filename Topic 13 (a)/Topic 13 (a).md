@@ -49,9 +49,9 @@ The main function of superscalar processing is the superscalar instruction issue
 
 ![](Aspose.Words.928a6fcc-698a-4916-b70c-0ef6ce080d5f.002.png)
 ## <a name="_fcxokdtja5pz"></a>**VLIW processors:**
-VLIW represents a Very long instruction word. It is an instruction set architecture constructed to take complete benefit of instruction-level parallelism (ILP) for upgraded performance.
+VLIW represents a Very long instruction word. It is an instruction set architecture constructed to ***take complete benefit of instruction-level parallelism*** (ILP) for upgraded performance.
 
-The central processing unit processors enable programs to designate instructions to execute in order only whereas a VLIW processor enables programs to explicitly determine instructions to implement in parallel. This design is designed to enable higher implementation without the complexity inherent in some different designs.
+The central processing unit processors enable programs to designate instructions to execute in order only whereas a VLIW processor ***enables programs to explicitly determine instructions to implement in parallel.*** This design is designed to enable higher implementation without the complexity inherent in some different designs.
 
 VLIW architectures are closely associated with superscalar processors. Both objectives at speeding up computation with the aid of exploiting instruction-level parallelism. Both have almost a similar execution basis, including various execution units (EUs) controlling in parallel, and employing either a unified register file for all data types or specific (split) register files for FX and FP data, as shown in the figure.
 
