@@ -29,7 +29,7 @@ A processor that executes instructions one after the other, may use resources in
 ## <a name="_2nimzrdkpgj"></a>**Speculative Execution:**
 Speculative execution is an optimization technique in which a processor (CPU) performs a series of tasks before it is prompted to, in order to have the information ready if it is required at any point. Speculative execution uses concurrent processing and out-of-order execution (OoOE) to anticipate and fetch data that might be required at a later point. 
 
-It eliminates the stall experienced while waiting for appropriate instructions to arrive for the next step.  Speculative execution uses branch prediction to guess which instructions will most likely be needed in the near future and data flow analysis to arrange the instructions for optimal execution (instead of executing them in the order they came in). The goal is to reduce the total execution time and improve the overall CPU performance.
+It eliminates the stall experienced while waiting for appropriate instructions to arrive for the next step. Speculative execution uses ***branch prediction*** to guess which instructions will most likely be needed in the near future and ***data flow analysis*** to arrange the instructions for optimal execution (instead of executing them in the order they came in). The goal is to reduce the total execution time and improve the overall CPU performance.
 
 **Working:**
 
