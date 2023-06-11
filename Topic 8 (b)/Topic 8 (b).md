@@ -38,7 +38,18 @@ Nagios software runs periodic checks on critical parameters of application, netw
 - Vibrant Community
 - Customizable Code
 
+It could be summarized as in the following:
+- Purpose:
+    - Nagios is designed to monitor the health and availability of IT infrastructure components, including servers, networks, applications, and services.
+    - Its purpose is to proactively detect and alert administrators about any issues or problems in the monitored systems to minimize downtime and ensure system reliability.
 
+- Benefits:
+    - Proactive Monitoring: Nagios enables administrators to identify and resolve potential issues before they lead to service disruptions or downtime.
+    - Centralized Monitoring: It provides a centralized platform to monitor multiple systems from a single interface, simplifying management and monitoring tasks.
+
+- Capabilities:
+    - Monitoring: Nagios performs continuous monitoring of network services, hosts, and applications, checking their status using pre-defined checks and probes.
+    - Alerting: It delivers real-time alerts and notifications via various channels (email, SMS, etc.) when predefined thresholds or service failures are detected.
 
 **Bibliography:**
 
