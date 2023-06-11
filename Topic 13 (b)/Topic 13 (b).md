@@ -19,13 +19,13 @@ For example, let's say you want to find the names of all employees whose salary 
 
 A query is a request for information from a database. The database processes the query by translating it into a language it understands, finding the best way to execute it, and finally getting the answer for you.
 # <a name="_ih2mgetbvakb"></a>**Tree-based optimization in relational algebra.**
-Tree-based optimization is a method used to make queries more efficient. It involves creating a tree structure called a query tree, which represents the steps needed to execute a database query. The tables in the query are like leaves on the tree, and the operations we perform on the data are like branches or nodes.
+Tree-based optimization is a method used to make queries more efficient. It involves ***creating a tree structure called a query tree***, which represents the steps needed to execute a database query. ***The tables in the query are like leaves on the tree, and the operations we perform on the data are the nodes.***
 
 To optimize the query, we start from the bottom of the tree and work our way up to the top. We begin with the table data and move upwards, creating temporary results as we go. These temporary results are stored in memory and are removed once we are done with them. By moving up the tree, we eventually reach the top, which represents the final result of the query.
 
-There are different ways to find the best optimization strategy. One approach is an exhaustive search, where we generate all possible query trees and choose the one that gives us the best result. However, this method can be time-consuming and requires a lot of memory.
+There are different ways to find the best optimization strategy. One approach is an ***exhaustive search, where we generate all possible query trees and choose the one that gives us the best result. However, this method can be time-consuming and requires a lot of memory.***
 
-Alternatively, we can use rule-based heuristics. These are like shortcuts or guidelines that help us make decisions during optimization. For example, a rule could suggest performing select and project operations before joining operations. These heuristics are faster than an exhaustive search but may not always give the absolute best solution.
+Alternatively, we can use ***rule-based heuristics***. These are like shortcuts or guidelines that help us make decisions during optimization. For example, ***a rule could suggest performing select and project operations before joining operations.*** These heuristics are faster than an exhaustive search but may not always give the absolute best solution.
 
 ### Example:
 Here's a simplified example to illustrate tree-based optimization in relational algebra:
