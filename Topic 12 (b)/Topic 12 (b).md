@@ -91,9 +91,9 @@ Examples:
 - power supplies, battery chargers, renewable energy systems, electric vehicles, and many other devices and systems that require voltage conversion or regulation.
 
 ## <a name="_ewlgnenjq0gn"></a>**Voltage Regulator:**
-A voltage regulator is an electrical or electronic device that maintains the voltage of a power source within acceptable limits. The voltage regulator is needed to keep voltages within the prescribed range that can be tolerated by the electrical equipment using that voltage. Such a device is widely used in motor vehicles of all types to match the output voltage of the generator to the electrical load and to the charging requirements of the battery.
+A voltage regulator is an electrical or electronic device that ***maintains the voltage of a power source within acceptable limits***. The voltage regulator is needed to keep voltages within the prescribed range that can be tolerated by the electrical equipment using that voltage. Such a device is ***widely used in motor vehicles*** of all types to match the output voltage of the generator to the electrical load and to the charging requirements of the battery.
 
-Electronic voltage regulators utilize solid-state semiconductor devices to smooth out variations in the flow of current. In most cases, they operate as variable resistances; that is, resistance decreases when the electrical load is heavy and increases when the load is lighter.
+Electronic voltage regulators utilize solid-state semiconductor devices to smooth out variations in the flow of current. In most cases, ***they operate as variable resistances; that is, resistance decreases when the electrical load is heavy and increases when the load is lighter.***
 ### <a name="_b4rdeoaj905x"></a>**How does it work?**
 The voltage regulator uses the principle of a feedback control system. It relies upon negative feedback control loops.
 
