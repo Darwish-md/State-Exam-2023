@@ -41,9 +41,9 @@ Similarly, "2." demonstrates how the application’s execution might depend on t
 
 ![](Aspose.Words.928a6fcc-698a-4916-b70c-0ef6ce080d5f.001.png)
 ## <a name="_w6eg81mzafyt"></a>**Superscalar processors:**
-A superscalar processor is invented to produce an execution cost of higher than one instruction per clock cycle for an individual sequential program. Superscalar processor design defines a set of approaches that enable the central processing unit (CPU) of a computer to obtain a throughput of higher than one instruction per cycle while implementing an individual sequential program.
+A superscalar processor is invented to produce an execution cost of higher than one instruction per clock cycle for an individual sequential program. Superscalar processor design defines a set of approaches that enable the central processing unit (CPU) of a computer to ***obtain a throughput of higher than one instruction per cycle*** while implementing an individual sequential program.
 
-A superscalar architecture consists of parallel execution units, which can execute instructions at the same time. This parallel architecture was first executed in RISC processors, which use brief and simple instructions to implement computation. Because of their superscalar efficiency, RISC processors have normally performed higher than CISC processors running at equal megahertz.
+A superscalar architecture ***consists of parallel execution units***, which can execute instructions at the same time. This parallel architecture ***was first executed in RISC processors***, which use brief and simple instructions to implement computation. Because of their superscalar efficiency, RISC processors have normally performed higher than CISC processors running at equal megahertz.
 
 The main function of superscalar processing is the superscalar instruction issue. A higher issue rate provides rise to higher processor execution, simultaneously, it intensifies the restrictive result of control and data dependencies on the processor implementation as well.
 
