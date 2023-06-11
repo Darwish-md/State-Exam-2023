@@ -47,11 +47,12 @@ It could be summarized as in the following:
     - Proactive Monitoring: Nagios enables administrators to identify and resolve potential issues before they lead to service disruptions or downtime.
     - Centralized Monitoring: It provides a centralized platform to monitor multiple systems from a single interface, simplifying management and monitoring tasks.
 
-- Capabilities ():
+- Capabilities (Monitoring, Alerting, Visualization, event handling):
     - Monitoring: Nagios performs continuous monitoring of network services, hosts, and applications, checking their status using pre-defined checks and probes.
     - Alerting: It delivers real-time alerts and notifications via various channels (email, SMS, etc.) when predefined thresholds or service failures are detected.
     - Visualization: Nagios provides a web-based user interface where administrators can view the status of monitored systems, access performance graphs, and generate reports to visualize system health and performance.
     - Event Handling: It enables administrators to define automated actions or event handlers that execute in response to specific events or alerts, allowing for immediate corrective actions.
+    
 **Bibliography:**
 
 1. <https://www.techtarget.com/searchnetworking/tip/Monitor-your-traffic-with-MRTG>
