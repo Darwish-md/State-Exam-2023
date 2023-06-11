@@ -38,8 +38,14 @@ A rectifier is a device that converts an oscillating two-directional alternating
 The name half-wave rectifier itself states that the rectification is done only for half of the cycle. The AC signal is given through an input transformer which steps up or down according to the usage. Mostly a step-down transformer is used in rectifier circuits, so as to reduce the input voltage.
 
 The input signal given to the transformer is passed through a PN junction diode which acts as a rectifier. This diode converts the AC voltage into pulsating dc for only the positive half cycles of the input.
+
+![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/7d94d79c-e812-4c4b-b364-a5bdbb7d9485)
+
 ### <a name="_lr4aktl30ujk"></a>**Full-Wave Rectifiers:**
 If we need to rectify AC power to obtain the full use of both half-cycles of the sine wave, a different rectifier circuit configuration must be used. Such a circuit is called a full-wave rectifier.
+
+![image](https://github.com/Darwish-md/State-Exam-2023/assets/72353586/3c5f0576-b8df-4d59-8553-5d07dc016e40)
+
 ### <a name="_b8a95p3erf9u"></a>**Rectification:**
 An alternating current has the property to change its state continuously. This is understood by observing the sine wave by which an alternating current is indicated. It raises in its positive direction goes to a peak positive value, reduces from there to normal, and again goes to the negative portion and reaches the negative peak and again gets back to normal and goes on.
 
