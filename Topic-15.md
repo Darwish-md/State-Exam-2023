@@ -37,9 +37,9 @@ The four pillars of Object-Oriented Programming (OOP) are:
         Method overloading is a form of polymorphism that enables a class to have multiple methods with the same name but different parameters.
         The appropriate method is determined based on the number, type, or order of the parameters.
         
-      overloading: same name different signature (different parameters).
+      overloading: same name different signature (different parameters). Overloading is an example of static polymorphism, also known as compile-time polymorphism or early binding. 
           
-      overriding: same method signature, different implementation.
+      overriding: same method signature, different implementation. Overriding is an example of dynamic polymorphism, also known as runtime polymorphism or late binding. 
       
       For example, a class "Shape" can have a method named "calculateArea()" that is implemented differently in subclasses like "Circle" and "Rectangle."
  
