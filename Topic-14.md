@@ -75,11 +75,43 @@ A stack is a Last-In-First-Out (LIFO) data structure where elements are added an
 Example:
 Think of a stack of books. You add books on top of the stack and remove books from the top. The last book added is the first book to be removed.
 
+Stack Operations: Stacks typically support two primary operations:
+- Push: Adds an element to the top of the stack.
+- Pop: Removes and returns the element at the top of the stack.
+- Peek: Retrieves the element at the top of the stack without removing it.
+
+Empty Stack: A stack can be empty, meaning it has no elements.
+
+Stack Overflow: If you try to push an element onto a full stack (in case of a fixed-size stack), it results in a stack overflow condition, indicating that the stack is unable to accommodate more elements.
+
+Stack Underflow: If you try to pop an element from an empty stack, it results in a stack underflow condition, indicating that there are no elements to be removed.
+
+Stack Implementation: Stacks can be implemented using arrays or linked lists. Array-based implementation requires a fixed size, while linked list-based implementation allows for dynamic resizing.
+
+Common Applications: Stacks are widely used in programming and computer science. Some common applications include expression evaluation, function call stack in programming languages, backtracking algorithms, DFS, undo/redo functionality, and managing recursive data structures.
+
 ### Queues: 
 A queue is a First-In-First-Out (FIFO) data structure where elements are added at one end, called the rear, and removed from the other end, called the front. The first element added is the first one to be removed.
 
 Example:
 Imagine a queue of people waiting in line. The person who joins the queue first is the first one to leave the queue.
+
+Queue Operations: 
+- Enqueue: Adds an element to the back (rear) of the queue.
+- Dequeue: Removes and returns the element from the front (head) of the queue.
+- Peek: Retrieves the element at the front of the queue without removing it.
+
+Front and Rear: The front of the queue refers to the element at the head, while the rear represents the element at the tail.
+
+Empty Queue: A queue can be empty, indicating that it has no elements.
+
+Queue Overflow: If you try to enqueue an element into a full queue (in case of a fixed-size queue), it results in a queue overflow condition, indicating that the queue is unable to accommodate more elements.
+
+Queue Underflow: If you try to dequeue an element from an empty queue, it results in a queue underflow condition, indicating that there are no elements to be removed.
+
+Queue Implementation: Queues can be implemented using arrays or linked lists. Array-based implementation requires a fixed size, while linked list-based implementation allows for dynamic resizing.
+
+Common Applications: Queues have various applications in computer science, including task scheduling, BFS, printer job queues, message queues in interprocess communication, and handling requests in network routing.
 
 ### Sets: 
 A set is a data structure that represents a collection of unique elements, where each element occurs only once. It does not maintain any particular order.
@@ -91,8 +123,15 @@ Let's consider a set of colors:
         Blue
 In this set, each color appears only once, and the order of the colors does not matter.
 
+Benefits:
+- Elimination of duplicates: Sets automatically enforce uniqueness, ensuring that each element appears only once in the collection.
+- Efficient membership testing: Sets provide a fast way to check whether an element exists in the set or not, regardless of the size of the set.
+- Set operations: Sets support operations like union (addAll), intersection (retainAll), difference (removeAll), and subset testing (containsAll).
+
 ### Multisets: 
 A multiset is similar to a set but allows duplicate elements. It can store multiple occurrences of the same element.
+
+Multisets are used when you need to store a collection of elements where duplicates are allowed and you still want to perform operations like adding elements, removing elements, and counting occurrences efficiently.
 
 Example:
 Consider a multiset of fruits:
@@ -112,7 +151,6 @@ Here, the array contains four numbers, and each number can be accessed using its
   - Primitive data types refer to the basic data types provided by a programming language, typically built into the language itself. These types are used to represent fundamental values, such as numbers, characters, or boolean values. Examples of primitive data types include integers, floating-point numbers, characters, and booleans. Primitive data types are usually low-level and directly supported by the underlying hardware. Examples: Integer, Float, Character, Boolean.
 
   - On the other hand, elementary data structures refer to fundamental data structures used to organize and store data in computer memory. They are higher-level abstractions that go beyond individual data types. Examples of elementary data structures include arrays, linked lists, stacks, queues, and trees. These data structures are used to organize, manipulate, and store collections of data elements. Examples: Integer, Float, Character, Boolean, Array, Stack, Queue.
-
 
 ### Trees
 Trees are hierarchical data structures composed of nodes connected by edges. They have a root node at the top, and each node can have child nodes branching out from it. Here's an explanation of tree representation, traversal, deletion, and insertion:
