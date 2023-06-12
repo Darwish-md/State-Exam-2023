@@ -9,7 +9,9 @@ OpenSSL is an open-source cryptographic library that provides an implementation 
 SSL authentication, also known as server authentication or mutual authentication, verifies the identity of the server to the client. It ensures that the client is connecting to the intended and legitimate server and not to an imposter or malicious entity. This is achieved through the use of digital certificates issued by trusted Certificate Authorities (CAs). The server presents its digital certificate to the client, and the client validates the certificate against a list of trusted CAs.
 
 ## Encryption
-Encryption is the process of encoding data in a way that makes it unreadable to unauthorized parties. In the context of SSL, encryption is used to protect the data transmitted between the client and server from being intercepted or deciphered by attackers. SSL uses asymmetric encryption (public-key cryptography) and symmetric encryption to establish a secure connection. The public key is used for encryption and is shared with the client, while the private key is used for decryption and is kept securely on the server.
+Encryption is the process of encoding data in a way that makes it unreadable to unauthorized parties. In the context of SSL, encryption is used to protect the data transmitted between the client and server from being intercepted or deciphered by attackers. 
+
+SSL uses asymmetric encryption (public-key cryptography) and symmetric encryption to establish a secure connection. The public key is used for encryption and is shared with the client, while the private key is used for decryption and is kept securely on the server.
 
 ***In summary***, SSL (Secure Sockets Layer) is a protocol that ensures secure communication between a client and a server. OpenSSL is a cryptographic library that provides the implementation of SSL/TLS protocols. SSL authentication verifies the identity of the server using digital certificates, and encryption protects the data transmitted between the client and server from unauthorized access or tampering.
 
