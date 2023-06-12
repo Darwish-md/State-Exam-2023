@@ -24,18 +24,36 @@ There are three key steps:
 ## key generation:
 - Key generation in the context of the SSH protocol is a crucial step in establishing a secure and encrypted connection between the client and the server. It involves the generation of cryptographic keys that are used for encryption and decryption of the data transmitted during the SSH session. To generate an SSH key pair, you can use the `ssh-keygen` command-line tool. Once generated, you will have two files: id_rsa (private key) and id_rsa.pub (public key). the id_rsa.pub should be placed in the remote systems authorized_keys directory in its .ssh hidden folder on its home directory, this directory must also have root permissions granted. Now whoever has the corresponding private key can login to this remote computer using ssh protocol.
 
-- SSH utilizes asymmetric cryptography, which involves the use of a key pair consisting of a public key and a private key. The key pair is unique to each user or entity involved in the SSH communication. Here is an explanation of the key generation process:
+- Here are the steps to explain how key generation and SSH connection establishment work between a Windows machine (client) and a Linux virtual machine (server):
 
-    1. Key Pair Generation: The client and server each generate their own key pair. The key pair consists of a public key and a private key. The private key should be kept confidential and securely stored by the owner, while the public key can be freely shared.
+1. Key Pair Generation:
+  - On the Windows machine, generate an SSH key pair using a tool like PuTTYgen.
+  - This generates a public key (e.g., id_rsa.pub) and a private key (e.g., id_rsa) on the Windows machine.
 
-    2. Public Key Distribution: The client sends its public key to the server. This can be done in various ways, such as manually copying the key to the server or using automated methods like SSH key management systems.
+1. Server Configuration:
+  - On the Linux virtual machine, ensure the SSH server (e.g., OpenSSH) is installed and running.
+  - Copy the public key (id_rsa.pub) from the Windows machine to the Linux virtual machine.
 
-    3. Server Verification: Upon receiving the client's public key, the server verifies its authenticity. The server checks if the client's public key is listed in its authorized_keys file or any other trusted key storage mechanism. This ensures that only authorized clients with valid public keys can establish a connection.
+1. Server Authorization:
+  - On the Linux virtual machine, add the copied public key to the authorized_keys file located in the ~/.ssh directory.
+  - This allows the Linux virtual machine to authenticate the Windows machine's public key during SSH connections.
 
-    4. Shared Session Key: Once the server verifies the client's public key, both the client and server engage in a process called the Diffie-Hellman key exchange. This process allows them to derive a shared session key without directly transmitting it over the network. The shared session key is a symmetric key used for encryption and decryption during the SSH session.
+1. Client Initiation:
+  - On the Windows machine, use an SSH client like PuTTY to initiate an SSH connection to the Linux virtual machine.
+  - Specify the IP address or hostname of the Linux virtual machine and the appropriate port (default is 22).
 
-    5. Encryption and Decryption: With the shared session key in place, the client and server can now encrypt and decrypt the data transmitted between them. The encryption algorithms used, such as AES or DES, ensure the confidentiality and integrity of the data.
-   
+1. Client Authentication:
+  - During the initial connection, the Windows machine presents its public key to the Linux virtual machine.
+  - The Linux virtual machine checks if the Windows machine's public key is in the authorized_keys file for authentication.
+
+1. Secure Communication:
+  - If the Windows machine's public key is authenticated, the Linux virtual machine generates a session key and encrypts it using the Windows machine's public key.
+  - The encrypted session key is sent back to the Windows machine.
+  - The Windows machine decrypts the session key using its private key, establishing a shared session key for secure communication.
+
+1. Secure Shell Connection:
+  - With the shared session key, the Windows machine and Linux virtual machine can securely exchange encrypted data during the SSH connection.
+  - They can execute commands, transfer files, or perform any other supported SSH operations securely.
 ## configuration of user settings:
 - SSH configuration file (ssh_config): Users can modify this global configuration file to set options that apply to all SSH connections from their account.
 
