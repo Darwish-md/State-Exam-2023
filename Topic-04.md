@@ -4,6 +4,12 @@
 - It allows users to securely connect to a remote server or device and execute commands, transfer files, and manage systems remotely. 
 - SSH utilizes encryption and authentication mechanisms to ensure the confidentiality, integrity, and authenticity of the communication by ***running on top of the TCP protocol and always listens to the TCP/IP port number 22 by default***, and it is secure since it encrypts the data using encryption ***algorithms like Advanced Encryption Standard AES or Data Encryption Standard DES.***
 
+In summary:
+- Designed for secure remote access and control of systems over an unsecured network.
+- Provides encrypted and secure communication between a client and a server.
+- Typically used for secure remote login, file transfers, and remote command execution.
+- Operates at the application layer of the network stack.
+
 ### Establishing an SSH connection
 There are three key steps:
   
